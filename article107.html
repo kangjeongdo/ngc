@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article107_main.png" alt="The only surviving equestrian statue of a pagan emperor depicts Marcus Aurelius.">
+            </div>
+            <div>
+                <h3>What were Marcus 
+                    Aurelius' rules for life His 
+                    self-help classic has the 
+                    answers</h3>
+                <p>
+                    <span class="history">HISTORY &amp; CULTURE</span>
+                    <time datetime="2023-11-16">November 16, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_ThreePic">
+            <ul>
+                <li><img src="images/article107_02.png" alt="On his deathbed, an ailing Marcus Aurelius takes the arm of his son and successor Commodus in this 1844 oil painting "></li>
+                <li><img src="images/article107_03.png" alt="Emperor Trajan made this city the capitol of Upper Pannonia. "></li>
+                <li><img src="images/article107_04.png" alt="Regarding the ephemeral nature of life, Marcus Aurelius mentions in Meditations three lost citie"></li>
+            </ul>
+            <div>
+                <p>The second-century A.D. world of Emperor Marcus Aurelius was in shambles. A 
+                    great plague ravaged western Europe, as he embarked on a long and bloody war 
+                    against the Germanic tribes along the Danube frontier. Faced with these woes, 
+                    along with old age and thoughts of death, the emperor sought comfort in 
+                    philosophy.</p>
+                <p>Throughout his life, notably at odd moments during the military campaign, he 
+                    jotted down his personal struggles, philosophical beliefs, and insights about being 
+                    a better ruler and a person. Out of this sincere expression of introspection came 
+                    12 books contemplating life and the human condition. In total this collection is 
+                    called Meditations.</p>
+                <h4>Philosopher emperor</h4>
+                <p>CLEAN, CLOSE SHAVE - Born in A.D. 121 into an aristocratic family in Rome, 
+                    Marcus Aurelius received an excellent education in rhetoric and philosophy. He 
+                    studied Greek and quoted freely from Homer and Euripides. Perhaps that’s why he 
+                    wrote his Meditations in Greek rather than Latin, the Roman Empire’s official 
+                    language.</p>
+                <p>As a youth, he also became deeply interested in philosophy, particularly Stoicism, a 
+                    school of thought that flourished in antiquity. One of its key tenets emphasizes the 
+                    development of inner strength and the acceptance of things beyond one’s control. 
+                    Founded in Athens by Zeno of Citium around 300 B.C., Stoicism grew to become 
+                    one of the leading philosophies of the ancient world.</p>
+                <p>On Monday, March 22, 2015, as Richard’s coffin was received by Leicester 
+                    Cathedral in preparation for reburial, Channel 4 TV presenter Jon Snow asked a 
+                    Tudor historian for the evidence of Richard’s murder of the Princes in the Tower. 
+                    “The evidence,” the historian replied, “is that he would have been a fool not to do it.”</p>
+                <p>It flourished in ancient Rome, counting Cicero among its leading scholars (and a 
+                    good source of information on Stoicism in Rome). Epictetus, a formerly enslaved 
+                    Greek, became a highly influential Stoic philosopher studied by Marcus Aurelius. 
+                    In fact, Meditations bears some resemblance to Epictetus’s collection of moral 
+                    precepts, called Enchiridion (Manual).</p>
+                <h4>With gratitude</h4>
+                <p>The work starts as a kind of reckoning in which Marcus Aurelius gives thanks to all 
+                    those who positively influenced him throughout his life. For example, he credits his 
+                    tutors for keeping him from superstition and vice and turning him toward a more 
+                    austere and virtuous life. The most important of these tutors, he remembers, was 
+                    Quintus Junius Rusticus, who corrected his impetuous character and introduced 
+                    him to the Stoic philosophers.</p>
+                <p>Marcus Aurelius also reminisces about his life at the court in Rome, where he 
+                    arrived at age 17. His adoptive father, then emperor Antoninus Pius, maintained a 
+                    modest lifestyle, and so the young Marcus Aurelius was not thrust into a world of 
+                    sumptuous clothes and luxurious living; he didn’t even have a personal guard. The 
+                    future emperor admired the dedication with which his adoptive father managed 
+                    the empire and his calm but decisive personality.</p>
+                <p>Marcus Aurelius ascended to the throne in A.D. 161, co-ruling with his adoptive 
+                    brother Lucius Verus until Lucius’s death, in 169. While Marcus Aurelius doesn’t 
+                    reflect directly about his life as an emperor, he touches on important related topics, 
+                    including the weight of his responsibilities and the need to uphold justice. He 
+                    recognizes that he must make decisions in the best interest of the people he 
+                    governs. He writes: “Begin each day by telling yourself: Today I shall be meeting 
+                    with interference, ingratitude, insolence, disloyalty, ill will, and selfishness ... None 
+                    of these things can injure me, for nobody can implicate me in what is degrading.”</p>
+                <p>He recognizes that power can be a burden and a temptation, emphasizing the 
+                    importance of avoiding arrogance and maintaining humility in the face of authority. 
+                    He also offers insights on how to cope with difficult situations, maintain inner 
+                    tranquility, and remain focused on one’s purpose in the face of obstacles.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article189.png" alt="The town of Positano is one of many along the Amalfi Coast, a famed stretch known for its curving roads and breathtaking vistas.">
+                        <div>
+                            <strong>Travel Italy's Most Scenic Stretch of Coastline</strong>
+                            <p>The Amalfi Coast is the playground of the social elite and well-heeled, but don’t let 
+                                that throw you. The Italians love kids and this area puts everyone at close quarters.</p>
+                            <a href="article189.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article190.png" alt="A vintage car passes a modern bar nestled between neoclassical buildings in Havana, Cuba.">
+                        <div>
+                            <strong>Get Off the Tourist Track in Havana</strong>
+                            <p>To get an inside glimpse of daily life for the average Cuban, you and your kids 
+                                should skip the hotels and stay in one of the hundreds of casas particulares 
+                                sprinkled throughout Havana, the Cuban equivalent of B&Bs</p>
+                            <a href="article190.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article191.png" alt="The Manhattan Bridge connects Manhattan and Brooklyn.">
+                        <div>
+                            <strong>Why a Trip to New York is a Rite of Passage</strong>
+                            <p>For a first trip, stick with Manhattan, the classic microcosm of the world. There’s no 
+                                major influence, theme, subject, attraction, or trend that in some way isn’t touched 
+                                or reflected in the work, play, creativity</p>
+                            <a href="article191.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

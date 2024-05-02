@@ -1,0 +1,1015 @@
+body{
+    overflow-x: hidden; 
+}
+body,
+#gnbPanel,
+.list_container2{
+    background-color: #ffffff;
+}
+footer{
+    background-color: #02291f;
+}
+#gnbPanel div:not(:first-child) *:not(b),
+#searchField *:not(input[type='submit'],form),
+header div:first-child > div:first-of-type input[type='button']:not(:first-of-type),
+header div ul li a,
+header div:nth-child(2) input[type='button']:not(:last-of-type),
+div[id^='depthMenu'] *:not(b),
+#newsLetterPopUp *:not(form),
+.indexContainer *:not(b,iframe),
+.list_container *:not(b,em),
+.list_container2 *:not(b,button,a),
+.list_Travel *:not(img),
+article *:not(h2,img),
+.loginContainer *,
+.findContainer *,
+.signContainer *,
+.termsContainer *,
+.policyContainer *,
+.subscribeContainer *,
+footer *:not(h2,img){
+    font-family: 'Lato';
+}
+input[type='button']{
+    border: none; background-color: transparent; padding: 0; 
+}
+input[type='button']:hover{
+    color: #757575;
+}
+input[value='search']{
+    text-indent: -9999px; background: url('../images/bul_search.svg') center no-repeat; width: 19px;
+}
+b{
+    display: block; font-style: italic; font-family: 'lora'; font-weight: 400;
+}
+a{
+    display: block; text-decoration: none;
+}
+.backgroundColor{
+    background-color: #ffffff;
+}
+
+@media screen and (max-width:767px){
+
+    #gnbPanel{
+        box-sizing: border-box; width: 100%; padding:27px 3.6% 40px; position: fixed; top: 0; display: none; z-index: 60; box-sizing: border-box; 
+        overflow-x: hidden; 
+    }
+    #gnbPanel.active{
+       display: block; 
+    }
+     #gnbPanel div:first-child{
+        position: relative; width: 100%;
+     }
+     #gnbPanel div:first-child input.closeBtn{
+        text-indent: -9999px; background: url('../images/bul_close.svg') center no-repeat; width: 19px; height: 19px;
+        position: absolute; left: 0; top: 3px;
+     }
+     #gnbPanel div:first-child h2{
+        text-align: center; margin: 0 28%; max-width: 133px; width: 35%;
+     }
+     #gnbPanel div:first-child h2 a{
+        display: block;
+     }
+     #gnbPanel div:first-child h2 a img{
+        display: inherit; width: 100%; 
+     }
+     #gnbPanel div:first-child input.openField{
+        position: absolute; top: 3px; right: 0;
+     }
+    #gnbPanel > div:last-child{
+        margin-top: 40px;
+    }
+    #gnbPanel > div:last-child aside ol:not(:last-child){
+        margin-bottom: 20px;
+    }
+    #gnbPanel > div:last-child aside ol li{
+        text-align: left; font-size: 14px; 
+    }
+    #gnbPanel > div:last-child aside ol li:not(:first-child){
+        opacity: 0; height: 0; transition: all 0.4 ease;
+    }
+    #gnbPanel > div:last-child aside ol li:not(:first-child,:last-child){
+        margin-bottom: 0; transition: margin-bottom 0.4s ease-in;
+    }
+    #gnbPanel > div:last-child aside ol li:first-child{
+        padding-bottom: 15px; background: url('../images/bul_plus.svg') right -4px no-repeat;
+        border-bottom: 1px solid black; transition: background 0.3s ease;
+    }
+    #gnbPanel > div:last-child aside ol:hover li:first-child{
+        background-image: url('../images/bul_minus.svg'); margin-bottom: 20px;
+    }
+    #gnbPanel > div:last-child aside ol:hover li:first-child ~ *{
+        opacity: 1; height: 14px; margin-bottom: 15px;
+    }
+    #gnbPanel > div:last-child aside ol:nth-child(3):hover li:nth-child(3){
+        height: 29px;
+    } 
+    #gnbPanel > div:last-child aside ol li:first-child a{
+        font-weight: 700; color: #000000;
+    }
+    #gnbPanel > div:last-child aside ol li:not(:first-child) a{
+        font-weight: 300; color: #757575; 
+    }
+    #gnbPanel > div:last-child aside ol:hover li:not(:first-child) a:hover{
+        font-weight: 400; color: #000000;
+    }
+    #gnbPanel > div:last-child div{
+        display: none;
+    }
+    header{
+        position: fixed; top: 0; z-index: 50; background-color: transparent;
+        padding: 27px 3.6% 25px; width: 100%; box-sizing: border-box; 
+    }
+    header > div:first-child{
+        position: relative; 
+    }
+    header > div:first-child > div{
+        position: absolute; top: 0; line-height: 28px; font-size: 14px; font-weight: 700;
+    }
+    header > div:first-child > div input,
+    header > div:first-child > div:last-of-type a{
+        line-height: inherit; font-size: inherit; vertical-align: top; font-weight: inherit;
+    }
+    header > div:first-child > div input:not([value='menu'],[value='Newsletters'],[value='search']){
+        visibility: hidden;
+    }
+    header > div:first-child > div:first-of-type{
+        left: 0; max-width: 135px; width: 14%; 
+    }
+    header > div:first-child > div:first-of-type input[data-panel="gnbPanel"]{
+        margin-right: calc(7% - 10px); text-indent: -9999px; width: 29px;
+        background: url('../images/bul_menu.svg') center no-repeat;
+    }
+    header > div:first-child > h1{
+       width: 35%; max-width: 133px; text-align: center; margin: 0 28%;
+    }
+    header > div:first-child > h1 a{
+        display: block;
+    }
+    header > div:first-child > h1 a img{
+        display: inherit; width: 100%;
+    }
+    header > div:first-child > div:last-of-type{
+        right: 0; max-width: 125px; width: 50%;
+        text-align: right; 
+    }
+    header > div:first-child > div:last-of-type > *:not(:last-child){
+        width: 13%; cursor: pointer;
+    }
+    header > div:first-child > div:last-of-type > *:not(a:first-of-type){
+        margin-left: 1%;
+    }
+    header > div:first-child > div:last-of-type a{
+       display: inline-block; text-indent: -9999px;  background-repeat: no-repeat; background-position: center; 
+       text-align: left;
+    }
+    header > div:first-child > div:last-of-type a:first-of-type{
+         background-image: url('../images/bul_login.svg');
+    }
+    header > div:first-child > div:last-of-type a:last-of-type{
+        background-image: url('../images/bul_subscribe.svg');
+    }
+    header > div:first-child > div:last-of-type a:hover{
+        color: #757575;
+    }
+    header > div:first-child > div input[value='Newsletters']{
+        text-indent: -9999px; background: url('../images/bul_newsletters.svg') center no-repeat; 
+    }
+    header div[id^='depthMenu']{
+        padding: 80px 0 40px; visibility: hidden;
+        display: none; transition: display 10s ease-in-out 3s;
+    }
+    header div#newsLetterPopUp{
+        box-sizing: border-box; width: 100%; height: 100%; 
+        position: fixed; top: 0; left: 0; z-index: 100; display: none;
+    }
+    header div#newsLetterPopUp.active{
+        display: block;
+    }
+    header div#newsLetterPopUp > div{
+        width: 75%; overflow: hidden; border-radius: 20px; background-color: black; height: 280px;
+        position: absolute; left: 11%; top: 32%; box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.4);
+    }
+    header div#newsLetterPopUp > div img{
+        opacity: 0;
+    }
+    header div#newsLetterPopUp > div input[type='button']{
+        display: block; text-indent: -9999px; background: url('../images/bul_close.svg') center no-repeat;
+        width: 30px; height:30px; background-color: #ffffff; border-radius: 15px;
+        position: absolute; top: 10px; right: 4%; cursor: pointer;
+    }
+    header div#newsLetterPopUp > div div{
+        position: absolute; top: 45px; width: 100%;
+    }
+    header div#newsLetterPopUp > div div dl{
+        margin-bottom: 20px; text-align: center; color: #ffffff;
+    }
+    header div#newsLetterPopUp > div div dl dt{
+        font-weight: 900; font-size: 25px; margin-bottom: 25px;
+    }
+    header div#newsLetterPopUp > div div dl dd{
+        font-weight: 400; font-size: 15px; padding: 0 5%; box-sizing: border-box;
+    }
+    header div#newsLetterPopUp > div div form input[type='email']{
+        width: 85%; display: block; margin: 0 auto; border: none; line-height: 40px; border-radius: 35px;
+        box-sizing: border-box; position: relative; margin-bottom: 20px;
+        background: url('../images/bul_mail.svg') 9% 7px no-repeat #ffffff;
+        padding: 0 50px; 
+    }
+    header div#newsLetterPopUp > div div form input[type='email']::placeholder{
+        font-size: 14px; font-weight: 400; color: #000000; 
+    }
+    header div#newsLetterPopUp > div div form input[type='email']:focus{
+        outline: none; 
+    }
+    header div#newsLetterPopUp > div div form input[type='submit']{
+        width: 110px; height: 40px; border: none; background-color: #456148; border-radius: 25px;
+        color: #ffffff; font-size: 16px; font-weight: 400; margin: 0 auto; display: block; cursor: pointer;
+    }
+    header div#searchField{
+        width: 42%;  padding: 16px 0 14px 1.5%; background-color: transparent;
+        position: absolute; right: 1%; top: -100px; z-index: 40; display: none;
+    }
+    header div#searchField.active{
+        top: 75px; right: 0; display: block;
+    }
+    header div#searchField.backgroundColor{
+        background-color: #ffffff;
+    }
+    header div#searchField form fieldset{
+        position: relative;
+    }
+    header div#searchField form fieldset input[type='search']{
+        border: none; width: 96%; background-color: transparent; outline: none; border-radius: 0;
+        padding-bottom: 15px; border-bottom: 1px solid #000000; line-height: 26px;
+    }
+    header div#searchField form fieldset input[type='search']::placeholder{
+        font-size: 14px; font-weight: 300; color: #000000; text-transform: uppercase;
+    }
+    header div#searchField form fieldset input.openBtn{
+        border: none; position: absolute; right: 5%; top: 5px; height: 20px;
+    }
+    footer{
+        padding: 80px 3.6% 0; position: relative; bottom: 0; box-sizing: border-box; min-height: 815px;
+    }
+    footer div:first-child{
+        margin-bottom: 60px;
+    }
+    footer h2{
+        margin-bottom: 80px; width: 40%;
+    }
+    footer h2 img{
+        width: 100%; max-width: 140px; display: block;
+    }
+    footer div:first-child div{
+        margin-bottom: 20px; 
+    }
+    footer div:first-child div h3{
+        font-size: 16px; font-weight: 700; color: #ffffff; background: url('../images/bul_plus_footer.svg') right -4px no-repeat;
+        padding-bottom: 15px; border-bottom: 1px solid white; transition: background 0.3s ease;
+    }
+    footer div:first-child div:hover h3{
+        background-image: url('../images/bul_minus_footer.svg');  margin-bottom: 20px;
+    }
+    footer div:first-child div a{
+       display: none; font-weight: 400; color: #ffffff; transition-property: display, color;
+       transition-duration: 0.3s; transition-timing-function: ease;
+    }
+    footer div:first-child div a:not(:last-of-type){
+        margin-bottom: 15px; 
+    }
+    footer div:first-child div:hover a{
+        display: block;
+    }
+    footer div:first-child div:hover a:hover{
+        color: #757575;
+    }
+    footer div:last-child ul{
+        margin-bottom: 60px;
+    }
+    footer div:last-child ul li{
+        display: inline-block; vertical-align: middle;
+    }
+    footer div:last-child ul li:not(:first-child){
+        margin-left: 2%;
+    }
+    footer div:last-child ul li a{
+        display: block; text-indent: -9999px; 
+        width: 30px; height: 29px;
+    }
+    footer div:last-child ul li:first-child a{
+        background: url('../images/ico_sns_facebook.svg') center no-repeat;
+    }
+    footer div:last-child ul li:nth-child(2) a{
+        background: url('../images/ico_sns_twitter.svg') center no-repeat;
+    }
+    footer div:last-child ul li:nth-child(3) a{
+        background: url('../images/ico_sns_instagram.svg') center no-repeat;
+    }
+    footer div:last-child ul li:nth-child(4) a{
+        background: url('../images/ico_sns_linkedin.svg') center no-repeat;
+    }
+    footer div:last-child ul li:nth-child(5) a{
+        background: url('../images/ico_sns_youtube.svg') center no-repeat;
+    }
+    footer div:last-child ul li:last-child a{
+        background: url('../images/ico_sns_reddit.svg') center no-repeat;
+    }
+    footer div:last-child p{
+        margin: 0 auto; line-height: 20px; 
+    }
+    footer div:last-child span{
+        display: block; font-weight: 300; font-size: 14px; color: #ffffff; width: 92.8%;
+    }
+    footer div:last-child span:first-child{
+        padding-right: 5.4%; border-right: 1px solid white; margin-bottom: 15px;
+    }
+    }
+@media screen and (min-width:768px) and (max-width:1279px){
+
+    #gnbPanel{
+        box-sizing: border-box; width: 100%; height: 100%; padding:31px 3.12% 40px; overflow-y: scroll;
+        position: fixed; top: 0; display: none; z-index: 60; box-sizing: border-box; 
+     }
+    #gnbPanel.active{
+       display: block;
+    }
+     #gnbPanel div:first-child{
+        position: relative; width: 100%;
+     }
+     #gnbPanel div:first-child input.closeBtn{
+        text-indent: -9999px; background: url('../images/bul_close.svg') center no-repeat; width: 19px; height: 19px;
+        position: absolute; left: 0; top: 10px;
+     }
+     #gnbPanel div:first-child h2{
+        text-align: center; margin: 0 auto; max-width: 133px;
+     }
+     #gnbPanel div:first-child h2 a{
+        display: block;
+     }
+     #gnbPanel div:first-child h2 a img{
+        display: inherit; width: 100%;
+     }
+     #gnbPanel div:first-child input.openField{
+        position: absolute; top: 10px; right: 0; height: 19px; 
+     }
+    #gnbPanel > div:last-child{
+        margin-top: 74px; 
+        display: flex; flex-direction: column; 
+    }
+    #gnbPanel > div:last-child aside{
+        order: 2; margin-top: 100px; 
+        display: flex; flex-wrap: wrap; 
+    }
+    #gnbPanel > div:last-child aside::after{
+        content: ''; display: block; clear: both;
+    }
+    #gnbPanel > div:last-child aside ol{
+        flex-basis: 34%;
+    }
+    #gnbPanel > div:last-child aside ol:not(:nth-child(n+3):nth-child(-n+5)){
+        margin-bottom: 50px;
+    }
+    #gnbPanel > div:last-child aside ol:first-child{order: 1;}
+    #gnbPanel > div:last-child aside ol:nth-child(2){order: 3;}
+    #gnbPanel > div:last-child aside ol:nth-child(3){order: 2; margin-left: 16%;}
+    #gnbPanel > div:last-child aside ol:nth-child(4){order: 4; margin-left: 16%;}
+    #gnbPanel > div:last-child aside ol:last-child{order: 5;}
+    #gnbPanel > div:last-child aside ol li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    #gnbPanel > div:last-child aside ol li:first-child{
+        display: none;
+    }
+    #gnbPanel > div:last-child aside ol li a{
+        text-align: left; font-size: 14px; font-weight: 300; color: #757575;
+    }
+    #gnbPanel > div:last-child aside ol li a:hover{
+        font-weight: 400; color: #000000;
+    }
+    #gnbPanel > div:last-child div{
+        width: 100%; order: 1;
+    }
+    #gnbPanel > div:last-child div h2{
+        font-size: 54px; font-weight: 100; color: #000000; margin-bottom: 30px;
+    }
+    #gnbPanel > div:last-child div h2 b{
+        font-size: 60px; margin-top: 15px; 
+    }
+    #gnbPanel > div:last-child div ul{
+        display: flex; flex-wrap: wrap; column-gap: 10px; row-gap: 95px;
+    }
+    #gnbPanel > div:last-child div ul li{
+        width: 49%; background-position: center; background-repeat: no-repeat;
+        background-size: 120%; max-width: 494px; position: relative; height: 250px;
+        transition: background-size 2s ease-in-out;
+    }
+    #gnbPanel > div:last-child div ul li:first-child{
+        background-image: url('../images/article_world_heritage_01.jpg'); 
+    }
+    #gnbPanel > div:last-child div ul li:nth-child(2){
+        background-image: url('../images/article_science_03.png');
+    }
+    #gnbPanel > div:last-child div ul li:last-child{
+        background-image: url('../images/article_science_14.png');
+    }
+    #gnbPanel > div:last-child div ul li:hover{
+        background-size: 130%;
+    }
+    #gnbPanel > div:last-child div ul li a{
+        font-size: 16px; font-weight: 400; color: #000000; line-height: 22px; position: absolute; top: 275px;
+    }
+    header{
+        position: fixed; top: 0; z-index: 50; background-color: transparent;
+        padding: 31px 3.12% 34px; width: 100%; box-sizing: border-box; 
+    }
+    header > div:first-child{
+        position: relative; 
+    }
+    header > div:first-child > div{
+        position: absolute; top: 0; line-height: 41px; font-size: 14px; font-weight: 700;
+    }
+    header > div:first-child > div input,
+    header > div:first-child > div:last-of-type a{
+        line-height: inherit; font-size: inherit; vertical-align: top; font-weight: inherit;
+    }
+    header > div:first-child > div input:not([value='menu'],[value='Newsletters'],[value='search']){
+        visibility: hidden;
+    }
+    header > div:first-child > div:first-of-type{
+        left: 0; max-width: 800px; width: 46.5%; 
+    }
+    header > div:first-child > div:first-of-type input[data-panel="gnbPanel"]{
+        margin-right: calc(7% - 10px); text-indent: -9999px; width: 29px;
+        background: url('../images/bul_menu.svg') center no-repeat;
+    }
+    header > div:first-child > h1{
+        max-width: 133px; text-align: center; margin: 0 auto;
+    }
+    header > div:first-child > h1 a{
+        display: block;
+    }
+    header > div:first-child > h1 a img{
+        display: inherit; width: 100%; 
+    }
+    header > div:first-child > div:last-of-type{
+        right: 0; max-width: 785px; width: 18%;  text-align: right;
+    }
+    header > div:first-child > div:last-of-type > *:not(a:first-of-type){
+        margin-left: 5%;
+    }
+    header > div:first-child > div:last-of-type a{
+       display: inline-block; text-indent: -9999px;  background-repeat: no-repeat; background-position: center; width: 24px; text-align: left;
+    }
+    header > div:first-child > div:last-of-type a:first-of-type{
+         background-image: url('../images/bul_login.svg');
+    }
+    header > div:first-child > div:last-of-type a:last-of-type{
+        background-image: url('../images/bul_subscribe.svg');
+    }
+    header > div:first-child > div:last-of-type a:hover{
+        color: #757575;
+    }
+    header > div:first-child > div input[value='Newsletters']{
+        text-indent: -9999px; background: url('../images/bul_newsletters.svg') center no-repeat; width: 24px;
+    }
+    header div[id^='depthMenu']{
+        padding: 80px 0 40px; visibility: hidden;
+        display: none; transition: display 10s ease-in-out 3s;
+    }
+    header div#newsLetterPopUp{
+        box-sizing: border-box; width: 100%; height: 100%; 
+        position: fixed; top: 0; left: 0; z-index: 100; display: none;
+    }
+    header div#newsLetterPopUp.active{
+        display: block;
+    }
+    header div#newsLetterPopUp > div{
+        width: 75%; max-width: 1200px; overflow: hidden; border-radius: 20px; background-color: #ffffff;
+        position: absolute; left: 11%; top: 32%; box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.4);
+    }
+    header div#newsLetterPopUp > div img{
+        width: 101%; opacity: 0.5; display: block;
+        max-height: 477px; 
+    }
+    header div#newsLetterPopUp > div input[type='button']{
+        display: block; text-indent: -9999px; background: url('../images/bul_close.svg') center no-repeat;
+        width: 30px; height:30px; background-color: #ffffff; border-radius: 15px;
+        position: absolute; top: 35px; right: 3%;
+    }
+    header div#newsLetterPopUp > div div{
+        position: absolute; top: 60px; width: 100%;
+    }
+    header div#newsLetterPopUp > div div dl{
+        margin-bottom: 60px; text-align: center; 
+    }
+    header div#newsLetterPopUp > div div dl dt{
+        font-weight: 900; font-size: 50px; margin-bottom: 45px;
+    }
+    header div#newsLetterPopUp > div div dl dd{
+        font-weight: 400; font-size: 20px;
+    }
+    header div#newsLetterPopUp > div div form input[type='email']{
+        width: 54%; display: block; margin: 0 auto; border: none; line-height: 70px; border-radius: 35px;
+        box-sizing: border-box; position: relative;
+        background: url('../images/bul_mail.svg') 6% 23px no-repeat #ffffff;
+        padding: 0 8%;
+    }
+    header div#newsLetterPopUp > div div form input[type='email']::placeholder{
+        font-size: 20px; font-weight: 400; color: #000000; 
+    }
+    header div#newsLetterPopUp > div div form input[type='email']:focus{
+        outline: none; 
+    }
+    header div#newsLetterPopUp > div div form input[type='submit']{
+        width: 110px; height: 50px; border: none; background-color: #456148; border-radius: 25px;
+        color: #ffffff; font-size: 16px; font-weight: 400;
+        position: absolute; right: 25%; top: 75%;
+    }
+    header div#searchField{
+        width: 24%;  padding: 30px 0 20px 1.5%; background-color: transparent;
+        position: absolute; right: 1%; top: -100px; z-index: 40; display: none;
+    }
+    header div#searchField.active{
+        top: 106px; right: 0; display: block;
+    }
+    header div#searchField.backgroundColor{
+        background-color: #ffffff;
+    }
+    header div#searchField form fieldset{
+        position: relative;
+    }
+    header div#searchField form fieldset input[type='search']{
+        border: none; width: 96%; background-color: transparent; outline: none;
+        padding-bottom: 15px; border-bottom: 1px solid #000000; line-height: 26px; border-radius: 0;
+    }
+    header div#searchField form fieldset input[type='search']::placeholder{
+        font-size: 20px; font-weight: 300; color: #000000; text-transform: uppercase;
+    }
+    header div#searchField form fieldset input.openBtn{
+        border: none; position: absolute; right: 5%; top: 0; height: 19px;
+    }
+    footer{
+        padding: 80px 3.12%; position: relative; bottom: 0; box-sizing: border-box;
+    }
+    footer div:first-child{
+        margin-bottom: 60px;
+    }
+    footer h2{
+        margin-bottom: 80px;
+    }
+    footer h2 img{
+        width: 100%; max-width: 140px; display: block;
+    }
+    footer div:first-child::after{
+        content: ''; display: block; clear: both;
+    }
+    footer div:first-child div{
+        width: 20%; float: left;
+    }
+    footer div:first-child div:not(:first-of-type){
+        margin-left: 6.5%;
+    }
+    footer div:first-child div h3{
+        font-size: 16px; font-weight: 700; color: #ffffff; margin-bottom: 30px;
+    }
+    footer div:first-child div a{
+        font-size: 14px; font-weight: 400; color: #ffffff; margin-bottom: 15px;
+    }
+    footer div:first-child div a:hover{
+        color: #757575;
+    }
+    footer div:last-child ul{
+        width: 100%; margin-bottom: 60px;
+    }
+    footer div:last-child ul li{
+        display: inline-block; vertical-align: middle;
+    }
+    footer div:last-child ul li:not(:first-child){
+        margin-left: 2%;
+    }
+    footer div:last-child ul li a{
+        display: block; text-indent: -9999px; 
+        width: 35px; height: 35px;
+    }
+    footer div:last-child ul li:first-child a{
+        background: url('../images/ico_sns_facebook.svg') center no-repeat;
+    }
+    footer div:last-child ul li:nth-child(2) a{
+        background: url('../images/ico_sns_twitter.svg') center no-repeat;
+    }
+    footer div:last-child ul li:nth-child(3) a{
+        background: url('../images/ico_sns_instagram.svg') center no-repeat;
+    }
+    footer div:last-child ul li:nth-child(4) a{
+        background: url('../images/ico_sns_linkedin.svg') center no-repeat;
+    }
+    footer div:last-child ul li:nth-child(5) a{
+        background: url('../images/ico_sns_youtube.svg') center no-repeat;
+    }
+    footer div:last-child ul li:last-child a{
+        background: url('../images/ico_sns_reddit.svg') center no-repeat;
+    }
+    footer div:last-child p{
+        margin: 0 auto; line-height: 20px; 
+    }
+    footer div:last-child p::after{
+        content: ''; display: block; clear: both;
+    }
+    footer div:last-child span{
+        font-weight: 300; font-size: 14px; color: #ffffff; width: 41%; float: left;
+    }
+    footer div:last-child span:first-child{
+        padding-right: 2%; border-right: 1px solid #ffffff; margin-right: 2%; width: 28%; min-width: 343px;
+    }
+    
+    }
+@media screen and (min-width:1280px){
+
+#gnbPanel > *,
+header > div:not(:nth-child(7),:last-child),
+footer > *{
+    max-width: 1720px; margin: 0 auto; 
+}
+#gnbPanel{
+    box-sizing: border-box; width: 100%; height: 100%; padding:55px 5%; overflow-y: scroll;
+    position: fixed; top: 0; display: none; z-index: 60; box-sizing: border-box;
+ }
+#gnbPanel.active{
+   display: block;
+}
+ #gnbPanel div:first-child{
+    position: relative;
+ }
+ #gnbPanel div:first-child input.closeBtn{
+    text-indent: -9999px; background: url('../images/bul_close.svg') center no-repeat; width: 19px; height: 19px;
+    position: absolute; left: 0; top: 10px;
+ }
+ #gnbPanel div:first-child h2{
+    text-align: center; margin: 0 auto; max-width: 133px;
+ }
+ #gnbPanel div:first-child h2 a{
+    display: block;
+ }
+ #gnbPanel div:first-child h2 a img{
+    display: inherit; width: 100%;
+ }
+ #gnbPanel div:first-child input.openField{
+    position: absolute; top: 10px; right: 0;
+ }
+#gnbPanel > div:last-child{
+    margin-top: 110px;
+}
+#gnbPanel > div:last-child::after{
+    content: ''; display: block; clear: both;
+}
+#gnbPanel > div:last-child aside{
+    float: left; margin-left: 8%; width: 20%;
+}
+#gnbPanel > div:last-child aside ol:not(:last-child){
+    margin-bottom: 50px;
+}
+#gnbPanel > div:last-child aside ol li:first-child{
+    display: none;
+}
+#gnbPanel > div:last-child aside ol li:not(:last-child){
+    margin-bottom: 15px;
+}
+#gnbPanel > div:last-child aside ol li a{
+    text-align: left; font-size: 14px; font-weight: 300; color: #757575;
+}
+#gnbPanel > div:last-child aside ol li a:hover{
+    font-weight: 400; color: #000000;
+}
+#gnbPanel > div:last-child div{
+    float: left; margin-left:3%; width: 69%;
+    /* width: 69%; */ 
+}
+#gnbPanel > div:last-child div h2{
+    font-size: 54px; font-weight: 100; color: #000000; margin-bottom: 30px;
+}
+#gnbPanel > div:last-child div h2 b{
+    font-size: 60px; margin-top: 15px; 
+}
+#gnbPanel > div:last-child div ul{
+    display: flex; flex-wrap: wrap; column-gap: 10px; row-gap: 60px;
+}
+#gnbPanel > div:last-child div ul li{
+    width: 49%; background-position: center; background-repeat: no-repeat;
+    background-size: 120%; max-width: 494px; position: relative; height: 290px;
+    transition: background-size 2s ease-in-out;
+}
+#gnbPanel > div:last-child div ul li:first-child{
+    background-image: url('../images/article_world_heritage_01.jpg'); 
+}
+#gnbPanel > div:last-child div ul li:nth-child(2){
+    background-image: url('../images/article_science_03.png');
+}
+#gnbPanel > div:last-child div ul li:last-child{
+    background-image: url('../images/article_science_14.png');
+}
+#gnbPanel > div:last-child div ul li:hover{
+    background-size: 130%;
+}
+#gnbPanel > div:last-child div ul li a{
+    font-size: 16px; font-weight: 400; color: #000000; line-height: 22px; position: absolute; top: 295px;
+}
+header{
+    position: fixed; top: 0; z-index: 50; background-color: transparent;
+    padding: 55px 5%; width: 100%; box-sizing: border-box; 
+}
+header > div:first-child{
+    position: relative; 
+}
+header > div:first-child > div{
+    position: absolute; top: 0; line-height: 41px; font-size: 14px; font-weight: 700;
+}
+header > div:first-child > div input{
+    line-height: inherit; font-size: inherit; vertical-align: top; font-weight: inherit;
+}
+header > div:first-child > div:first-of-type{
+    left: 0; max-width: 800px; width: 46.5%;
+}
+header > div:first-child > div:first-of-type input[data-panel="gnbPanel"]{
+    margin-right: calc(7% - 10px); text-indent: -9999px; width: 29px;
+    background: url('../images/bul_menu.svg') center no-repeat;
+}
+header > div:first-child > div *:not([data-panel="gnbPanel"]){
+    margin-left: calc(5.5% - 10px);
+}
+header > div:first-child > h1{
+    max-width: 133px; margin: 0 auto;
+}
+header > div:first-child > h1 a{
+    display: block;
+}
+header > div:first-child > h1 a img{
+    display: inherit; width: 100%;
+}
+header > div:first-child > div:last-of-type{
+    right: 0; max-width: 785px; width: 45.5%; text-align: right;
+}
+header > div:first-child > div:last-of-type a{
+    display: inline-block; color: inherit;
+}
+header > div:first-child > div:last-of-type a:hover{
+    color: #757575;
+}
+header div[id^='depthMenu']{
+    padding: 80px 0 40px; 
+    display: none; transition: display 10s ease-in-out 3s;
+}
+header div[id^='depthMenu'].active{
+    display: flex;
+}
+header div[id^='depthMenu'] aside{
+    padding-top: 80px; width: 14%;
+}
+header div[id^='depthMenu'] aside ol li:not(:last-child){
+    margin-bottom: 15px;
+}
+header div[id^='depthMenu'] aside ol li a{
+    font-size: 14px; font-weight: 300; color: #757575;
+}
+header div[id^='depthMenu'] aside ol li:hover a{
+    color: #000000; font-weight: 400;
+}
+header div[id^='depthMenu'] div{
+    margin-left: 4%; width: 82%; position: relative;
+}
+header div[id^='depthMenu'] div input.closeBtn{
+    position: absolute; right: 0; display: block; text-indent: -9999px; background: url('../images/bul_close.svg') center no-repeat;
+    width: 24px; height: 24px; 
+}
+header div[id^='depthMenu'] div h2{
+    font-size: 60px; font-weight: 100; color: #000000; margin-bottom: 30px;
+}
+header div[id^='depthMenu'] div h2 b{
+    display: inline-block; font-size: 65px; margin-left: 1.5%; margin-top: 0;
+}
+header div[id^='depthMenu'] div ol{
+    display: flex; column-gap: 0.7%; width: 100%; 
+}
+header div[id^='depthMenu'] div ol li{
+    width: 24%; transition: background-size 0.3s ease-in; overflow: hidden; height: 455px;
+    background-position: center; background-size: cover; background-repeat: no-repeat;
+    /* transition: background-size 0.5s ease-in; overflow-y: hidden; */
+}
+header div[id$='Animal'] div ol li:first-child{
+    background-image: url('../images/depth_animal_01.png');
+}
+header div[id$='Animal'] div ol li:nth-child(2){
+    background-image: url('../images/depth_animal_02.png');
+}
+header div[id$='Animal'] div ol li:nth-child(3){
+    background-image: url('../images/depth_animal_04.png');
+}
+header div[id$='Animal'] div ol li:last-child{
+    background-image: url('../images/depth_animal_03.png');
+}
+header div[id$='Environment'] div ol li:first-child{
+    background-image: url('../images/depth_environment_01.png');
+}
+header div[id$='Environment'] div ol li:nth-child(2){
+    background-image: url('../images/depth_environment_02.png');
+}
+header div[id$='Environment'] div ol li:nth-child(3){
+    background-image: url('../images/depth_environment_03.png');
+}
+header div[id$='Environment'] div ol li:last-child{
+    background-image: url('../images/depth_environment_04.png');
+}
+header div[id$='Culture'] div ol li:first-child{
+    background-image: url('../images/depth_history_01.png');
+}
+header div[id$='Culture'] div ol li:nth-child(2){
+    background-image: url('../images/depth_history_02.png');
+}
+header div[id$='Culture'] div ol li:nth-child(3){
+    background-image: url('../images/depth_history_03.png');
+}
+header div[id$='Culture'] div ol li:last-child{
+    background-image: url('../images/depth_history_04.png');
+}
+header div[id$='Science'] div ol li:first-child{
+    background-image: url('../images/depth_science_01.png');
+}
+header div[id$='Science'] div ol li:nth-child(2){
+    background-image: url('../images/depth_science_02.png');
+}
+header div[id$='Science'] div ol li:nth-child(3){
+    background-image: url('../images/depth_science_03.png');
+}
+header div[id$='Science'] div ol li:last-child{
+    background-image: url('../images/depth_science_04.png');
+}
+header div[id$='Travel'] div ol li:first-child{
+    background-image: url('../images/depth_travel_01.png');
+}
+header div[id$='Travel'] div ol li:nth-child(2){
+    background-image: url('../images/depth_travel_02.png');
+}
+header div[id$='Travel'] div ol li:nth-child(3){
+    background-image: url('../images/depth_travel_03.png');
+}
+header div[id$='Travel'] div ol li:last-child{
+    background-image: url('../images/depth_travel_04.png');
+}
+header div[id^='depthMenu'] div ol li a{
+    text-align: center; font-size: 14px; font-weight: 400; 
+    color: #ffffff;  padding-top: 400px;
+}
+header div#newsLetterPopUp{
+    box-sizing: border-box; width: 100%; height: 100%; 
+    position: fixed; top: 0; left: 0; z-index: 100; display: none;
+}
+header div#newsLetterPopUp.active{
+    display: block;
+}
+header div#newsLetterPopUp > div{
+    width: 75%; max-width: 1200px; overflow: hidden; border-radius: 20px; background-color: #ffffff;
+    position: absolute; left: 18%; top: 32%; box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.4);
+}
+header div#newsLetterPopUp > div img{
+    width: 101%; opacity: 0.5; display: block;
+    max-height: 477px; scale: 1.0 1.4;
+}
+header div#newsLetterPopUp > div input[type='button']{
+    display: block; text-indent: -9999px; background: url('../images/bul_close.svg') center no-repeat;
+    width: 30px; height:30px; background-color: #ffffff; border-radius: 15px;
+    position: absolute; top: 35px; right: 3%;
+}
+header div#newsLetterPopUp > div div{
+    position: absolute; top: 120px; width: 100%;
+}
+header div#newsLetterPopUp > div div dl{
+    margin-bottom: 60px; text-align: center; 
+}
+header div#newsLetterPopUp > div div dl dt{
+    font-weight: 900; font-size: 50px; margin-bottom: 45px;
+}
+header div#newsLetterPopUp > div div dl dd{
+    font-weight: 400; font-size: 20px;
+}
+header div#newsLetterPopUp > div div form input[type='email']{
+    width: 54%; display: block; margin: 0 auto; border: none; line-height: 70px; border-radius: 35px;
+    box-sizing: border-box; position: relative;
+    background: url('../images/bul_mail.svg') 6% 23px no-repeat #ffffff;
+    padding: 0 6%;
+}
+header div#newsLetterPopUp > div div form input[type='email']::placeholder{
+    font-size: 20px; font-weight: 400; color: #000000; 
+}
+header div#newsLetterPopUp > div div form input[type='email']:focus{
+    outline: none; 
+}
+header div#newsLetterPopUp > div div form input[type='submit']{
+    width: 110px; height: 50px; border: none; background-color: #456148; border-radius: 25px;
+    color: #ffffff; font-size: 16px; font-weight: 400;
+    position: absolute; right: 25%; top: 75%;
+}
+header div#searchField{
+    width: 24%;  padding: 30px 0 20px 1.5%; background-color: transparent;
+    position: absolute; right: 1%; top: -100px; z-index: 40; display: none;
+}
+header div#searchField.active{
+    top: 150px; display: block;
+}
+header div#searchField.backgroundColor{
+    background-color: #ffffff;
+}
+header div#searchField form fieldset{
+    position: relative;
+}
+header div#searchField form fieldset input[type='search']{
+    border: none; width: 96%; background-color: transparent; outline: none;
+    padding-bottom: 15px; border-bottom: 1px solid #000000; line-height: 26px;
+}
+header div#searchField form fieldset input[type='search']::placeholder{
+    font-size: 20px; font-weight: 300; color: #000000; text-transform: uppercase;
+}
+header div#searchField form fieldset input.openBtn{
+    border: none; position: absolute; right: 5%; top: 0px;
+}
+footer{
+    padding: 80px 5%; position: relative; bottom: 0;
+}
+footer div:first-child:after{
+    content: ''; display: block; clear: both;
+}
+footer div:first-child{
+    margin-bottom: 60px;
+}
+footer div:first-child > *{
+    float: left;
+}
+footer h2{
+    width: 8%;
+}
+footer h2 img{
+    width: 100%; max-width: 140px; display: block;
+}
+footer div:first-child div{
+    width: 12%;
+}
+footer div:first-child div:first-of-type{
+    margin-left: 12%;
+}
+footer div:first-child div:not(:first-of-type){
+    margin-left: 8%;
+}
+footer div:first-child div h3{
+    font-size: 16px; font-weight: 700; color: #ffffff; margin-bottom: 30px;
+}
+footer div:first-child div a{
+    font-size: 14px; font-weight: 400; color: #ffffff; margin-bottom: 15px; 
+}
+footer div:first-child div a:hover{
+    color: #757575;
+}
+footer div:last-child{
+    position: relative;
+}
+footer div:last-child ul{
+    width: 33.5%; max-width: 575px; position: absolute; left: 0; top: 0;
+}
+footer div:last-child ul li{
+    display: inline-block; vertical-align: middle;
+}
+footer div:last-child ul li:not(:first-child){
+    margin-left: 5%;
+}
+footer div:last-child ul li a{
+    display: block; text-indent: -9999px; 
+    width: 35px; height: 35px;
+}
+footer div:last-child ul li:first-child a{
+    background: url('../images/ico_sns_facebook.svg') center no-repeat;
+}
+footer div:last-child ul li:nth-child(2) a{
+    background: url('../images/ico_sns_twitter.svg') center no-repeat;
+}
+footer div:last-child ul li:nth-child(3) a{
+    background: url('../images/ico_sns_instagram.svg') center no-repeat;
+}
+footer div:last-child ul li:nth-child(4) a{
+    background: url('../images/ico_sns_linkedin.svg') center no-repeat;
+}
+footer div:last-child ul li:nth-child(5) a{
+    background: url('../images/ico_sns_youtube.svg') center no-repeat;
+}
+footer div:last-child ul li:last-child a{
+    background: url('../images/ico_sns_reddit.svg') center no-repeat;
+}
+footer div:last-child p{
+    text-align: center; margin: 0 auto; padding-left: 27%; line-height: 35px;
+}
+footer div:last-child span{
+    font-weight: 300; font-size: 14px; color: #ffffff;
+}
+footer div:last-child span:first-child{
+    padding-right: 1%; border-right: 1px solid #ffffff; margin-right: 1%;
+}
+
+}

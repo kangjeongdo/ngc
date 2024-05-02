@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_small">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article221_main.png" alt="Hunter Naimanngitsoq Kristiansen rests his team of husky sled dogs on Greenland’s sea ice.">
+            </div>
+            <div>
+                <h3>This is one of the last 
+                    places on Earth to explore 
+                    an ancient Arctic life</h3>
+                <p>
+                    <span class="travel">TRAVEL</span>
+                    <time datetime="2023-07-16">July 16, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="center_Pic">
+            <div>
+                <p>With an average drift speed of .4 miles per hour (and higher speeds of two miles per 
+                    hour), icebergs can appear quite quickly, rendering vital shipping lanes into 
+                    impenetrable blockades in just a matter of hours. Both icebergs and floating ice 
+                    sheets have been known to halt maritime traffic in towns like Qaanaaq for days (and 
+                    occasionally weeks) at a time. I know I won’t be leaving Qaanaaq by boat anytime 
+                    soon</p>
+                <div>
+                    <img src="images/article221_02.png" alt="Qaanaaq, current population 646, is Greenland’s northernmost town.">
+                </div>
+                <p>The area above the Arctic Circle known collectively as the High Arctic is one of the 
+                    few places on the planet where the traditional rhythms of wind, tide, and animal 
+                    movements still direct one’s schedule.</p>
+                <p>With a current population of 646, Qaanaaq is the central town in northwestern 
+                    Greenland’s Avanersuaq district, one of the world’s least densely populated 
+                    administrative zones. It is home to a community of Inughuit, historically known as 
+                    Smith Sound Inuit or Arctic Highlanders.</p>
+                <p>Until the last century, Inughuit peoples survived primarily by utilizing every part of 
+                    their sea mammal prey. In this land without trees, everything clothing, sleds, tools, 
+                    weapons, fuel, kayaks, and even parts of structural dwellings came from sea 
+                    mammals. The villages of northwestern Greenland are one of the last remaining 
+                    places to experience the remnants of ancient Arctic life.</p>
+                <h4>Kiviak: traditional Arctic food</h4>
+                <p>“Would you like to try some kiviak? It has a strong smell, so we have to eat it 
+                    outside,” says Birthe Jenson, one of the chefs at Hotel Qaanaaq. The hotel has long
+                    been one of the few places in town where travelers can rent a room. [It is currently 
+                    closed as it changes management.] It’s the last comfort stop for many travelers 
+                    venturing farther north into the vast Arctic wilderness. And while there are no 
+                    conventional restaurants in town, some local families are more than happy to 
+                    accommodate travelers with home-cooked local fare.</p>
+                <p>Kiviak is an Arctic delicacy made by stuffing hundreds of birds, most commonly 
+                    little auks (Alle alle), also known as dovekies, a small black-and-white seabird, 
+                    inside of a fresh seal skin. Once full, the carcass is stitched closed and placed under 
+                    a mound of heavy rocks to ensure the sunlight does not hit the package. Months 
+                    later, the fermented birds are removed, cleaned, and eaten.</p>
+                <p>While traditional, animal-sourced fermented foods such as kiviak are becoming 
+                    less common, they continue to garner attention for their unique cultural and 
+                    scientific significance. Inuk microbiologist Aviaja Lyberth Hauptmann, who recently 
+                    established a microbiology lab at the University of Greenland, in Nuuk, is 
+                    researching how traditional Inuit foodways impact the human gut microbiome. 
+                    Hauptmann’s research has shown that traditional Greenlandic foods have 
+                    increased microbial diversity, which could mean better overall health for those who 
+                    consume them.</p>
+                <p>Jenson and I stand on the front stoop of Hotel Qaanaaq, giggling like two teenagers 
+                    sneaking a cigarette as she peels open a plastic container. She hands me a bird the 
+                    size of a bagel and instructs me to simply peel the feathers and pull off some meat. 
+                    It comes apart easily, and the flavor is a divine revelation. The flesh is initially very 
+                    fruity like ripe plums followed by a long Parmesan cheese finish. I was nervous the 
+                    kiviak would taste like the ammonia-flavored hakarl (fermented shark) of Iceland, 
+                    but I am delighted to encounter meaty piquant notes more reminiscent of Egyptian 
+                    feseekh (fermented gray mullet fish).</p>
+                <p>As we both chew in silent delight, I wonder how many Arctic traditions like kiviak, 
+                    born of both ingenuity and necessity, have already been lost to history. At this very 
+                    moment, what textile, song, recipe, ceremony, or medicine exists only in the mind 
+                    of a single elder?</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article177.png" alt="Canada's road trips offer fantastic views and exhilarating experiences.">
+                        <div>
+                            <strong>From ice roads to the Klondike Highway 6 of 
+                                Canada's most adventurous road trips</strong>
+                            <p>With highways navigating remote mountains, lake shores and vast tracts of 
+                                wilderness, Canada is the quintessential country for an unforgettable road trip. 
+                                Whether you rent a motorhome or a car, you’ll be cruising</p>
+                            <a href="article177.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article178.png" alt="Dixie National Forest, the largest national forest in Utah, offers similar views to popular Bryce Canyon National Park without the crowds. ">
+                        <div>
+                            <strong>National parks overcrowded Visit a national 
+                                forest.</strong>
+                            <p>Despite the immense vastness of most national parks, many can feel almost 
+                                claustrophobic at times due to swarming crowds. At least three of the busiest parks 
+                                Arches, Glacier, and Rocky Mountain require</p>
+                            <a href="article178.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article179.png" alt="Part of the Canadian Rockies, the Three Sisters are a spectacular trio of mountains near Canmore that can be explored on a two-to-three-day road trip from Calgary.">
+                        <div>
+                            <strong>How to plan an epic road trip through the 
+                                Canadian Rocky Mountains</strong>
+                            <p>Calgary in Alberta and Vancouver in British Columbia are the key international 
+                                gateway cities to the Canadian Rocky Mountains, which sit astride the two 
+                                provinces. For an instant hit of big country vistas</p>
+                            <a href="article179.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

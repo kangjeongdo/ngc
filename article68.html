@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_small">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article68_main.png" alt="Workers plant a tree in Los Angeles, California where a stark divide exists between affluent neighborhoods with tree-lined streets and low-income neighborhoods where tree cover is scarce.">
+            </div>
+            <div>
+                <h3>The surprising way that 
+                    millions of new trees 
+                    could transform America</h3>
+                <p>
+                    <span class="environment">ENVIRONMENT</span>
+                    <time datetime="2023-10-10">October 10 , 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_BannerPic">
+            <div>
+                <img src="images/article68_02.png" alt="article left bannerPic">
+            </div>
+            <div>
+                <p>When community groups planted 125 trees in two low-income neighborhoods in 
+                    north central Detroit this past spring, changes were seen almost immediately. 
+                    Residents began using the newly greened streets as a pedestrian corridor that 
+                    allowed them to interact more with their neighbors. Trash collectors who routinely 
+                    picked up garbage reported that littering had almost stopped completely.</p>
+                <p>“To me, it was validation that what we are hoping to accomplish with trees can and 
+                    will work,” says Eric Candela, director of local government relations for American 
+                    Forests, whose mission for more than 100 years has been to restore and protect the 
+                    nation’s forest ecosystems.</p>
+                <p>In the next few months, Detroit will receive almost $10 million to plant more trees, 
+                    along with many other cities and nonprofit groups in the U.S. that will get varying 
+                    amounts to affect similar change. As part of the Inflation Reduction Act, the Biden 
+                    Administration is awarding a billion dollars in grant money to communities 
+                    throughout the country to plant trees to combat extreme heat and increase access 
+                    to nature in cities and towns, where more than 84 percent of Americans live.</p>
+                <p>The money, which is the largest investment to date in urban and community forests, 
+                    will go mostly to disadvantaged communities that grapple with “tree equity” having 
+                    enough trees so that everyone can experience their environmental, health, and 
+                    economic benefits.</p>
+                <p>On a more local level, the can drastically influence the climate of a single 
+                    neighborhood.</p>
+                <p>Trees are natural coolants and lower the risk of respiratory and heat-related 
+                    illnesses such as those seen during this summer’s record heat wave. Streets with 
+                    few trees are typically 10 degrees warmer and exacerbate “urban heat islands” that 
+                    occur in areas with dense concentrations of pavement, concrete, and other 
+                    materials that absorb and retain heat.</p>
+                <p>“Trees are a critical part of the infrastructure of cities and are as important as 
+                    sidewalks and bridges,” says Benita Hussain, tree equity lead for American Forests, 
+                    which was awarded $50 million in federal funding for tree planting and maintenance.</p>
+                <p>A growing body of research is finding that trees also provide an array of benefits 
+                    associated with physical and mental health.</p>
+                <h4>How trees make us healthier </h4>
+                <p>The calming effect of being around trees is familiar to anyone who has sat on a 
+                    bench under a tree, walked down a tree-lined street, or experienced the respite of 
+                    shade from a tree on a scorching hot day.</p>
+                <p>But research has also found that trees can help people live longer. A 2022 U.S. 
+                    Forest Service study of 30 years of tree planting in Portland, Oregon by the 
+                    nonprofit organization Friends of Trees found that one premature death was 
+                    avoided for every 100 trees planted. Using data from the Oregon Health Authority, 
+                    researchers found that in neighborhoods where more trees had been planted, death 
+                    rates (per 100,000 persons) were lower. The association strengthened as trees aged 
+                    and grew: the reduction in mortality rate associated with trees planted 11-15 years 
+                    before was double that observed with trees planted in the preceding 1-5 years.</p>
+                <p>This speaks to the potential public health benefits of preserving existing mature 
+                    trees, which are associated with lower death rates.</p>
+                <p>In a 2020 report on Philadelphia’s goal to reach 30 percent tree canopy cover in 
+                    every neighborhood by 2025, researchers estimated that 403 premature deaths 
+                    overall, including 244 premature deaths in areas of lower socioeconomic status, 
+                    could be prevented annually if the city were able to meet its goal. At the time, the 
+                    tree canopy cover in disadvantaged areas was about 17 percent.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article195.png" alt="Storm clouds gather over Gettysburg Battlefield in Pennsylvania.">
+                        <div>
+                            <strong>Revisit the Battlefield That Shaped America</strong>
+                            <p>"The Civil War was the most important event in American history, the crossroads of 
+                                our being,” says documentary filmmaker Ken Burns, whose 1990 The Civil War won 
+                                40 major television and film honors</p>
+                            <a href="article195.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article196.png" alt="The Avenue of the Sphinxes, a 1.7-mile stretch connecting the temples of Karnak and Luxor, is flanked with more than a thousand ancient statues of real and mythical animals.">
+                        <div>
+                            <strong>New reasons to visit Egypt now</strong>
+                            <p>The largest archaeological museum in the world, the Grand Egyptian Museum (
+                                GEM), is due to open later this year (or early in 2023) outside Cairo. This dazzling 
+                                showplace near the pyramids of Giza cost more</p>
+                            <a href="article196.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article197.png" alt="Utah’s rugged landscapes invite outdoor adventures, such as paddleboarding down the Colorado River in Moab.">
+                        <div>
+                            <strong>5 adrenaline-pumping adventures in 2023</strong>
+                            <p>Wondering where to go next? You’re not the only one. After a frenetic return to 
+                                travel, many are asking how to enjoy the rush of discovery without the crush of 
+                                crowds. Our annual list of 25 inspiring</p>
+                            <a href="article197.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

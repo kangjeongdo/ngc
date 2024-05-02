@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_small">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article235_main.png" alt="Cycling beneath the 13th-century New Gate, near Winchelsea, East Sussex, on the Cantii Way.">
+            </div>
+            <div>
+                <h3>How to explore the Cantii 
+                    Way, England's newest 
+                    long-distance cycle route</h3>
+                <p>
+                    <span class="travel">TRAVEL</span>
+                    <time datetime="2023-03-04">March 04, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_BannerPic">
+            <div>
+                <img src="images/article235_02.png" alt="article left bannerPic">
+            </div>
+            <div>
+                <p>The route takes its name from the ancient Celtic Cantii tribe, whom Julius Caesar 
+                    met on his conquest of England in 54 BC, and from which Canterbury and Kent 
+                    derive their names. Described by Cycling UK as ‘equal parts culinary and cycling 
+                    tour’, it aims to combine favourites such as Whitstable, Canterbury and Dover with 
+                    some of the lesser-known rural treasures of the Garden of England and beyond, 
+                    including orchards, vineyards, tearooms, farms and oasthouses. Perhaps best of all, 
+                    however, is how accessible the route is — it can either be tackled in one go or broken 
+                    up into stages over a few days, with stops accessible by train.</p>
+                <p>Over in North Yorkshire, the 12-mile Market Town Trail launched earlier this year, 
+                    mixing Ryedale’s lush landscape with some of the county’s top food offerings. The 
+                    trail connects Malton regarded as Yorkshire’s food capital with Pickering, home to 
+                    the North Yorkshire Moors Railway. It also provides a welcome link between the 
+                    various trails within the Yorkshire Wolds, the North York Moors National Park, 
+                    and the cyclist’s paradise of Dalby Forest. There’s cycling prestige here, too: the 
+                    area will play host to British Cycling’s National Road Race Championship Series in 
+                    August and the Tour of Britain in September. </p>
+                <h4>Ride and rave in Ibiza</h4>
+                <p>Sun-drenched rides, gourmet barbecues on the beach and tips from Bradley 
+                    Wiggins and Mark Cavendish a former and current cycling pro, respectively it's all 
+                    on offer with this newly launched Ibiza trip from luxury cycling tour operator 
+                    LeBlanq. As well as rides ranging from 37 to 99 miles, there’s also sunrise yoga, 
+                    drinks by the pool and even massages from dedicated soigneurs. Expect Radio 1 DJ 
+                    Pete Tong to join you, too not only for the afterparty, but also for a guest 
+                    appearance on the pedals. 20-23 October 2022. From £2,795.</p>
+                <h4>Hit new heights in Switzerland</h4>
+                <p>With over 200 miles of bike trails, the mountain resort of Laax has long drawn 
+                    mountain bikers keen to test their mettle. A flowing enduro route, the Segnes Trail, 
+                    is set to be launched by the resort in August, connecting directly to the Runca Trail 
+                    one of the longest flow country trails in Europe. Heading out from one of the oldest 
+                    mountain huts in the region, the Segnes Trail will give mountain bikers plenty to 
+                    chew on with its banked slaloms, jumps and paths, all set amid dramatic Alpine 
+                    landscapes.</p>
+                <h4>Test your mettle across Europe</h4>
+                <p>If you’re keen to try mountain cycling and pushing yourself to the limit, then the 
+                    Cent Cols Challenge might just be for you. The demanding, 10-stage routes are not 
+                    for the faint-hearted, so the addition of new six-stage events (with a rest day 
+                    halfway through) is a welcome tweak to the programme. The two new six-stage 
+                    challenges take place in the Alps and eastern Pyrenees. The CC6 Northern Alps 
+                    runs from 4 to 10 July 2022, while the CC6 East Pyrenees takes place from 26 
+                    September to 2 October 2022.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article59.png" alt="Crown-of-thorns sea stars walk along reefs in the Maldives.">
+                        <div>
+                            <strong>Hurricanes are escalating more quickly than 
+                                ever. Here’s why.</strong>
+                            <p>On the morning of October 24, Tropical Storm Otis was heading for the Pacific 
+                                coast of Mexico. Later that day, it was a major Cat-5 hurricane that would 
+                                eventually slam Alcapulo with 165 mph winds.</p>
+                            <a href="article59.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article60.png" alt="Singapore's iconic urban park, Gardens by the Bay, is full of trees and flowers from all over the world. ">
+                        <div>
+                            <strong>Are these cities ready to become climate 
+                                havens</strong>
+                            <p>For decades Perth, Sydney, and Melbourne have been lauded as some of the most 
+                                livable places on the planet.</p>
+                            <a href="article60.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article61.png" alt="This satellite image provided by NOAA on Tuesday, Oct. 24, 2023, shows Hurricane Otis approaching Mexico's Pacific coast near Acapulco.">
+                        <div>
+                            <strong>These creatures are otherworldly. They 
+                                destroy coral. And they're hard to kill.</strong>
+                            <p>First, a diver stabs a needle at the end of a long pole into the center of the alien-like 
+                                creature. Then, a vinegar solution is injected in several spots before the animal is 
+                                gently pulled away from the coral where it was feeding</p>
+                            <a href="article61.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

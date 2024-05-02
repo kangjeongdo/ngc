@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_small">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article96_main.png" alt="This historical photograph shows an enslaved African American family or families posing in front of a wooden house on a plantation in Hanover County, Virginia.">
+            </div>
+            <div>
+                <h3>10 million enslaved 
+                    Americans' names are 
+                    missing from history. AI is 
+                    helping identify them.</h3>
+                <p>
+                    <span class="history">HISTORY &amp; CULTURE</span>
+                    <time datetime="2023-08-31">August 31, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="right_BannerPic">
+            <div>
+                <img src="images/article96_02.png" alt="article right bannerPic">
+            </div>
+            <div>
+                <p>When journalist Dorothy Tucker first learned about the 10 Million Names 
+                    genealogical project, it helped amplify memories of long car journeys from Chicago 
+                    to “Down South” in the 1960’s, where her mother’s family owned land.</p>
+                <p>The Mississippi property purchased by her great-grandfather George Trice in 1881 
+                    was special for several reasons. First, nobody’s really sure how a formerly enslaved 
+                    man was able to purchase 160 acres, but Trice came up with the $800. And every 
+                    time Tucker and her family drove down to Shannon, Mississippi each summer to 
+                    visit relatives, it was more than just a vacation.</p>
+                <p>“I'd wake up in the morning and have breakfast at my aunt's house. I'd go a few feet 
+                    down the road and have lunch at my great-aunt's house. And then I'd play outside at 
+                    my cousin's house,” says Tucker, an award-winning investigative journalist with 
+                    CBS2 WBBM-TV in Chicago. “It was that way all day long. Every house was owned 
+                    by a relative. I thought everybody lived like this. I thought everybody had land and 
+                    stuff that was theirs.”</p>
+                <p>Tucker finally got specific details about how and why that land was purchased 
+                    during the final months of her term as president of the National Association of 
+                    Black Journalists. In early 2023, NABJ Board Member Paula Madison, a retired 
+                    NBC Universal executive, informed the group about an offshoot of the Georgetown 
+                    Memory Project, the initiative that unearthed information about the 1838 sale of 
+                    enslaved Africans to fund Georgetown University. The 10 Million Names Project 
+                    was created to recover the names of an estimated 10 million men, women and 
+                    children of African descent who were enslaved in pre- and post-colonial America 
+                    between the 1500’s and 1865. By engaging with expert genealogists, cultural 
+                    organizations, and family historians both Black and white, the initiative hopes to 
+                    provide more African Americans with information that only formally began to be 
+                    captured for their ancestors in the 1870 United States Census.</p>
+                <p>Up until that year, enslaved Africans and their descendants were only 
+                    acknowledged as the property of their owners. If their existence was noted, it was 
+                    in the form of sales documents or as catalogued property in civil records. Also, the 
+                    relatives of enslavers often maintain troves of information about those purchased 
+                    and sold off that would otherwise be completely lost.</p>
+                <p>Much of the work will be dependent on oral histories passed down thru generations 
+                    of families, and researchers of the 10 Million Names Project also hope that more 
+                    white families will aid in the search by making familial records, like letters and 
+                    pages from family bibles, available to them.</p>
+                <p>Tucker, who ended her term as NABJ president during that organization’s annual 
+                    conference in August, revealed at the awards banquet in Birmingham, Alabama 
+                    that she’d been able to learn more about her great grandfather’s real-estate 
+                    ventures, through a collaboration between NABJ and the New England Historical 
+                    Genealogical Society’s American Ancestors initiative.</p>
+                <p>The 10 Million Names Project was formally launched at the convention. Tucker 
+                    considers it an especially timely parting gift to her journalistic colleagues. As 
+                    societal divisions along racial lines widen, hate crimes continue, and attempts to 
+                    ban books and curtail African American studies programs in schools and 
+                    universities increase, strengthening historical knowledge is urgently important for 
+                    Black Americans, Tucker says.</p>
+                <p>“I think that the ability to tell these stories and to know them is so critically 
+                    important,” she says. “When you know your personal story, then as a journalist, it 
+                    gives you the perspective to dig deeper when you're doing the next story, whether 
+                    it’s about the school board or about Ukraine or the next elections. You know, these 
+                    stories are all tools that are really good for all of us.”</p>
+                <h4>How the initiative evolved</h4>
+                <p>The man who is the catalyst for the Georgetown Memory Project and 10 Million 
+                    Names says he’s never really been interested in investigating his own family tree.</p>
+                <p>“To me, genealogy was sort of like butterfly collecting,” says Richard Cellini, a 
+                    faculty fellow at Harvard University and founding director of the Harvard Legacy of 
+                    Slavery Remembrance Program. “It’s impressive because of the amount of effort 
+                    invested into it. But I never quite understood the point.”</p>
+                <p>Cellini was born in 1963 in Central Pennsylvania to a Penn State University 
+                    professor and homemaker mother. His Catholic upbringing steered him to Georget
+                    own University and an eventual decade-long law career before pivoting toward the 
+                    software and technology realm. In 2015, Cellini learned that his alma mater had 
+                    formed a working group to explore the sale of 272 men, woman, and children in 
+                    1838 to rescue the university from bankruptcy. As a white American of European 
+                    descent, he says he did not live with or know many Black people growing up, going 
+                    to school or during his legal and technology careers, so the initiative opened a 
+                    window in his mind.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article16.png" alt="Reas, a three-year-old male whippet, won the second-annual Fastest Dog USA competition.">
+                        <div>
+                            <strong>Reas the whippet named America’s fastest 
+                                dog, breaks last year’s record</strong>
+                            <p>ORLANDO, FLORIDAReas, a male white-and-blonde whippet, bolted ahead of the 
+                                competition to win the second-annual Fastest Dog USA competition.</p>
+                            <a href="article16.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article17.png" alt="Border collies (pictured, a working dog in Arizona) are likely so smart because they were bred to pay close attention to herders' commands.">
+                        <div>
+                            <strong>Some dogs are geniuses just like humans</strong>
+                            <p>But some dogs are exceptional. Take Chaser, an American border collie dubbed the 
+                                “smartest dog in the world,” who could recognize and remember 1,022 nouns one 
+                                for each of her toys.</p>
+                            <a href="article17.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article19.png" alt="An elderly Boston terrier looks at the camera.">
+                        <div>
+                            <strong>If you’re chronically stressed, your dog could 
+                                be too</strong>
+                            <p>“Dogs are quite good at understanding humans,” says senior author Lina Roth, a 
+                                zoologist at Sweden’s Linkoping University. “They’re definitely better at 
+                                understanding us than we are at understanding them.”
+                                </p>
+                            <a href="article19.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

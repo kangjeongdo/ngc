@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article161_main.png" alt="The design of the Sydney Opera House mirrors the arch of the Sydney Harbour Bridge.">
+            </div>
+            <div>
+                <h3>How a commuter bridge 
+                    turned into a bucket-list 
+                    experience</h3>
+                <p>
+                    <span class="travel">TRAVEL</span>
+                    <time datetime="2023-09-29">September 29, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_ThreePic">
+            <ul>
+                <li><img src="images/article161_02.png" alt="Tourists dressed in identical blue jumpsuits—the better to blend in with the Sydney Harbour Bridge—wave at a passing ferry."></li>
+                <li><img src="images/article161_03.png" alt="A group of tourists ascends the Sydney Harbour Bridge, a few of the millions who do the Australian bridge climb each year."></li>
+                <li><img src="images/article161_04.png" alt="The Sydney Harbour Bridge opened in 1932 as a link between the city’s central business district and the North Shore. Since 1998, tourists have been able to climb it."></li>
+            </ul>
+            <div>
+                <p>I’m standing on a steel walkway 440 feet above Sydney Harbor when a voice 
+                    crackles over my headset. My guide tells me to look right and take in one of the 
+                    world’s most stunning skylines.</p>
+                <p>The view: the familiar clamshell roof of the Sydney Opera House, ferries 
+                    crisscrossing the sparkling water. Below me, cars and trains rumble across the 
+                    Sydney Harbour Bridge, the world’s tallest steel-arch span. But up here, as twilight 
+                    descends, with my head nearly in the clouds, it feels like I’m floating over a toy city.</p>
+                <p>I now see why climbing the Sydney Harbour Bridge ranks as one of Australia’s most 
+                    popular experiences, attracting more than four million climbers (including, recently, 
+                    Michelle and Barack Obama) since the first customer stepped onto its steel beams 
+                    25 years ago this week on October 1, 1998. The climb has helped make the bridge an 
+                    instantly recognizable landmark, and the experience a lure for anyone visiting the 
+                    continent. It also helped change tourism around the world.</p>
+                <p>Climbers pay up to $270 for the privilege of standing above a commuter roadway in 
+                    nearly any weather and absorbing the incredible view from the Coat Hanger, the 
+                    nickname locals gave the bridge even before it opened in 1932.</p>
+                <p>But few climbers stop to think about the novelty of it all: how Australia turned a 
+                    piece of infrastructure a commuter bridge into an unlikely global tourist attraction 
+                    that has inspired similar bridge experiences around the world, from New Zealand 
+                    and Japan to Portugal and West Virginia.</p>
+                <h4>Taking a chance on bridge climbing</h4>
+                <p>As thrilling as it is, the Sydney climb is surprisingly easy, attracting customers aged 
+                    8 to 100. It has been the site of countless marriage proposals and more than 30 
+                    weddings. Every five minutes during peak periods, a guide leads small groups onto 
+                    the bridge superstructure. Climbers ascend ladders and follow catwalks built for 
+                    maintenance workers. They must wear harnesses and remain clipped to safety 
+                    cables during the entire journey.</p>
+                <p>Perhaps even more daring than the climb was the journey to create it. In 1989 Paul 
+                    Cave, the president of a tile manufacturing company, had a rare chance to climb the 
+                    bridge during an international business conference hosted in Sydney. He saw the 
+                    excitement in his colleagues’ eyes and instantly realized the tourism potential.</p>
+                <p>“Their reaction … was just quite amazing,” he told the University of New South 
+                    Wales in a 2012 video on business leadership. “I thought I‘ve just got to share this 
+                    with the world.”</p>
+                <p>Until that point climbing the bridge had been largely a renegade middle-of-the 
+                    night activity, says Barry Newling, an official with the state government agency 
+                    that owns and manages the span. He admits to hopping a gate and sneaking out 
+                    over the harbor himself when he was a university student in the 1970s. “The bridge 
+                    had no security on it,” he says.</p>
+                <p>But it would take nearly a decade to turn the climb into a business. When Cave 
+                    requested government permission, he received a disappointing response: a letter 
+                    with 64 reasons why he couldn’t safely do it.</p>
+                <p>Undeterred, he methodically began to address every objection. For example, the 
+                    government was concerned that climbers would distract drivers. Cave’s answer: 
+                    Outfit each visitor in a blue-grey jumpsuit that blends into the bridge.</p>
+                <p>Another worry was that customers could drop something on the roadway. “We 
+                    don’t want things falling,” says Newling, who negotiated the latest bridge climb 
+                    contract. “You can’t have any loose clothing, cameras, sunglasses. Imagine a camera 
+                    falling from high and smashing a windscreen. You’d have a catastrophe.”</p>
+                <p>Then there was the fear of drunk climbers. The answer: mandatory breathalyzer 
+                    tests. Other accommodations include outfitting climbers with helmets, headlamps, 
+                    gloves, rain gear, and even handkerchiefs that clip to their suit, reducing the chance 
+                    they’d drop onto the roadway.</p>
+                <p>Finally, after more than nine years of planning, Cave and his investors won 
+                    permission to turn the Harbour bridge into a travel adventure, and it welcomed its 
+                    first guest in October 1998.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article10.png" alt="The salmon-eating southern resident killer whales are endangered, but even though they are starving, they won’t eat the porpoises they kill. ">
+                        <div>
+                            <strong>Orcas are killing porpoises but not eating 
+                                them. Why</strong>
+                            <p>“What on Earth is happening?” wondered Giles, the science and research director 
+                                for the nonprofit Wild Orca, based in Friday Harbor. “It didn't make any sense.”</p>
+                            <a href="article10.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                         <img src="images/article11.png" alt="​The outbreak of the mysterious illness has spread to dogs across the country. ">
+                        <div>
+                            <strong>A mysterious new respiratory illness is 
+                                spreading in dogs. Here’s what we know.</strong>
+                            <p>When the reports first started coming in about a respiratory illness outbreak in 
+                                New Hampshire dogs, in summer 2022, David Needle and his colleagues 
+                                immediately began investigating.</p>
+                            <a href="article11.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article12.png" alt="Memory loss and cognitive decline are common for older dogs, but some may develop a more serious disease called canine cognitive dysfunction.">
+                        <div>
+                            <strong>Dogs’ risk of dementia increases by half every 
+                                year</strong>
+                            <p>Is your old but beloved family dog suddenly having accidents in the house or 
+                                getting lost in corners? Has it seemed like your pet sometimes doesn’t recognize 
+                                someone they’ve known all their life?</p>
+                            <a href="article12.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article197_main.png" alt="Utah’s rugged landscapes invite outdoor adventures, such as paddleboarding down the Colorado River in Moab.">
+            </div>
+            <div>
+                <h3>5 adrenaline-pumping 
+                    adventures in 2023</h3>
+                <p>
+                    <span class="travel">TRAVEL</span>
+                    <time datetime="2022-10-26">October 26, 2022</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_ThreePic">
+            <ul>
+                <li><img src="images/article197_02.png" alt="A prime winter sports destination, Austria’s Carinthia region is home to several mountaineering villages in the Bergsteigerdörfer network."></li>
+                <li><img src="images/article197_03.png" alt="Mountain bikers ride along the 31-mile Coronet Loop, the newest backcountry trail in Queenstown, New Zealand."></li>
+                <li><img src="images/article197_04.png" alt="The resident bottlenose dolphins of Mexico’s Revillagigedo National Park frequently show curiosity toward divers."></li>
+                <li><img src="images/article197_05.png" alt="Twilight falls over Delicate Arch and other red rock formations in Arches National Park, one of Utah’s five national parks."></li>
+            </ul>
+            <div>
+                <h4>Utah</h4>
+                <p>With five national parks and eight national monuments, Utah is an adventurer’s 
+                    dream destination. But outdoor lovers tend to visit only a small and iconic group of 
+                    destinations, such as Zion National Park. Now the Utah Office of Outdoor 
+                    Recreation has created an innovative grant program to help fund new initiatives 
+                    throughout the state, including the Zion National Park Forever Project.</p>
+                <p>In Zion, known for its dramatic narrow canyons and towering sandstone cliffs, work 
+                    began in 2022 on a new visitor center on the park’s east side. The hope is to draw 
+                    some of Zion’s five million annual visitors away from the crowded main south 
+                    entrance and popular trails like Angels Landing. In addition to the visitor center, 
+                    plans include 30-plus miles of new mountain biking trails and 40 miles of hiking 
+                    trails outside the east entrance.</p>
+                <p>“Outdoor recreation is a cash cow for Utah. It contributes more than $6.4 billion to 
+                    the economy, employs more than 83,000 people, and generates $737 million in 
+                    state and local tax revenues,” says Stephanie Pearson, author of National 
+                    Geographic’s 100 Great American Parks. These efforts will keep Utah’s outdoor 
+                    industry booming, while protecting fragile ecosystems.</p>
+                <h4>Choquequirao, Peru</h4>
+                <p>One of the most remote Inca sites in the Peruvian Andes, the ruins of Choquequirao 
+                    are reserved for the hardy. Those who make the trek can do so only on foot, 
+                    zigzagging up and down vertiginous paths for 18 miles before accessing the 
+                    sprawling complex suspended at 10,000 feet between the high Andes and the 
+                    jungles below.</p>
+                <p>“Many myths exist around Choquequirao,” says Gori-Tumi Echevarría, an 
+                    archaeologist who first worked at the ruins in 2005. Its many temples, terraces, and 
+                    plazas have yet to be fully excavated. Among the ancient city’s most intriguing 
+                    features: the Llama Terraces, named for the two dozen nearly life-size llama images 
+                    that cascade down the face of a series of steep terraces. The llamas are formed from 
+                    quartzlike white rocks that vividly stand out against the dark schist background 
+                    unique stone artwork found at no other Inca site. </p>
+                <p>“There is nothing else like this in the Andes. It was graphic innovation that occurred 
+                    prior to the 16th century and was not repeated,” says Echevarría, who specializes in 
+                    prehistoric rock art. But change is coming to rock the “cradle of gold,” the meaning 
+                    of Choquequirao in the Indigenous Quechua language. New infrastructure plans 
+                    are expected to boost visitation to Machu Picchu’s sister city.</p>
+                <h4>Austrian Alps</h4>
+                <p>To save a mountain range, it sometimes takes a village. Since 2008 an association of 
+                    high-altitude hamlets located in Central Europe’s Eastern Alps has banded together 
+                    to promote their small communities to the world’s adventure travelers interested 
+                    in mountain hiking, biking, and climbing, as well as winter sports like cross-country 
+                    skiing and ice climbing.</p>
+                <p>Called the Bergsteigerdörfer, or the “Mountaineering Villages,” the network is 
+                    concentrated primarily in Austria’s western states, including Tyrol and Carinthia, 
+                    with additional member towns in Switzerland, Germany, Italy, and Slovenia. The 
+                    Bergsteigerdörfer works to protect the culture and traditions of its 36 villages 
+                    while preserving mountain landscapes from overdevelopment. Rejecting large 
+                    scale tourist projects like sprawling ski lodges and peak-scaling cable cars, the 
+                    Bergsteigerdörfer puts greater emphasis on green or sustainable mountain tourism.</p>
+                <h4>Revillagigedo National Park, Mexico</h4>
+                <p>Some 300 miles off the southern tip of the Baja California Peninsula lies a national 
+                    park steeped in superlatives. Revillagigedo National Park, a 57,000-square-mile 
+                    Mexican marine reserve, is North America’s largest fully protected underwater 
+                    park. It offers sanctuary to the continent’s greatest concentration of tropical 
+                    marine megafauna, from hammerhead sharks to humpback whales, earning it the 
+                    nickname “the Galápagos of Mexico.” And the waters surrounding its four main 
+                    islands are fast becoming a mecca for scuba divers.</p>
+                <p>“The park is one of the few places, if not the only place on the planet, that you can 
+                    have intimate interaction with giant oceanic mantas,” says marine biologist and 
+                    underwater filmmaker Erick Higuera. He says the mantas, which can weigh up to 
+                    3,600 pounds and attain a wingspan of 27 feet, seem to like the feel of the divers’ air 
+                    bubbles on their bellies.</p>
+                <h4>New Zealand</h4>
+                <p>The country that brought you bungee jumping is bouncing back from the pandemic. 
+                    On New Zealand’s South Island, a reenergized Queenstown is again welcoming 
+                    adventure travelers from all over the world. They come to this lakeside town of 
+                    some 15,000 for skiing, as well as year-round hiking in the appropriately named 
+                    Remarkables range.</p>
+                <p>But bicycles should be generating the most excitement. By 2025, the Queenstown 
+                    Trails Trust aims to complete a network of recreational and commuting bike lanes 
+                    and paths that will link up workplaces, schools, and other urban spaces. The 
+                    network’s shining star: an 80.7-mile biking route called the Queenstown Trail, one 
+                    of New Zealand’s Great Rides. Starting on the shore of Lake Wakatipu, the Ride 
+                    pedals east from Queenstown to Gibbston.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article100.png" alt="The variety of ethnic groups that can fall under the label “Latin American” or “Hispanic” are reflected in modern art; here, “Latin American” by PJ Crook">
+                        <div>
+                            <strong>'Hispanic' 'Latino' Here’s where the terms 
+                                come from</strong>
+                            <p>Choosing the term Hispanic or Latino as a source of identity is more complicated 
+                                than just applying a label. A person whose grandparents came from Spain, a person 
+                                with Indigenous Mexican heritage, and someone </p>
+                            <a href="article100.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article101.png" alt="On April 4, 1967, Martin Luther King Jr. walks through the halls of Riverside Church in New York City making edits to his speech. The anti-war speech was criticized at the time both by American media and some of his peers, who wanted King to keep his focus on civil rights.">
+                        <div>
+                            <strong>How Martin Luther King, Jr.’s multifaceted 
+                                view on human rights still inspires today</strong>
+                            <p>The Reverend Martin Luther King, Jr. towers over history as a civil rights legend 
+                                known for leading the movement to end segregation and counter prejudice against 
+                                Black Americans in the 1950s and 1960s, largely through peaceful protests.</p>
+                            <a href="article101.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article102.png" alt="Marchers pass the Washington Monument en route to the National Mall during the March On for Voting Rights event held in various cities across the nation on Aug.">
+                        <div>
+                            <strong>Struggle for voting rights continues 58 years 
+                                after historic March on Washington</strong>
+                            <p>Terry G. Collins is no stranger to peaceful protest.  The Birmingham, Alabama native 
+                                visited churches with his parents as a child where civil rights leaders talked about 
+                                challenging injustices. In 1963, at 15 years old, he was subject</p>
+                            <a href="article102.html">View article</a>
+                        </div>
+                    </div>
+                </li> 
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

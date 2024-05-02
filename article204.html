@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article204_main.png" alt="The Alladale Wilderness Reserve, in Sutherland, is one of a handful of places aiming to reintroduce animals, such as wolves, to the Highlands.">
+            </div>
+            <div>
+                <h3>Scotland could become 
+                    first ‘rewilded’ nation 
+                    what does that mean</h3>
+                <p>
+                    <span class="travel">TRAVEL</span>
+                    <time datetime="2022-11-01">November 01, 2022</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_ThreePic">
+            <ul>
+                <li><img src="images/article204_02.png" alt="Alladale Wilderness Reserve manager Innes MacNeil and ranger Ryan Munro plant trees along the banks of Abhainn a' Ghlinne Mhoir, in Glen Mor."></li>
+                <li><img src="images/article204_03.png" alt="Alladale Wildlife Reserve visitors stay in the main estate and in this cabin backdropped by rolling hills."></li>
+                <li><img src="images/article204_04.png" alt="A former hunting estate in Sutherland, Alladale Wilderness Reserve now hosts travelers who come to experience rewilding projects"></li>
+            </ul>
+            <div>
+                <p>At the end of the last ice age, Scotland was a truly wild place, where the Highland 
+                    tiger, a distinctly banded wildcat, and the wolf, lynx, and bear roamed among 
+                    Caledonian pine forests. The Romans called the country’s north “The Great Wood 
+                    of Caledon.” But over time, humans purged the land for timber, charcoal, and 
+                    agriculture. Native species such as wild boar, polecat, and elk vanished. By the turn 
+                    of the 20th century, only 5 percent of Scotland’s land area was covered by forest.</p>
+                <p>Now the country is experiencing a zeitgeist moment for rewilding in essence, the 
+                    rebuilding of ecosystems to their natural uncultivated states with new efforts and a 
+                    matrix of wild lands and natural corridors spreading across the country. The actions 
+                    of those responsible are aligning and, if successful, would make Scotland the first 
+                    rewilded nation in the world.</p>
+                <p>“Scotland has majestic scenery and beautiful glens, but the ecological completeness 
+                    has long been greatly diminished,” says Peter Cairns, executive chairperson of the 
+                    nonprofit Scotland: The Big Picture. “Climate breakdown is one of the principal 
+                    drivers for rewilding gaining momentum now because it unites everyone.”</p>
+                <h4>Into the wild</h4>
+                <p>No one in Scotland can quite agree when the rewilding movement officially began, 
+                    but one popular perspective sets it in the late 1980s. That’s when environmental 
+                    charity Trees for Life moved the conversation from preserving individual species 
+                    and specific habitats the selective approach to conservation at the time to 
+                    reigniting ecological processes with a landscape-scale approach.</p>
+                <p>Today, Trees for Life is behind the far-reaching Affric Highlands vision, a 30-year 
+                    blueprint to transform Glens Cannich, Affric, Moriston, and Shiel a succession of 
+                    valleys, in the Central Highlands—into an unbroken refuge. More immediately, it’s 
+                    also responsible for a world first in rewilding.</p>
+                <p>Beginning in spring 2023, travelers who venture west of Loch Ness into 
+                    Glenmoriston (also Glen Moriston) will be able to experience the immersive 
+                    Dundreggan Rewilding Centre. Located amid pinewoods and juniper on Trees for 
+                    Life’s 10,000-acre estate, the campus has been developed to preview the ambitious 
+                    project and to show visitors ways of seeing nature anew.</p>
+                <p>This reinvigorated landscape is now home to 4,000 native plant and animal species, 
+                    including a rush of roe deer, mountain hare, water vole, long-eared bat, otter, and 
+                    black grouse. The hope is that visitors will be inspired to reengage with nature in 
+                    new ways at home. For full immersion, the rewilding gateway, with exhibitions and 
+                    classrooms, will house a 40-bed complex for researchers and volunteers.</p>
+                <p>Travelers can attempt to galvanize their relationship with everything from pine 
+                    cones to pipits at Scotland’s most ambitious rewilding project, Cairngorms Connect. 
+                    Concentrated on a 232-square-mile subarctic plateau in Cairngorms National Park, 
+                    the largest in Britain, the multi-landowner enterprise has embarked on a 200-year 
+                    plan to restore rivers and reseed ancient Caledonian pine forest. Already, visitors 
+                    can join ranger-led tours and rewilding weekends to help revitalize the landscape. 
+                    Next year 20 wildcats will be introduced by the Royal Zoological Society of 
+                    Scotland for the first time.</p>
+                <p>Not all returning native species hide away in gorse-speckled glens. In recent years, 
+                    according to James Nairne of the Scottish Wild Beaver Group, Eurasian beavers 
+                    have been reintroduced and translocated to sites such as the Knapdale Scottish 
+                    Beaver Trail in Argyll and Bute and Argaty Red Kites near Doune, northwest of 
+                    Stirling. Visitors might glimpse the river-dwellers on an evening canoe safari along 
+                    the superlative River Tay with tour operator Perthshire Wildlife. At sunset, the 
+                    scuttling rodents are at their most industrious.</p>
+                <p>“The Scottish beaver was wiped out 400 years ago and yet there are now around 
+                    1,000 thriving back in the wild,” Nairne says. “By having this species reintegrated 
+                    into our riverlands and lochs, we get more of everything else.”</p>
+                <p>In a landscape where nature-based tourism contributes nearly 40 percent of all 
+                    visitor spend, according to government agency NatureScot, new ventures are being 
+                    driven by other reintroduced species. One is the red kite, which has been 
+                    reestablished on the Galloway Kite Trail on Loch Ken in Kirkcudbrightshire, while 
+                    the golden eagle is now being bred in the braided Moffat Hills, thanks to the 
+                    translocation of 40 raptors by the South of Scotland Golden Eagle Project.</p>
+                <p>Taking aim at the traditional, Victorian-era country sports estates of the Highlands, 
+                    meanwhile, is Alladale Wilderness Reserve, in Sutherland, 50 miles north of 
+                    Inverness. Once the sole realm of a dozen or so deer stalkers, the 23,000-acre plot 
+                    now welcomes roughly 1,500 annual visitors. They arrive, as “wildlife laird” Paul 
+                    Lister, puts it, to “come to the end of the road, to connect to the environment, and to 
+                    feel spiritual.”</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article121.png" alt="The memorial cemetery at Tengchong holds tombs of soldiers with the Chinese Expeditionary Force who died fighting the Japanese army.">
+                        <div>
+                            <strong>The stories I learned walking the Burma Roa 
+                                perhaps WWII’s greatest engineering feat</strong>
+                            <p>It unspools north from Myanmar, or Burma, to the jungled hills rumpling the border 
+                                of China. Near Tengchong, an ancient Chinese trading post leveled by U.S. bombers 
+                                in World War II, it bypasses a McDonald’s closed by COVID-19</p>
+                            <a href="article121.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article122.png" alt="Narrow streets in Bai communities such as Jianchuan are built for the passage of ancient trading caravans.">
+                        <div>
+                            <strong>This ‘culture of introverts’ prefers to have 
+                                conversations in song</strong>
+                            <p>Fiftyish. Squarely built. Face reddened by the subtropical sun. King Li is a 
+                                community leader among the Bai ethnic minority in the rumpled, green mountains 
+                                of Yunnan Province. A friendly man. But reserved. Soft-spoken. </p>
+                            <a href="article122.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article123.png" alt="A new architectural feature of Yangon, Myanmar, following a military coup on February 1: a city of makeshift barricades put up by pro-democracy protesters.">
+                        <div>
+                            <strong>A storyteller on a global trek maps his walk 
+                                through a city agonized by a military coup</strong>
+                            <p>Perhaps at the makeshift shrines of its dead. Take, for example, the ephemeral 
+                                memorial of Khant Nyar Hein.</p>
+                            <a href="article123.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

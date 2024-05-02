@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article143_main.png" alt="A human heart, showing the arteries and veins which supply blood to the cardiac muscles.">
+            </div>
+            <div>
+                <h3>Now we know how 
+                    COVID attacks your heart</h3>
+                <p>
+                    <span class="science">SCIENCE</span>
+                    <time datetime="2023-11-07">November 07, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="right_BannerPic">
+            <div>
+                <img src="images/article143_02.png" alt="article right bannerPic">
+            </div>
+            <div>
+                <p>Scientists have noticed that COVID-19 can trigger serious cardiovascular problems, 
+                    especially among older people who have a buildup of fatty material in their blood 
+                    vessels. But now a new study has revealed why and shown that SARS-CoV-2, the 
+                    virus that causes COVID-19, directly infects the arteries of the heart.</p>
+                <p>The study also found that the virus can survive and grow inside the cells that form 
+                    plaque the buildup of fat-filled cells that narrow and stiffen the arteries leading to 
+                    atherosclerosis. If the plaque breaks, it can block blood flow and cause a heart 
+                    attack or a stroke. The SARS-CoV-2 infection makes the situation worse by 
+                    inflaming the plaque and increasing the chance that it breaks free.</p>
+                <p>This can explain long-term cardiovascular effects seen in some, if not all, 
+                    COVID-19 patients.</p>
+                <p>SARS-CoV-2 virus has already been found to infect many organs outside the 
+                    respiratory system. But until now it hadn't been shown to attack the arteries.</p>
+                <p>"No one was really looking if there was a direct effect of the virus on the arterial 
+                    wall," says Chiara Giannarelli, a cardiologist at NYU Langone Health, in New York, 
+                    who led the study. Giannarelli noted that her team detected viral RNA the genetic 
+                    material in the virus in the coronary arteries. “You would not expect to see [this] 
+                    several months after recovering from COVID.”</p>
+                <p>Mounting evidence now shows that SARS-CoV-2 is not only a respiratory virus, but 
+                    it can also affect the heart and many other organ systems, says Ziyad Al-Aly, a 
+                    clinical epidemiologist at Washington University in St. Louis. Al-Aly's research has 
+                    shown that the risk of developing heart and cardiovascular diseases, including 
+                    heart failure, stroke, irregular heart rhythms, cardiac arrest, and blood clots 
+                    increases two to five times within a year of COVID-19, even when the person 
+                    wasn't hospitalized.</p>
+                <p>"This important study links, for the first time, directly the SARS-CoV-2 virus with 
+                    atherosclerotic plaque inflammation," says Charalambos Antoniades, chair of 
+                    cardiovascular medicine at the University of Oxford, United Kingdom</p>
+                <p>A recent study of more than 800,000 people led by Fabio Angeli, a cardiologist at 
+                    University of Insubria in Varese, Italy, has shown that COVID-19 patients develop 
+                    high blood pressure twice as often as others. More worrying is that the risk of 
+                    cardiac diseases can also rise for patients who suffered only mild COVID 
+                    symptoms.</p>
+                <p>"I saw a patient who now has a defibrillator, and she didn't even have a severe 
+                    [COVID] illness," says Bernard Gersh, a cardiologist at Mayo Clinic, Rochester, 
+                    Minnesota.</p>
+                <p>Wondering whether the cardiovascular damage during COVID was due to the virus 
+                    directly attacking the blood vessels, the NYU team analyzed autopsied tissue from 
+                    the coronary arteries and plaque of older people who had died from COVID-19. 
+                    They found the virus was present in the arteries regardless of whether the fatty 
+                    plaques were big or small.</p>
+                <p>"The original finding in this study is that the virus was convincingly found in the 
+                    plaque in the coronary artery," says Juan Carlos Kaski, a cardiovascular specialist at 
+                    St George's, University of London, who was not involved in the study.</p>
+                <p>The NYU team found that in the arteries, the virus predominantly colonized the 
+                    white blood cells called macrophages. Macrophages are immune cells that are 
+                    mobilized to fight off an infection, but these same cells also absorb excess fats 
+                    including cholesterol from blood. When microphages load too much fat, they 
+                    change into foam cells, which can increase plaque formation.</p>
+                <p>To confirm that the virus was indeed infecting and growing in the cells of the blood 
+                    vessels, scientists obtained arterial and plaque cells including macrophages and 
+                    foam cells from healthy volunteers. Then they grew these cells in the lab in petri 
+                    dishes and infected them with SARS-CoV-2.</p>
+                <p>Giannarelli found that although virus infected macrophages at a higher rate than 
+                    other arterial cells, it did not replicate in them to form new infectious particles. But 
+                    when the macrophages had become loaded with cholesterol and transformed into 
+                    foam cells, the virus could grow, replicate, and survive longer.</p>
+                <p>"We found that the virus tended to persist longer in foam cells," says Giannarelli. 
+                    That suggests that foam cells might act as a reservoir of SARS-CoV-2. Since more 
+                    fatty buildup would mean a greater number of foam cells, plaque can increase the 
+                    persistence of the virus or the severity of COVID-19.</p>
+                <p>Scientists found that when macrophages and foam cells were infected with SARS 
+                    CoV-2 they released a surge of small proteins known as cytokines, which signal the 
+                    immune system to mount a response against a bacterial or viral infection. In 
+                    arteries, however, cytokines boost inflammation and formation of even more 
+                    plaque.</p>
+                <p>"We saw that there was a degree of inflammation [caused] by the virus that could 
+                    aggravate atherosclerosis and cardiovascular events," says Giannarelli.</p>
+                <p>These findings also confirm previous reports that measuring inflammation in the 
+                    blood vessel wall can diagnose the extent of long-term cardiovascular 
+                    complications after COVID-19, says Antoniades.</p>
+                <p>"What this study has found is that plaque rupture can be accelerated and magnified 
+                    by the presence of the virus," says Kaski.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article201.png" alt="Buddhist monks walk in front of the Haw Pha Bang temple, built in Luang Prabang to enshrine Laos’s most sacred Buddha image.">
+                        <div>
+                            <strong>5 top spots for slow travel in 2023</strong>
+                            <p>The COVID-19 pandemic closed the borders of many tourism-dependent countries, 
+                                such as Laos. But the Southeast Asian country known for its emerald-green vistas 
+                                of the Upper Mekong River</p>
+                            <a href="article201.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article202.png" alt="Four ducks form a line on a lake as the sun rises in Voyageurs National Park">
+                        <div>
+                            <strong>Here’s the best place to see northern lights 
+                                in the U.S.</strong>
+                            <p>A wintertime trip to Voyageurs National Park is not for the faint-hearted. But 
+                                travelers who venture to Minnesota’s only national park one of the country’s least 
+                                visited are rewarded in the coldest months</p>
+                            <a href="article202.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article203.png" alt="Intricate details adorn the walls of the Alhambra, a UNESCO World Heritage Site">
+                        <div>
+                            <strong>This ancient city of sultans is a 21st-century 
+                                wonder</strong>
+                            <p>Returning to the Alhambra is like rereading a book. The hilltop citadel built by the 
+                                Nasrid sultans above Granada, in Spain’s autonomous Andalusia region, was a 
+                                masterpiece of medieval engineering</p>
+                            <a href="article203.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

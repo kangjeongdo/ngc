@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article150_main.png" alt="A pharmacist prepares a COVID-19 booster shot in the vaccination clinic at Meritus Medical Center in Hagerstown, Md., Feb. 22, 2022.">
+            </div>
+            <div>
+                <h3>Multiple COVID 
+                    infections can lead to 
+                    chronic health issues. 
+                    Here’s what to know.</h3>
+                <p>
+                    <span class="science">SCIENCE</span>
+                    <time datetime="2023-09-13">September 13, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_BannerPic">
+            <div>
+                <img src="images/article150_02.png" alt="article left bannerPic">
+            </div>
+            <div>
+                <p>Mehnaz Qureshi has caught COVID-19 seven times, despite being fully vaccinated 
+                    and boosted. A veterinarian and a virologist at The Pirbright Institute in England, 
+                    she first caught the disease in March 2020 when the COVID-19 pandemic was just 
+                    beginning; then everyone in her family got sick.</p>
+                <p>While Qureshi's own symptoms were mild, her family members fared worse some 
+                    requiring hospitalization and supplemental oxygen to breathe. As the mother of 
+                    two children and the family’s primary care giver she didn't have much time to think, 
+                    or treat, her own symptoms. "I almost forgot about myself," says Qureshi. But 
+                    COVID-19 hadn't forgotten her.</p>
+                <p>"For me, it has been just four to six months of window between each reinfection," 
+                    says Qureshi. Aside from disrupting her life seven times, her symptoms during 
+                    subsequent reinfections have been more severe.</p>
+                <p>While a previous SARS-CoV-2 infection can protect against a reinfection for an 
+                    average of seven months, the immunity wanes afterwards. Repeated bouts of 
+                    COVID-19 are harmful even if the episodes are mild because the long-term 
+                    consequences add up for each additional infection, as demonstrated in a study of 
+                    U.S. veterans. While veterans don't necessarily reflect the broader public because 
+                    they tend to be older, white, and male the research shows that patients who were 
+                    reinfected with any SARS-CoV-2 variant are much more likely to develop chronic 
+                    health issues like diabetes, kidney disease, organ failure, and even mental health 
+                    problems.</p>
+                <p>Qureshi’s first infection was mild, with a fever that lasted a couple of days, aches, 
+                    and cold symptoms, she recalls. "My major symptom was that I lost smell and taste.
+                    " But the most recent infection was disabling. She was bedridden for a week, could 
+                    barely stand, and had severe cognitive impairment. "I couldn't think straight," says 
+                    Qureshi. "The most recent one was really bad."</p>
+                <p>With reinfections rising it is good news that the U.S. Food and Drug Administration 
+                    approved Pfizer’s and Moderna’s new COVID-19 boosters on September 11. The 
+                    preliminary data from Moderna, which has not yet been peer reviewed and 
+                    published, shows that the XBB.1.5 based booster, which could be available to the
+                     public as soon as this week generates ample levels of antibodies not only against 
+                    the latest highly mutated Omicron BA.2.86 variant, but also against other 
+                    currently circulating strains, EG.5.1 and FL.1.5.1.</p>
+                <p>After the Centers for Disease Control and Prevention’s Advisory Committee on 
+                    Immunization Practices met yesterday and voted in favor of the new shots, CDC 
+                    director Mandy Cohen signed off on the panel's recommendations. "CDC is now 
+                    recommending updated COVID-19 vaccination for everyone six months and older 
+                    to better protect you and your loved ones."</p>
+                <p>“I certainly recommend at all of my preventative visits that patients complete their 
+                    primary COVID series and stay up to date on the boosters,” says Natalie Paul, a 
+                    family nurse practitioner at Lavender Spectrum Health in Longview, Washington. 
+                    While vaccines and boosters may not block new or reinfections, they provide a 
+                    strong protection against serious complications or hospitalization. “I personally 
+                    would get it myself.”</p>
+                <h4>Soaring reinfection rates</h4>
+                <p>The CDC defines a reinfection as when someone tests positive for SARS-CoV-2 the 
+                    virus that causes COVID-19 on a PCR test 45 days after recovering from a previous 
+                    confirmed infection. In the United States, about 2.7 percent of all reported COVID 
+                    cases during the Delta variant surge in late 2021 were reinfections. But the 
+                    problem became significantly worse when Omicron emerged, and its more 
+                    infectious subvariants became dominant.</p>
+                <p>A CDC analysis of lab-confirmed, adult COVID cases between September 2021 and 
+                    December 2022, found that reinfection rates jumped to 10.3 percent during the 
+                    Omicron BA.1 wave; 12.5 percent when BA.2 was dominant; 20.6 percent during 
+                    BA.4/BA.5; and 28.8 percent during the BQ.1/BQ.1.1. The good news is that a meta 
+                    analysis of 91 published studies showed that vaccination lowered the risk of 
+                    getting reinfected, although vaccines became less efficient in preventing 
+                    reinfections against Omicron variants.</p>
+                <p>But the numbers of reinfections are likely to be underestimated because not 
+                    everyone who gets infected with SARS-CoV-2 gets sick enough to get tested. Since 
+                    reinfection often generates somewhat milder symptoms, it is even more difficult to 
+                    fully assess the true tally. Being a virologist, Qureshi frequently takes COVID tests 
+                    when she suspects something is off, and that's why she knows she has had frequent 
+                    re-infections.</p>
+                <p>A Canadian study estimated that 40 percent of people who had antibodies in their 
+                    blood proof that they had been infected with SARS-CoV-2 had not experienced any 
+                    symptoms in the previous six months and were unaware they had gotten the 
+                    disease.</p>
+                <p>Studies from various other countries also suggest that reinfection rates can range 
+                    from 5 percent to 15 percent. An analysis of COVID-19 cases in Serbia, for example, 
+                    found that risk of getting reinfected has steadily increased during the pandemic, 
+                    but it spiked after the arrival of Omicron variants in December 2022.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article100.png" alt="The variety of ethnic groups that can fall under the label “Latin American” or “Hispanic” are reflected in modern art; here, “Latin American” by PJ Crook">
+                        <div>
+                            <strong>'Hispanic' 'Latino' Here’s where the terms 
+                                come from</strong>
+                            <p>Choosing the term Hispanic or Latino as a source of identity is more complicated 
+                                than just applying a label. A person whose grandparents came from Spain, a person 
+                                with Indigenous Mexican heritage, and someone </p>
+                            <a href="article100.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article101.png" alt="On April 4, 1967, Martin Luther King Jr. walks through the halls of Riverside Church in New York City making edits to his speech. The anti-war speech was criticized at the time both by American media and some of his peers, who wanted King to keep his focus on civil rights.">
+                        <div>
+                            <strong>How Martin Luther King, Jr.’s multifaceted 
+                                view on human rights still inspires today</strong>
+                            <p>The Reverend Martin Luther King, Jr. towers over history as a civil rights legend 
+                                known for leading the movement to end segregation and counter prejudice against 
+                                Black Americans in the 1950s and 1960s, largely through peaceful protests.</p>
+                            <a href="article101.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article102.png" alt="Marchers pass the Washington Monument en route to the National Mall during the March On for Voting Rights event held in various cities across the nation on Aug.">
+                        <div>
+                            <strong>Struggle for voting rights continues 58 years 
+                                after historic March on Washington</strong>
+                            <p>Terry G. Collins is no stranger to peaceful protest.  The Birmingham, Alabama native 
+                                visited churches with his parents as a child where civil rights leaders talked about 
+                                challenging injustices. In 1963, at 15 years old, he was subject</p>
+                            <a href="article102.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

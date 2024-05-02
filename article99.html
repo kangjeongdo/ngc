@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article99_main.png" alt="The 5th Dimension, a group whose unique sound was dubbed champagne soul, performs at the Harlem Cultural Festival in 1969.">
+            </div>
+            <div>
+                <h3>Questlove on the 
+                    ‘Summer of Soul’ ‘An 
+                    awesome look at 
+                    beautiful people having 
+                    fun’</h3>
+                <p>
+                    <span class="history">HISTORY &amp; CULTURE</span>
+                    <time datetime="2022-03-26">March 26 , 2022</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_ThreePic">
+            <ul>
+                <li><img src="images/article99_02.png" alt="Dubbed the High Priestess of Soul, Nina Simone performs at the Harlem Cultural Festival in 1969."></li>
+                <li><img src="images/article99_03.png" alt="B.B. King defined blues music as a singer-songwriter for future generations"></li>
+                <li><img src="images/article99_04.png" alt="Mavis Staples and Mahalia Jackson perform at the Harlem Cultural Festival in 1969."></li>
+            </ul>
+            <div>
+                <p>For six weeks during the summer of 1969, some 300,000 people flocked to Mount 
+                    Morris Park (now Marcus Garvey Park) in New York City for the Harlem Cultural 
+                    Festival. With its star power and rapt crowds, the musical event rivalled 
+                    Woodstock, the four-day affair that was held one hundred miles north later that 
+                    summer. But the Harlem festival, featuring legends like Stevie Wonder and Nina 
+                    Simone, has largely been forgotten and its role as a defining American cultural 
+                    experience long overlooked.</p>
+                <p>In 2021, Ahmir “Questlove” Thompson, drummer for the Roots, reintroduced the 
+                    festival with his debut documentary Summer of Soul (…Or, When the Revolution 
+                    Could Not Be Televised), using footage of the performances that had never been 
+                    shown. Nominated for a Best Documentary at this Sunday’s Oscars, the film shines 
+                    a light on the importance of history and stands as a testament to the healing power 
+                    of music during times of unrest, both past and present.</p>
+                <p>On the eve of the Oscars, Questlove spoke with National Geographic editors Debra 
+                    Adams Simmons and David Beard in a wide-ranging conversation, in which he 
+                    emphasized that Summer of Soul is a celebration of Black joy and a rejection of 
+                    Black erasure. As he and his team put together the film in 2020, amid the rise of 
+                    COVID-19 deaths and protests against racial injustice, Questlove knew he had to 
+                    set the historical record straight.</p>
+                <p>Questlove: I’m really proud of Summer of Soul because, all too often, when you see 
+                    films about the Civil Rights era and the revolution of the time, you often see our 
+                    pain, our suffering, our sorrow, our tears, our blood, but Black joy is, to me, 
+                    probably the most important element of the story of the Civil Rights struggle and 
+                    the struggle of African Americans in the United States because it humanizes us, and 
+                    it makes us relatable. Harlem Cultural Festival is just an awesome look at beautiful 
+                    people having fun, having their joy in a way that you’ve never seen anyone from this 
+                    era look.</p>
+                <p>Debra Adams Simmons: There is Black history that has been erased or buried, and 
+                    there are these efforts to restore history. How can people engage in this work?</p>
+                <p>Questlove: This is one of the rare times in which an idiom like the truth will set us 
+                    free really does apply. Oftentimes, we have a disdain for the past. Even in 
+                    entertainment, I’ll play something old, and people will often have a jolted or 
+                    traumatized reaction to any sort of exploring our past. But I do believe that you 
+                    can’t move into the future until you know what the past is. I’m not surprised at all 
+                    that there are efforts to suppress history. And I believe that for those who want to 
+                    uncover history, you know, lead that fight and know that you have a responsibility.</p>
+                <p>I’ll be very honest with you, this was very intimidating for me. I didn’t take this just 
+                    as, okay, let me figure out which Stevie Wonder songs, which Sly and the Family 
+                    Stone songs go together. I knew I was restoring history, and I put that pressure on 
+                    myself that, oh man, this has to be a grand slam. This can’t be anything less than 
+                    hitting it out of the park. This is my one chance to slam dunk it for my people, and 
+                    that was very, very intimidating. And you know, I was just afraid that I’d get it 
+                    wrong or I’d fumble. But every day, I stayed focused and meditated and wound up, I 
+                    think, with a very beautiful piece of work that I’m very proud of.</p>
+                <p>I think that there’s more out there. And I’m rolling up my sleeves, and I’m looking 
+                    for more history to uncover and teach people.</p>
+                <p>DAS: Can you talk about the title, Summer of Soul, and the full title? And how you 
+                    landed on that and why?</p>
+                <p>Questlove: When the Woodstock Festival happened in 1969, it got to define a 
+                    generation. You can’t even think about the Summer of Love in the ‘60s and hippies 
+                    without saying the word Woodstock. The marketing of Woodstock probably did 
+                    more to define a generation than the actual event.</p>
+                <p>Around 1972-73, Hal Tulchin [the Harlem festival producer who made the original 
+                    footage] wanted to clearly explain to his distributors that look, you remember 
+                    Woodstock and how magical that was, right? Well, I have something magical right 
+                    here, too, and it’s the Black version, Black Woodstock. So our film got tagged Black 
+                    Woodstock.</p>
+                <p>On the last day before we locked production, I woke my girlfriend up and I was like, 
+                    “Yo, what do you really think about the title?” And she was like, “You might as well 
+                    throw your film in the trash if you put this out in the world as Black Woodstock.”</p>
+                <p>She said it would do such a disservice to your community and for history if you 
+                    based this concert on something that came afterward. This concert is the original.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article46.png" alt="The pine rocklands are a rare ecosystem that feature pines, shrubs, and wildflowers that grow on rocky, sandy soil.">
+                        <div>
+                            <strong>Is this paradise or a parking lot This Florida 
+                                ecosystem is a battleground.</strong>
+                            <p>MIAMIOn a recent summer evening, I stood in a parcel of one of the world’s rarest 
+                                ecosystems, home to dozens of endemic, threatened, and even endangered species 
+                                and I stepped on one. Oops.</p>
+                            <a href="article46.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article47.png" alt="Python hunter Amy Siewe caught this nearly 12-foot python in August 2023. Invasive Burmese pythons have ravaged native wildlife in Florida, and so far, the most effective solution is hunting them. But is it working?">
+                        <div>
+                            <strong>Florida has a python problem are bounty 
+                                hunters the solution</strong>
+                            <p>The air is thick and soupy. Pythons seem to like stormy, humid air, says professional 
+                                hunter Amy Siewe, and Hurricane Idalia is about to make landfall in Florida.</p>
+                            <a href="article47.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article48.png" alt="An Asian elephant scoops up a coffee bean mixture with fruit and rice at the Anantara Golden Triangle Elephant Camp and Resort in northern Thailand in 2012.">
+                        <div>
+                            <strong>$1,500 for 'naturally refined' coffee Here's 
+                                what that phrase really means.</strong>
+                            <p>Fancy a cup of coffee with beans plucked from an elephant’s poop? That’s the 
+                                promise of one of the world’s current priciest coffee options. Sold in two-serving 
+                                packets for about $150, the brew’s served at luxury hotels and to VIP clients</p>
+                            <a href="article48.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

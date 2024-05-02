@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_small">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article73_main.png" alt="A helicopter drops water on a July wildfire burning through Riverside County in California.">
+            </div>
+            <div>
+                <h3>This summer's extreme 
+                    weather is a sign of things 
+                    to come</h3>
+                <p>
+                    <span class="environment">ENVIRONMENT</span>
+                    <time datetime="2023-09-08">September 08 , 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="right_BannerPic">
+            <div>
+                <img src="images/article73_02.png" alt="article right bannerPic">
+            </div>
+            <div>
+                <p>Two-thirds of the way through the year, 2023 seems destined to be remembered as 
+                    the year that extreme weather events left the Northern Hemisphere reeling.</p>
+                <p>The summer months brought a litany of extreme weather events: Wildfires across 
+                    Canada. Flooding in Vermont. An “unusually early and aggressive start” to the 
+                    Atlantic hurricane season. A devastating wildfire on the Hawaiian island of Maui, 
+                    fueled by heat and cyclonic winds, that all but destroyed a historic town..</p>
+                <p>According to the European Union’s Copernicus Climate Change Service, the three-
+                    month period from June to August was the warmest northern hemisphere summer 
+                    ever recorded, 1.2° F above the 1991-2020 average and 0.5 degrees higher than the 
+                    previous record.</p>
+                <p>And a new analysis by the nonprofit organization Climate Central has drawn a 
+                    direct line between those temperatures and climate change, arguing that nearly 
+                    half of the global population—3.9 billion people—experienced 30 or more days 
+                    between June and August with temperatures made at least three times more likely 
+                    by climate change.</p>
+                <p>“Virtually no one on Earth escaped the influence of global warming during the past 
+                    three months,” Andrew Pershing, Climate Central’s vice president for science, said 
+                    in a press release. “In every country we could analyze, including the southern 
+                    hemisphere where this is the coolest time of year, we saw temperatures that would 
+                    be difficult–and in some cases nearly impossible–without human-caused climate 
+                    change. Carbon pollution is clearly responsible for this season’s record-setting 
+                    heat.”</p>
+                <h4>The climate connection </h4>
+                <p>Connecting the dots between climate change and this summer’s extreme weather 
+                    is complicated, but some scientists are feeling increasingly confident in their ability 
+                    to do so.</p>
+                <p>Speaking at a press briefing to announce the Climate Central findings, Friederike 
+                    Otto, a physicist at Imperial College London said that the intensity of wildfires in 
+                    Quebec that blanketed large areas of the U.S. in smoke “was about 50 percent more 
+                    intense because of human-induced climate change,” and that the weather 
+                    conditions that allowed the fires to flourish were “made at least twice as likely” by 
+                    a warming climate.</p>
+                <p>But Otto, a co-founder of the World Weather Attribution initiative, acknowledged 
+                    that, because of the multiple components involved in driving extreme weather 
+                    events, “quantification is quite different depending on different methods and 
+                    different models.”</p>
+                <p>For that reason, some scientists prefer to speak in more general terms about how 
+                    climate change has driven the year’s extreme weather.</p>
+                <p>“We can say, with a great deal of confidence, that we would not be seeing the 
+                    unprecedented weather extremes we saw play out this past summer in the absence 
+                    of human-caused warming from fossil fuel-generated carbon pollution,” says 
+                    Michael Mann, director of the Penn Center of Science, Sustainability and the Media, 
+                    in an email.</p>
+                <p>But he argues that analysis that attempts to attribute specific events to climate 
+                    change can sometimes miss the bigger picture of how warming affects broader, 
+                    longer-term weather patterns, such as by distorting the jet stream, the band of 
+                    westerly winds that circles the northern hemisphere. A number of researchers are 
+                    concerned that a warming Arctic is weakening the jet stream, allowing hot air from 
+                    the tropics to flow north and prolonging heatwaves, fueling wildfires, and melting 
+                    the Arctic.</p>
+                <p>For that reason, explained Mann, whose latest book on climate change is publishing 
+                    later this month, “I often prefer to talk about how climate change is impacting the 
+                    basic processes relevant to all of these events, which includes not only the obvious 
+                    fact that heat waves are more frequent and intense on a hotter planet, but the fact 
+                    that hotter continents in the summer lose more moisture through evaporation.”</p>
+                <p>What might seem like just a heat wave can set off a cascade of disasters, Mann 
+                    notes. Worse droughts lead to more damaging wildfires. And a warmer atmosphere 
+                    can hold more water vapor, so when rain does arrive it is often heavier and more 
+                    likely to lead to flooding.</p>
+                <p>Adds Stephen MacAvoy of the Department of Environmental Science at American 
+                    University, the key to understanding the future of weather is to assume an increase 
+                    in the “extreme and erratic.”</p>
+                <p>“Your current conditions won't necessarily be exacerbated,” he explains. “If it's dry, 
+                    it doesn't necessarily get drier. And if it’s wet, it won’t necessarily get wetter. But 
+                    there’s a good chance it’s going to be odd, frankly. I mean, Texas didn't expect to get 
+                    frozen in 2021.”</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article210.png" alt="The multigenerational Matsuo family offer homestays at their strawberry farm located just an hour outside the city of Minamishimabara.">
+                        <div>
+                            <strong>A rail adventure in Kyushu onsen, homestays 
+                                and sweet treats along Japan's Sugar Road</strong>
+                            <p>The shoji screen door slides closed behind me. The room is sun-dappled — paper 
+                                door and latticework walls letting light in while keeping prying eyes out. My shoes 
+                                have been spirited away and the tatami floor is cool underfoot</p>
+                            <a href="article210.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article211.png" alt="Shinjuku, one of Tokyo's busiest districts, is home to Omoide Yokocho, a 'food alley' packed with restaurants, bars and izakayas.">
+                        <div>
+                            <strong>A culinary guide to Tokyo</strong>
+                            <p>Exciting things continue to happen in Tokyo’s dining scene. In the 2023 Michelin 
+                                Guide to the Japanese capital, 200 restaurants were awarded at least one star 
+                                more than in Paris and New York combined. Of those, 12 come with lofty three-star 
+                                status, including chef Seiji Yamamoto’s artistic kaiseki (multi-course) menu at 
+                                RyuGin and the Edo-style sushi at Masahiro Yoshitake’s Sushi Yoshitake.</p>
+                            <a href="article211.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article212.png" alt="The sun sets over Shanghai, China.">
+                        <div>
+                            <strong>Everything to Know About Shanghai</strong>
+                            <p>Shanghai has a very busy, yet wonderfully stimulating pulse that will leave you 
+                                addicted and craving more. Development is fast, and anything can happen any 
+                                given day. Simultaneously, the city offers a world of opportunities to enjoy life just 
+                                the way you like it, whether that’s eating well with friends</p>
+                            <a href="article212.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

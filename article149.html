@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article149.png" alt="With the new EG.5 coronavirus variant spreading rapidly, it may be time to mask up again.">
+            </div>
+            <div>
+                <h3>The EG.5 COVID variant is 
+                    spiking in the U.S. Is it 
+                    time to mask up</h3>
+                <p>
+                    <span class="science">SCIENCE</span>
+                    <time datetime="2023-08-16">August 16, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="center_Pic">
+            <div>
+                <p>A highly infectious, new COVID variant is spreading fast, barely three months after 
+                    the World Health Organization declared that COVID-19 was no longer a global 
+                    health emergency.</p>
+                <p>EG.5, a descendant of a previous XBB strain of Omicron, was first spotted in 
+                    Indonesia on February 17 and has been spreading steadily since. Infections began 
+                    surging in mid-June when a record-breaking number of summer travelers took to 
+                    the skies and unprecedented high temperatures around the Northern Hemisphere 
+                    forced people to gather indoors, enabling the virus to spread easily. That alarmed 
+                    the WHO and led them to elevate EG.5 to a "variant of interest" on August 9, 
+                    alongside other highly contagious Omicron variants such as XBB.1.5 and XBB.1.16.</p>
+                <p>"Based on the experience that we have from the previous waves, we can project 
+                    EG.5 is definitely a big deal," says Rajendram Rajnarayanan, a computational 
+                    biologist at the New York Institute of Technology campus in Jonesboro, Arkansas.</p>
+                <p>In the United States, EG.5 is now the most prevalent strain of SARS-CoV-2 and has 
+                    replaced other XBB variants (XBB.1.5, XBB.1.16, XBB.1.9), according to data from 
+                    the Centers for Disease Control and Prevention (CDC). This variant is now causing 
+                    more than 17 percent of all reported COVID-19 cases in the country. The number 
+                    of hospitalizations has risen by 12.5 percent in the past week to roughly 9,000 cases.</p>
+                <p>EG.5 is also causing upticks in COVID-19 cases worldwide. The number of new
+                    COVID cases between July 10 to August 6 nearly 1.5 million is 80 percent higher 
+                   compared to the previous 28 days. EG.5 has also been spotted in at least 51 other 
+                   countries including in those with high vaccination rates: Canada, Japan, South 
+                   Korea, and China.</p>
+                <p>"We should take all of these subvariants very seriously," says Angela Rasmussen, a 
+                    virologist at Vaccine and Infectious Disease Organization in Saskatoon, Canada.</p>
+                <p>Using testing kits, when symptoms suggest it could be COVID-19, and masking up 
+                    and staying home if COVID positive, can slow the spread of the new variant, says 
+                    Rajnarayanan. “We need to minimize the spread of the virus as much as we can."</p>
+                <h4>A more contagious variant</h4>
+                <p>EG.5 is an offshoot of the XBB branch of the Omicron variant, which first arrived in 
+                    the Fall of 2022. XBB viruses are the fastest-spreading SARS-CoV-2 variants with 
+                    the power to overcome immunity gained from vaccination or breakthrough 
+                    infections of prior Omicron subvariants.</p>
+                <p>EG.5 differs from its XBB parent by a single change within its spike protein, which 
+                    protrudes from the surface of the virus. When the spike binds to the ACE2 protein 
+                    receptors on human cells the virus is able to enter the human nasal passage and 
+                    lungs. The majority of EG.5 variants sequenced so far also carry a second mutation 
+                    in their spike protein; these have been named EG.5.1</p>
+                <p>A preliminary study from Japan shows that EG.5 is about 20 percent more 
+                    contagious than even XBB.1.5. This research, led by Kei Sato, a virologist at the 
+                    University of Tokyo, has not yet been peer reviewed.</p>
+                <h4>Tracking the variant</h4>
+                <p>While EG.5 is still designated a step below variants of concern such as Delta and 
+                    the Omicron parent, not many positive samples containing EG.5 are currently 
+                    being sequenced as most people are using at-home tests; further, many states are 
+                    no longer required to report non-hospitalized cases. This deficiency of genomic 
+                    surveillance means the scientists and the WHO now have insufficient data to fully 
+                    assess the impact of prevailing variants.</p>
+                <p>In the United States, wastewater monitoring and hospitalization data, along with 
+                    genomic sequences from states such as New York, California, and Florida, provide 
+                    an indication of the state of pandemic in the U.S.</p>
+                <p>"Like election projections and exit polls, we can pick some bellwether situations 
+                    that are still sequencing well," says Rajnarayanan who aggregates the data from all 
+                    available sources to visualize the daily prevalence of circulating variants. The virus 
+                    concentration present in samples of wastewater across the United States have 
+                    tripled since the end of June.</p>
+                <h4>Can EG.5 escape the immune system?</h4>
+                <p>It's too early to know if any of the changes in the spike protein can help EG.5 evade 
+                    prior immunity. Scientists are racing to figure that out.</p>
+                <p>The study from Japan shows that although EG.5 is more contagious than XBB.1.5. 
+                    It also shows that synthetic versions created in the lab were less successful in 
+                    infecting cells in petri dish. While contagiousness of a virus depends on its spread 
+                    from one infected person to others; the infectivity of virus measures how many 
+                    cells the virus can infect in a petri dish. If the Japanese study is correct, the faster 
+                    spread of the new EG.5 variant is probably not because these viruses are more 
+                    infectious. The study also shows that EG.5 can still be suppressed by the immunity 
+                    gained from a previous infection by XBB subvariant.</p>
+                <p>However, Sato's results conflict with another preliminary analysis of a synthetic 
+                    EG.5 virus created in the lab of Yunlong Cao of Peking University in China, which 
+                    suggests the new variant might be able to evade prior immunity from the original 
+                    Omicron BA.5 or XBB. A second preliminary study by Cao, also not yet peer 
+                    reviewed, shows that EG.5-like spikes created in the lab-synthesized viruses help 
+                    them dodge or weaken XBB.1.5 antibodies.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article74.png" alt="A chunk of ice carved off a glacier contains dozens of air bubbles">
+                        <div>
+                            <strong>Wildfire season is getting longer and more 
+                                intense. Here's how to prepare.</strong>
+                            <p>People living in the U.S. Northeast recently faced the worst air in more than two 
+                                decades when smoke from Canadian wildfires drifted southward, breaking pollution 
+                                records and turning skies a deep orange.</p>
+                            <a href="article74.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article75.png" alt="In 2021, Brood X—the biggest of the 15 known periodical cicada broods—emerged throughout the eastern U.S. in the trillions. ">
+                        <div>
+                            <strong>Noticing more cicadas this year in the U.S. 
+                                There may be a reason</strong>
+                            <p>"I always loved to hear them," she says, adding that the noise was also a sign they 
+                                were ending the school year.</p>
+                            <a href="article75.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article76.png" alt="Wildfire smoke is a health hazard for people living as far as a thousand miles away from the fire, but there are steps you can take to protect yourself. ">
+                        <div>
+                            <strong>What does a melting glacier sound like 
+                                'Gunshots.'</strong>
+                            <p>In tidewater glaciers large rivers of ice that pour into the sea the steady melting of 
+                                ice underwater causes billions of these bubbles to burst into the water “like little 
+                                tiny gunshots,” says Erin Pettit</p>
+                            <a href="article76.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

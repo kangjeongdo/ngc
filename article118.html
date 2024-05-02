@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article118_main.png" alt="Walking the former tea roads through Sichuan meant occasionally following modern highways.">
+            </div>
+            <div>
+                <h3>Walking in the footsteps 
+                    of China’s historic 
+                    caravans of tea porters</h3>
+                <p>
+                    <span class="history">HISTORY &amp; CULTURE</span>
+                    <time datetime="2022-10-14">October 14, 2022</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_ThreePic">
+            <ul>
+                <li><img src="images/article118_02.png" alt="Statues at the modern tea-growing center ofYa’an, in Sichuan, honor the porters of old."></li>
+                <li><img src="images/article118_03.png" alt="Village historian Chen Shoukang displays a typical cargo carried by porters—bricks of tea in bamboo-wrapped containers.  "></li>
+                <li><img src="images/article118_04.png" alt="Porters in western China, porters—sometimes including women and children—lugged crushing burdens of tea along trails to Tibet for centuries until trucks replaced them by the mid-1900s. "></li>
+            </ul>
+            <div>
+                <p>TIANQUAN COUNTY, SICHUAN PROVINCE, CHINA“I saw them when I was a 
+                    young boy. They were always bent over.” </p>
+                <p>Meet Chen Shou Kang: friendly, bald, energetic even in his 80s, the unofficial 
+                    historian of the village of Wayao Guan, located in the lumpy mountains of western 
+                    China. Chen is remembering the last beifu he ever saw. Beifu: the legendary tea 
+                    porters who for 250 years shouldered impossible burdens of black tea over the 
+                    eastern Himalaya and into Tibet. Across generations of such trade, perhaps two 
+                    million bearers may have inched over China’s perilous tea roads, carrying individual 
+                    loads as heavy as a modern refrigerator. They did this wearing grass sandals or 
+                    barefoot, over 11,000-foot elevations, for weeks at a stretch. Often, they managed 
+                    only a few dozen steps before pausing from exhaustion.</p>
+                <p>“They were poor. They had no other choice,” old Chen explains. “By the 1950s they 
+                    were replaced by trucks.” </p>
+                <p>Rummaging through his backroom museum, Chen suddenly grins. He holds up an 
+                    object made of bamboo: a strange, bladelike tool. It is an antique “sweat wiper” 
+                    designed to scrape perspiration from the brows and eyes. A long time ago, it once 
+                    dangled by a string from the wooden pack frame of a tea porter. An artifact from an 
+                    emphatically bygone era. From a different planet. A relic of extreme human 
+                    experience of boggling endurance that today is virtually impossible to access or 
+                    comprehend. </p>
+                <p>I am walking across the world. The heaviest item in my rucksack is a laptop 
+                    computer weighing two pounds. On this segment of my trek through China, I am 
+                    joined by three philosopher friends. Li Mengchi is a seeker who guides tourists into 
+                    the deserts of Arabia. Yang Wendou is a sage who teaches schoolchildren 
+                    Yunnanese culture. And Cheng Xinhao is the brilliant maker of conceptual art 
+                    videos. Walking, they argue the merits of idealism over realism, of memory over 
+                    forgetting. They sing the Mandarin version of “The Internationale” in the driving 
+                    rain.</p>
+                <p>Together we hike over Erlang Shan, a stormy, 11,200-foot massif that once tested 
+                    the old tea porters’ will. The colossal peak looms over fading trading paths between 
+                    Kangding a historic Tibetan outpost of tea markets and icy winters and Ya’an, a lush, 
+                    lowland hub of tea production in Sichuan Province, some 130 miles to the east. </p>
+                <p>This rugged borderland is notorious for its hazards.</p>
+                <p>The ramparts of the Tibetan Plateau knife up from the Sichuan Basin into an 
+                    austere world of heavy fogs, ice, snow, and strong winds. Landslides and rockfalls 
+                    are common. We slip, crazy-legged, up and down steep goat trails greased by wet 
+                    mud. We hopscotch along abandoned roads that are chopped to pieces by flash 
+                    floods. Dripping cedars loom out of the heavy mists. Rotten snow clings to the blue 
+                    pine shadows. At rest stops, we sometimes spot curious holes drilled into flat 
+                    bedrock. These small cavities were worn by the action of thousands of wooden 
+                    guaizi: the indispensable walking sticks of a vanished army of tea porters. Catching 
+                    their breath, the tough beifu would fit their t-shaped alpenstocks into such sockets 
+                    to prop up their enormous packs, which they rarely removed on the trail.</p>
+                <p>It's no stroll in the park to tread the old trading trails—let alone if you had to 
+                    shoulder 250 pounds of tea.</p>
+                <p>By the early 1700s, say historians, the expanding Qing Dynasty had pushed into 
+                    Sichuan’s ethnic Tibetan regions, and began exporting vast consignments of the 
+                    region’s cheap, dark tea to the peoples of the Himalaya. At its peak, this commerce 
+                    moved nearly 16 million pounds of tea a year, all of it pressed into dry bricks, and 
+                    the bulk of it transported from the plantations on human backs. People were more 
+                    economical conveyances than packhorses. Most of the carriers were men. But 
+                    women and children sometimes portered too. Their thousands of cargoes ended up 
+                    steeping in millions of cups of yak butter tea.</p>
+                <p>“Heavy, long-distance carrying is well-known elsewhere in the world, particularly 
+                    in Nepal,” writes Patrick Booz, an expert on the Chinese tea trade at Columbia 
+                    University, in New York, “but nowhere else ever did porters carry loads of such 
+                    awful weight, with such little time for rest.” </p>
+                <p>The beifu traversed the length of Sichuan’s tea roads in about 20 days. Their 
+                    burdens were so crushing they averaged just seven miles a day. Two hundred and 
+                    fifty pounds was considered a moderate load, Booz notes. But packs tipping 400 
+                    pounds weren’t unusual.</p>
+                <p>“I can still feel the pain,” says Wang Shikang, 89, among the last living beifu in the 
+                    village of Kang Zhi. “I have rheumatism in my knees and back.”</p>
+                <p>Wang’s eyes glitter in the leather shield of his face as he recalls his days as a 
+                    teenager in the twilight of the foot trade, before paved roads penetrated the region 
+                    during World War II. He slept on plank beds with scores of other rag-wrapped 
+                    carriers at porters’ inns. He gulped cold dumplings to fuel his outraged muscles. 
+                    Each trek to the alpine tea markets earned a palmful of coins: a survival wage that 
+                    bought a sackful of corn or rice. </p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article97.png" alt="Students walk through a hallway at a high school in Pasadena, California. African American studies—also known as Black or Africana studies—is largely embraced at institutions of higher education in the U.S. ">
+                        <div>
+                            <strong>The origins of African American studies, 
+                                explained</strong>
+                            <p>At high schools across the United States, students can take for the first time an 
+                                Advanced Placement course in African American studies that addresses “the vital 
+                                contributions and experiences of African Americans.”</p>
+                            <a href="article97.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article98.png" alt="An artist's depiction of the moment Henry Brown emerged from a box he'd traveled in from Virginia to Pennsylvania. ">
+                        <div>
+                            <strong>This magician escaped slavery by mailing 
+                                himself to freedom</strong>
+                            <p>On an early spring morning in 1849, an enslaved Black man named Henry Brown 
+                                folded himself into a three-foot by two-foot wooden crate. Twenty-seven hours and 
+                                350 miles later, he arrived at the home of William Johnson</p>
+                            <a href="article98.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article99.png" alt="The 5th Dimension, a group whose unique sound was dubbed performs at the Harlem Cultural Festival in 1969.">
+                        <div>
+                            <strong>Questlove on the ‘Summer of Soul’ ‘An 
+                                awesome look at beautiful people having fun’</strong>
+                            <p>In 2021, Ahmir “Questlove” Thompson, drummer for the Roots, reintroduced the 
+                                festival with his debut documentary Summer of Soul</p>
+                            <a href="article99.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

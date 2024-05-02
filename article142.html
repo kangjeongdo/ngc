@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article142.png" alt="The SARS-CoV-2 virus disrupts systems throughout the body, including those that regulate sleep.">
+            </div>
+            <div>
+                <h3>COVID-19 can ruin your 
+                    sleep in many different 
+                    ways—here's why</h3>
+                <p>
+                    <span class="science">SCIENCE</span>
+                    <time datetime="2023-11-13">November 13, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_BannerPic">
+            <div>
+                <img src="images/article142_02.png" alt="article left bannerPic">
+            </div>
+            <div>
+                <p>Six weeks after a mild case of COVID-19 early in the pandemic, Erika Thornes 
+                    started waking up every night between 2 and 3 a.m. Unable to fall back asleep, she 
+                    would listen to podcasts, read, and scroll through Twitter before finally dozing off 
+                    by 4 or 5 a.m. Thornes, the mother of three teenagers in San Diego, continued to 
+                    struggle to sleep through the night for more than two years after that a pattern that 
+                    improved only after she started taking a new medication following her second bout 
+                    with the virus in the summer of 2023.</p>
+                <p>A similar thing happened to her husband during a COVID-19 infection. He was 
+                    suddenly waking up at 3 a.m. every night. His sleep improved when he stopped 
+                    testing positive, but the symptom was extreme while it lasted. “He was quite 
+                    shocked,” she says. “He knew I was waking up, but I don’t think he quite understood 
+                    the severity of ‘awake.’”</p>
+                <p>Nightmares. Days without sleep. Waking in a panic in the middle of the night. 
+                    Sleeping for 18 hours a day. As COVID-19 swept through the global population, so 
+                    too did reports of sleep disruptions both during an infection and in the weeks and 
+                    months beyond.</p>
+                <p>Studies published since the pandemic began have revealed new details about how 
+                    the virus altered sleep and have documented the general ways that bacterial and 
+                    viral infections interfere with sleep through physical and psychological 
+                    mechanisms. New research has also revealed how poor sleep during and after 
+                    COVID-19 can exacerbate many symptoms of both acute and long COVID 
+                    including brain fog and how insomnia can lower production of antibodies after 
+                    vaccination.</p>
+                <p>Recognizing the potential for SARS-CoV-2 the virus that causes COVID-19 to 
+                    upset sleep, experts say, can help people get the care they need.</p>
+                <h4>How sleep and the immune system affect each 
+                    other</h4>
+                <p>Sleep is intricately entwined with the immune system, a link both well-known and 
+                    still mysterious. Getting enough rest can help prevent infections, according to 
+                    evidence and observations going back thousands of years. But infections can also 
+                    disrupt sleep in complicated ways.</p>
+                <p>Studies in animals show that viruses and bacteria alter both the amount of time 
+                    spent sleeping and the kind of sleep, says John Axelsson, director of the Sleep L
+                    aboratory at Stockholm University’s Stress Research Institute in Sweden. When 
+                    researchers inject rabbits or rodents with moderate doses of bacteria or viruses, 
+                    the animals sleep more. They get more non-rapid eye movement sleep, a deep 
+                    restful state thought to be important for recovery; and they spend less time in 
+                    dream-filled REM sleep.</p>
+                <p>Cytokines, a category of molecules that can stimulate or slow down inflammation, 
+                    appear to play a major role in these patterns, Axelsson says. When healthy animals 
+                    are sleep deprived, levels of some pro-inflammatory cytokines in the brain rise, 
+                    causing the animals to sleep more than usual. When scientists block these 
+                    cytokines, animals don’t sleep more—even when they are sleep deprived.</p>
+                <p>It’s harder to do the same kind of research in people, and results are mixed about 
+                    how sleep changes during illnesses. But studies suggest that, at least to some 
+                    extent, inflammatory molecules affect sleep in ways comparable to other animals. 
+                    In studies from the 1990s and early 2000s, researcher Thomas Pollmächer and 
+                    colleagues injected people with bits of bacterial cell walls, called endotoxins, and 
+                    found that mild activation of the immune system increased the drive for sleep and 
+                    enhanced non-REM sleep.</p>
+                <p>But once the immune system revved up with increased cytokine levels and 
+                    symptoms of illness, people experienced more disrupted sleep, not typically seen 
+                    in animals. “The inflammatory system increases the drive for sleeping," Axelsson 
+                    says. “But at the same time, it then disrupts your sleep if you get a fever.”</p>
+                <p>To see how respiratory infections affect human sleep, Axelsson and colleagues 
+                    recruited 100 healthy adults to keep a detailed sleep diary after experiencing the 
+                    first symptoms of a respiratory infection while wearing a sleep-tracking device on 
+                    their wrists. Of the 100 volunteers, 28 people got sick. Overall, those people spent 
+                    longer in bed and slept more after their symptoms began, the researchers reported 
+                    in 2019.</p>
+                <p>But this wasn’t a restful sleep. Infected people had difficulty falling asleep, woke up 
+                    more, and had a more restless sleep especially when they were most symptomatic. 
+                    As symptoms eased, sleep improved. Anecdotally, that’s the same pattern reported 
+                    by many people with COVID-19 a lot of sleep initially followed by insomnia or 
+                    other disruptions while sickest. The physiological drive to sleep more while getting 
+                    sick might be adaptive helping the body fight off the invader, Axelsson says.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article180.png" alt="Durdle Door is one of Dorset’s most popular coastal sights, with its impressive limestone arch attracting scores of visitors each week.">
+                        <div>
+                            <strong>Why families should plan a trip to the British 
+                                seaside this summer</strong>
+                            <p>The East Sussex beach town has long been a favourite with open-water swimmers, 
+                                but Brighton’s new 165ft open-air Sea Lanes pool will be a gamechanger for families 
+                                who want better facilities</p>
+                            <a href="article180.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article181.png" alt="A new tour near Churchill, Manitoba allows visitors to observe cloud wolves.">
+                        <div>
+                            <strong>4 of Canada's best wildlife watching trips, 
+                                from spirit bears to cloud wolves</strong>
+                            <p>Churchill is far removed from the rest of Canada 600 miles from provincial capital 
+                                Winnipeg alone and not connected by road. Beyond the main street, all signs of 
+                                civilisation give a feeble shiver and peter out</p>
+                            <a href="article181.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article182.png" alt="The Green Gardens Trail is one of the most popular paths in the UNESCO-listed Gros Morne National Park, which celebrates its 50th birthday this year and remains one of the best outdoor destinations in Canada.">
+                        <div>
+                            <strong>Banff, Jasper and more 4 wild places for 
+                                Canadian outdoor adventures</strong>
+                            <p>Untamed landscapes are a point of pride in Canada, a land laid out on such a scale 
+                                that it touches three oceans. The fortress-like peaks and glacial lakes of the Rockies 
+                                are the literal high-point of any journey</p>
+                            <a href="article182.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

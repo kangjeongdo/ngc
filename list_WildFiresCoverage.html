@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <input type="search" placeholder="Search for article" title="insert keyword for articles">
+                <input type="submit" value="search" class="openBtn">
+            </form>
+        </div>
+    </header>
+    <section class="list_container2">
+        <div>
+            <img src="images/list_bg_wildfirescoverage.png" alt="wildfires Coverage background">
+            <div>
+                <h2>NATIONAL GEOGRAPHIC<b>WILDFIRES COVERAGE</b></h2>
+                <p>Wildfire smoke affects birds too. Here’s how you can help.</p>
+            </div>
+        </div>
+        <div>
+            <form>
+                <input type="search" placeholder="search" title="insert keyword for articles">
+                <input type="submit" value="search">
+            </form>
+        </div>
+        <div>
+            <div class="gridListHandler">
+                <mark>Articles Grid View</mark>
+                <input type="button" value="way2">
+                <input type="button" value="way3">
+                <input type="button" value="way4">
+            </div>
+            <mark>10 articles</mark>
+        </div>
+        <div class="gridBox">
+            <h3>ENVIRONMENT BY NATIONAL GEOGRAPHIC</h3>
+            <ul class="way4">
+                <li>
+                    <img src="images/list_wildfirescoverage_01.png" alt="Wildfire smoke is a health hazard for people living as far as a thousand miles away from the fire, but there are steps you can take to protect yourself. ">
+                    <div>
+                        <span>
+                            <strong>ENIVROMENT BY NATIONAL GEOGRAPHIC</strong>
+                            <a href="article76.html" class="material-symbols-outlined">arrow_circle_right</a>    
+                        </span>
+                        <p>Wildfire season is getting longer and more intense.
+                            Here's how to prepare.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/list_wildfirescoverage_02.png" alt="Smoke from the Thomas Fire glows in fiery shades of orange during sunset in the Los Padres National Forest on December 13, 2017. ">
+                    <div>
+                        <span>
+                            <strong>ENIVROMENT BY NATIONAL GEOGRAPHIC</strong>
+                            <a href="article77.html" class="material-symbols-outlined">arrow_circle_right</a>    
+                        </span>
+                        <p>Orange skies are the future. Prepare yourself.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/list_wildfirescoverage_10.png" alt="A man talks on his phone as the haze from wildfire smoke obscures his view of the George Washington Bridge from his perch in Fort Lee, New Jersey, on June 7, 2023. ">
+                    <div>
+                        <span>
+                            <strong>ENIVROMENT BY NATIONAL GEOGRAPHIC</strong>
+                            <a href="article78.html" class="material-symbols-outlined">arrow_circle_right</a>    
+                        </span>
+                        <p>What the Air Quality Index measures and what to do
+                            when it’s code red</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/list_wildfirescoverage_13.png" alt="A wildfire burning through a forest in Calistoga, California, creates an orange glow in the sky. Heat, ash, and other particles from burns like this one can change weather patterns both nearby and very far away, a new study finds.">
+                    <div>
+                        <span>
+                            <strong>ENIVROMENT BY NATIONAL GEOGRAPHIC</strong>
+                            <a href="article79.html" class="material-symbols-outlined">arrow_circle_right</a>    
+                        </span>
+                        <p>Wildfires can intensify destructive storms half a
+                            continent away</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/list_wildfirescoverage_14.png" alt="Lightning strikes during a monsoon near Mayer, Arizona. Not only does monsoon season bring rains, but also lightning strikes that can start wildfires. ">
+                    <div>
+                        <span>
+                            <strong>ENIVROMENT BY NATIONAL GEOGRAPHIC</strong>
+                            <a href="article80.html" class="material-symbols-outlined">arrow_circle_right</a>    
+                        </span>
+                        <p>Unlocking the secrets of the North American monsoon</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/list_wildfirescoverage_15.png" alt="Wildfire flames burn through a vineyard in Calistoga, California, during the 2020 wildfire season">
+                    <div>
+                        <span>
+                            <strong>ENIVROMENT BY NATIONAL GEOGRAPHIC</strong>
+                            <a href="article81.html" class="material-symbols-outlined">arrow_circle_right</a>    
+                        </span>
+                        <p>How the West’s wineries are battling ruinous wildfire
+                            smoke</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/list_wildfirescoverage_16.png" alt="The Castle fire killed this giant sequoia tree in Sequoia National Forest, California, last year. In just the last two years wildfires have killed up to one-fifth of the huge trees, which live only in the Sierra Nevada.">
+                    <div>
+                        <span>
+                            <strong>ENIVROMENT BY NATIONAL GEOGRAPHIC</strong>
+                            <a href="article82.html" class="material-symbols-outlined">arrow_circle_right</a>    
+                        </span>
+                        <p>Polluters are using forests as ‘carbon offsets.’ Climate
+                            change has other plans.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/list_wildfirescoverage_19.png" alt="A firefighting helicopter flies past smoke plumes during the Dixie Fire on August 18, 2021, near Coppervale in northern California">
+                    <div>
+                        <span>
+                            <strong>ENIVROMENT BY NATIONAL GEOGRAPHIC</strong>
+                            <a href="article83.html" class="material-symbols-outlined">arrow_circle_right</a>    
+                        </span>
+                        <p>Wildfire smoke is transforming clouds, making rainfall
+                            less likely</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/list_wildfirescoverage_20.png" alt="Wildfire smoke contains dangerous pollution called particulate matter that may make some more vulnerable to COVID-19.">
+                    <div>
+                        <span>
+                            <strong>ENIVROMENT BY NATIONAL GEOGRAPHIC</strong>
+                            <a href="article84.html" class="material-symbols-outlined">arrow_circle_right</a>    
+                        </span>
+                        <p>Wildfire smoke linked to higher COVID-19 death rates</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/list_wildfirescoverage_21.png" alt="The setting sun shines through wildfire smoke during the Beckwourth Complex Fire in California on Monday, July 12, 2021">
+                    <div>
+                        <span>
+                            <strong>ENIVROMENT BY NATIONAL GEOGRAPHIC</strong>
+                            <a href="article85.html" class="material-symbols-outlined">arrow_circle_right</a>    
+                        </span>
+                        <p>How extreme fire weather can cool the planet</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

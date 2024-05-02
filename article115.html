@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article115_main.png" alt="Bad dreams scared the ancient Egyptians, who feared that evil spirits or demons would visit them in their sleep">
+            </div>
+            <div>
+                <h3>The world's oldest 
+                    nightmare came from 
+                    Egypt. What hidden 
+                    meanings did it hold</h3>
+                <p>
+                    <span class="history">HISTORY &amp; CULTURE</span>
+                    <time datetime="2023-08-31">August 31, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="right_ThreePic">
+            <ul>
+                <li><img src="images/article115_02.png" alt="Pharaoh Senusret of Egypt is shown in a 20th century B.C. statue "></li>
+                <li><img src="images/article115_03.png" alt="The Egyptian Museum in Turin, Italy, has two 14th-century B.C. beds on display from the tomb of Kha, the royal architect at Deir el-Medina, and his wife Merit."></li>
+                <li><img src="images/article115_04.png" alt="Several headrests were found among the treasures in Tutankhamun’s tomb."></li>
+            </ul>
+            <div>
+                <p>Falling. Being chased by monsters. Showing up to school naked. These may be 
+                    common common scary dreams today, but the world's oldest nightmare was a lot 
+                    less action packed. The 4,000-year-old Egyptian night fright centered on staring. 
+                    Just staring.</p>
+                <p>Around 2100 B.C., a Egyptian man named Heni wrote a letter to his dead father, 
+                    asking him for help with his nightmares. Heni described how in his dreams Seni, his 
+                    deceased dad's servant, keeps staring at him. Perhaps trying to relieve a guilty 
+                    conscience, Heni alluded to how he mistreated Seni but claimed he was not the first 
+                    to abuse him. Heni begged his father: “Do not allow him to do me harm.” </p>
+                <p>Heni's letter is one of the earliest references to dreams in ancient Egypt found in 
+                    the 20 or so non-royal Letters to the Dead. Written on papyrus or pottery and 
+                    typically left in the tombs of dead relatives, these missives often include requests 
+                    for favors, such as ending a property dispute or ensuring the birth of a healthy child. 
+                    Writing letters to departed relatives became a common practice throughout 
+                    ancient Egyptian history. Occasionally these requests were inscribed on bowls 
+                    with tasty offerings to coax the deceased into responding to a request.</p>
+                <p>Egyptians put great value on dreaming as a way to access a world normally hidden 
+                    from view. They devised history’s first manual of dream interpretation and first 
+                    recorded humanity’s dreams and nightmares. The most common word for “dream” 
+                    in ancient Egypt was the noun resut, which means “awakening.” There was no verb
+                     for dreaming; it was not active but passive, something to be observed.</p>
+                <p>Traveling through the portal of sleep, Egyptian dreamers “awakened” in another 
+                    world that existed between the afterlife and the everyday. In this space, they might 
+                    receive communications from the gods and the dead. “In contrast to modern 
+                    understandings of the nature of a dream, Egyptians had no internal psychological 
+                    explanation for them,” said Kasia Szpakowska, author of Behind Closed Eyes: 
+                    Dreams and Nightmares in Ancient Egypt. Dreams were not intended to give 
+                    insight into the dreamer’s psyche as they might be interpreted today. Instead, 
+                    Egyptians saw them as omens about their present and future.</p>
+                <h4>Dream interpretations</h4>
+                <p>Pharaohs used the power of dreams to help secure their thrones, but everyday 
+                    Egyptians were looking to guides to decipher their nightly dreams. Written around 
+                    1220 B.C., the Dream Manual, found in the so-called Chester Beatty Papyrus, was 
+                    one such guide. Pieces of the work are missing, but what survives are lists of 
+                    dreams and their interpretations 139 dreams that are interpreted as good omens 
+                    are listed first, followed by 83 bad harbingers.</p>
+                <p>Each dream is composed of the overarching premise followed by lists of dream 
+                    images with an evaluation of the dream as “good” or “bad,” and an interpretation. 
+                    For instance, the manual proclaims: “If a man sees himself dead, this is good; a long 
+                    life awaits him.”</p>
+                <p>While the Dream Manual is more likely a catalog of potential dream imagery rather 
+                    than a record of actual dreams, it reveals what issues were of concern to everyday 
+                    Egyptians. Not surprisingly, many of them—financial matters, matrimonial 
+                    problems or personal happiness, social status, health, and divine favor or disfavor 
+                    feel similar to modern worries. “They enlighten us on the worries of the ‘average’ 
+                    Egyptians, since it is clear that dream books were not meant to cater only for the 
+                    elites,” said Szpakowska.</p>
+                <h4>Protection from the night</h4>
+                <p>In the early years of the Third Intermediate Period (1069-664 B.C.), a series of texts 
+                    featuring protective spells now called “Oracular Amuletic Decrees” came into 
+                    vogue to ward off nightmares. During this turbulent period, Egypt was struggling 
+                    and failing to maintain its independence from the powerful Assyrian Empire. 
+                    Egyptians used these protective spells to keep bad dreams and sleep paralysis away.</p>
+                <p>The Chester Beatty Papyrus also includes a cure to drive out the bad dreams using 
+                    a poultice of bread, herbs, beer, and myrrh rubbed on the dreamer’s face. “In many 
+                    ways, the ancient Egyptian methods for combating nightmares were not so far off 
+                    from those of today as we might think,” said Szpakowska.</p>
+                <p>To protect themselves from bad dreams, Egyptians were also advised to decorate 
+                    their bedposts, headboards, and headrests with the fierce images of protective 
+                    guardians, such as Taweret, a fertility goddess and protector of children. </p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article34.png" alt="Atlantic horseshoe crab">
+                        <div>
+                            <strong>Atlantic horseshoe crab</strong>
+                            <p>Atlantic horseshoe crabs may appear alien, but their history as earthlings is pretty 
+                                impressive. They’ve been around for 450 million years, predating the dinosaurs by 
+                                more than 200 million years. They live on the Atlantic coast of North America</p>
+                            <a href="article34.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article35.png" alt="Bombardier beetles">
+                        <div>
+                            <strong>Bombardier beetles</strong>
+                            <p>Bombardier beetles have the infamous ability to synthesize and release rapid 
+                                bursts of stinky, burning-hot liquid from their rear ends. These noxious emissions 
+                                can kill other insects, or startle potential predators into backing off.</p>
+                            <a href="article35.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article36.png" alt="The Narragansett turkey (pictured, an animal at the Knoxville Zoo) is an historic breed named after Rhode Island's Narragansett Bay">
+                        <div>
+                            <strong>Wild turkeys are at a record high in New 
+                                England but not all are thankful.</strong>
+                            <p>AMHERST, NEW HAMPSHIREWild turkeys are a familiar sight throughout New 
+                                Hampshire, where flocks strut along roadsides and wander through backyards.</p>
+                            <a href="article36.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

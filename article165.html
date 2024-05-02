@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article165_main.png" alt="Amtrak’s Pacific Surfliner train hugs the coast through parts of California.">
+            </div>
+            <div>
+                <h3>What's it like to travel on 
+                    the longest daily-running 
+                    train service in the US</h3>
+                <p>
+                    <span class="travel">TRAVEL</span>
+                    <time datetime="2023-12-01">December 01, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_ThreePic">
+            <ul>
+                <li><img src="images/article165_02.png" alt="Passengers can expect scenic mountain views and glimpses of wildlife while crossing through the Rocky Mountains."></li>
+                <li><img src="images/article165_03.png" alt="The California Zephyr starts its cross-country journey in Emeryville, across the bay from San Francisco and its iconic Golden Gate Bridge."></li>
+            </ul>
+            <div>
+                <p>“If you need to update Facebook, do it now,” the conductor announces over the 
+                    tannoy. The passengers chuckle but dutifully pull out their phones. As we trundle 
+                    into the snow-capped Sierra Nevada mountains, we’re about to enter another 
+                    mobile dead zone.</p>
+                <p>I’m sitting in the observation car on Amtrak’s California Zephyr, a train that 
+                    trundles cross-country for 2,438 miles, making it the longest daily-running rail 
+                    service in the US. From its starting point near San Francisco to its final destination 
+                    in Chicago, this expansive journey slicing through the middle of the US takes 51 
+                    hours and 20 minutes more than two full days of riding the rails, assuming you 
+                    arrive on time, which you likely won’t. In 2022, just 25% of the journeys made by 
+                    the California Zephyr ran to schedule.</p>
+                <p>In a country that feels ever more fractured, the observation car on an Amtrak train 
+                    might be the last great levelling ground. It’s a place where you can quickly form a 
+                    sense of community with complete strangers a cross between a neighbourhood bar 
+                    and an Agatha Christie novel. No one rides Amtrak accidentally. Taking a train in the 
+                    US, especially in the lesser-served part of the country west of the Mississippi River, 
+                    is rarely the most time- or cost-efficient method of getting from A to B. Everyone is 
+                    here in this carriage, on this train, right now deliberately.</p>
+                <p>I’ve made myself comfortable on the upper floor of the double-decker train. A 
+                    handful of diner-style booths and beige swivel chairs cushioned in generic 1980s 
+                    blue are positioned beside picture windows that run the length of the walls and 
+                    curve up the rounded roof. The landscape on the other side of the glass a succession 
+                    of pine-covered mountain passes, ribbons of blue-green river far below, red-rock 
+                    outcrops poking out from a thin blanket of snow demands the observation car’s 
+                    collective attention, and the windows quickly become smudged with fingerprints 
+                    as we clamber for photos. </p>
+                <p>Between Sacramento in California and Reno in Nevada, a pair of volunteer guides 
+                    in red vests from the California State Railroad Museum stand and narrate our 
+                    journey, which follows the same route as the 1869 transcontinental railroad the 
+                    first rail route connecting the country from east to west and traverses the 2,150 
+                    metre-high Donner Pass, named for the famous 1840s pioneer party whose 
+                    wagons got snowed in and had to resort to cannibalism.</p>
+                <p>The scenery is captivating, but so are the characters, and when the narration ends, 
+                    the passengers’ stories begin. “What brings you here?” I ask again and again, often 
+                    opening the door to much more than I bargained for. There’s an absence of filter 
+                    and instant friendliness among many Americans that makes conversation come 
+                    easy most don’t mind spilling their life story to a stranger. Amid the retirees, 
+                    commuters and students, there’s a large family of traditionally dressed Amish 
+                    women in bonnets and demure dresses and men with long beards and braces 
+                    playing card games on the way home to Pennsylvania Dutch Country after the 
+                    mother had a medical procedure in California. Two Japanese students who aren’t 
+                    totally fluent in English only add to the unusual menagerie of travellers.</p>
+                <p>The next morning, as the sun rises over Utah, I wake up in my roomette, one of 
+                    Amtrak’s sleeper cabins, which have seats that fold out into small bunks. I’m ready 
+                    for another day of observation car antics, so I reconvene with the motley crew. A 
+                    new conductor boarded the train overnight in Salt Lake City and has clearly drunk 
+                    his morning coffee, calling out over the tannoy as if we’re on safari. “There’s a bald 
+                    eagle!” he cries, followed shortly by, “See that herd of antelope?”. All of us in the 
+                    observation car start playing a group game of I spy, letting out a collective gasp 
+                    when the animals are spotted.</p>
+                <p>Soon we’re curving along the Colorado River and diving deep into canyons through 
+                    the Rockies, slowing to a crawl as the sheer walls close in on the tracks. Had the 
+                    windows been able to open, I could’ve reached out and brushed my fingers along 
+                    the snowy stones. More than once, I stand up to get a closer look only to duck my 
+                    head when it feels like an overhead ledge gets too close.</p>
+                <p>By dusk, we’re passing through Denver and into the Great Plains prairie. I’ve hardly 
+                    left my observation car seat as other passengers have filtered through and on and 
+                    off the train over a handful of stops. The conductor is still in a jolly mood. “If anyone 
+                    has a guitar, bring it to the observation car and let’s have a party,” he announces to 
+                    the entire train. One of the Amish men whips a harmonica out of his pocket and 
+                    starts to play. “You know, it’s times like this that make me love this country again,” 
+                    says the man sitting next to me a proclamation as much to himself as to me. And I 
+                    think to myself: when was the last time you heard someone say that at the airport?</p>
+                <p>As it happens, someone on board does have a guitar, and I wonder whether a round 
+                    of Kumbaya is about to break out. Instead, the observation car is treated to a bit of 
+                    soulful strumming, topped by, as ever, a layer of conversation that never dies out. 
+                    Turns out you don’t need a mobile signal to make a connection.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article83.png" alt="A firefighting helicopter flies past smoke plumes during the Dixie Fire on August 18, 2021, near Coppervale in northern California. As of August 22, the wildfire had burned more than 724,000 acres and destroyed 1,259 structures and was continuing to grow.">
+                        <div>
+                            <strong>Wildfire smoke is transforming clouds, making 
+                                rainfall less likely</strong>
+                            <p>Over the summer of 2018, the worst wildfire season the western United States had 
+                                ever seen sent thick plumes of smoke high into the sky. Atmospheric scientist 
+                                Cynthia Twohy and her colleagues spent weeks flying a giant</p>
+                            <a href="article83.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article84.png" alt="Wildfire smoke contains dangerous pollution called particulate matter that may make some more vulnerable to COVID-19">
+                        <div>
+                            <strong>Wildfire smoke linked to higher COVID-19 
+                                death rates</strong>
+                            <p>Smoke from last year’s wildfires in California, Oregon, and Washington, contributed 
+                                to a significant increase in COVID-19 cases and deaths in those states, according to 
+                                a new study.</p>
+                            <a href="article84.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article85.png" alt="The setting sun shines through wildfire smoke during the Beckwourth Complex Fire in California on Monday, July 12, 2021">
+                        <div>
+                            <strong>How extreme fire weather can cool the planet</strong>
+                            <p>Extreme heat often brings extreme wildfires, and this year is no exception, with 
+                                unprecedented heat waves fueling enormous outbreaks of fires in the western 
+                                United States and Canada, as well as across the Mediterranean and in Siberia</p>
+                            <a href="article85.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

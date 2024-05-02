@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article174_main.png" alt="Climbing chalk is a key gripping tool for climbers, such as Jakob Schubert, pictured here. But its chemical makeup could be damaging plants that grow on rocks.">
+            </div>
+            <div>
+                <h3>Rock climbing is getting 
+                    more popular and that 
+                    concerns 
+                    conservationists</h3>
+                <p>
+                    <span class="travel">TRAVEL</span>
+                    <time datetime="2021-07-23">July 23, 2021</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_ThreePic">
+            <ul>
+                <li><img src="images/article174_02.png" alt="A climber follows a chalk trail up a rock face in the Arico climbing area in Tenerife, one of the most popular islands in Spain’s Canary Islands archipelago."></li>
+                <li><img src="images/article174_03.png" alt="Alex Honnold chalks up for a climb in this June 18, 2019, photo. Chalk is popular with both professionals and amateur climbers for its dessicating and friction-inducing qualities."></li>
+            </ul>
+            <div>
+                <p>Even before climbing star Alex Honnold’s stunning “free solo” ascent of Yosemite’s 
+                    El Capitan in 2017, rock climbing was gaining a foothold. Now, with its debut at this 
+                    year’s Tokyo Olympics, the once niche sport is set to reach new heights.</p>
+                <p>Yet the popularity of rock climbing and its sister sport, bouldering (where climbers 
+                    scramble up large rocks without the use of ropes or harnesses), is raising questions 
+                    about the damaging environmental effects of climbing chalk a ubiquitous and 
+                    essential climbing tool.</p>
+                <p>Made from magnesium carbonate, climbing chalk is the same substance that 
+                    gymnasts and weightlifters use to improve their grip on bars and weights. In fact, it 
+                    was first introduced to rock climbing in the 1950s by John Gill, who was a gymnast 
+                    in college before he turned his attention to bouldering. Since then, amateur and 
+                    professional climbers alike have come to depend on the chalk’s desiccating and 
+                    friction-inducing properties and have been leaving streaks of the stuff on rock faces 
+                    around the world.</p>
+                <p>The resulting “chalk graffiti” has become so bad in the United States that parks are 
+                    beginning to restrict its use. Utah’s Arches National Park allows only colored chalk 
+                    that mostly matches rocks, while Colorado’s Garden of the Gods National Natural 
+                    Landmark banned all chalk and chalk substitutes. Native American tribes have 
+                    declared areas under Indigenous control off-limits to climbers, not only because of 
+                    unsightly chalk marks but also to preserve spiritually important areas.</p>
+                <p>Beyond the visual pollution, new research suggests chalk may be harming the flora 
+                    that grows on rocks. The latest study on the effects of climbing chalk, released 
+                    October 2020, found that it negatively impacted both the germination and survival 
+                    of four species each of rock-dwelling ferns and mosses in laboratory settings. 
+                    Wiping it off doesn’t seem to help; chemical trails on cleaned boulders changed the 
+                    rock surface’s pH balance, which could affect the ability of plants to grow there in 
+                    the future.</p>
+                <p>That matters because some climbing spots, such as erratic boulders (the study’s 
+                    focus), host unique ecosystems. These erratic boulders rocks scattered across the 
+                    globe by glaciers at the end of the Ice Age are islands of vegetation, different from 
+                    the land they sit on. As such, they may hold information about that era and how 
+                    these plants travel.</p>
+                <p>It’s not even clear whether chalk improves climbing performance at all. Some 
+                    papers found no additional grip benefits, while others found the opposite. Some 
+                    climbers may find it helpful, says Daniel Hepenstrick, a co-author of the 2020 study 
+                    and a doctoral candidate at ETH Zürich. But more likely it’s a psychological aid. 
+                    “When you face a problem on a rock, what do you do?” he says. “You powder your 
+                    hands and go on.”</p>
+                <h4>Compounding the problem</h4>
+                <p>Adding to climbing chalk’s potentially problematic nature is how it’s sourced. 
+                    Magnesium carbonate (MgCO3) is processed from magnesite, a mineral buried 
+                    deep within the Earth. According to Climbing Magazine, more than 70 percent of 
+                    the world’s supply comes from mines in China’s Liaoning Province, where satellite 
+                    photos show magnesium carbonate powder piled up, and resembling snow, around 
+                    one mining and processing plant.</p>
+                <p>The Chinese government has strengthened laws around mining to reduce its 
+                    environmental impact and proposed remediation. But De-Hui Zeng, an ecologist at 
+                    Liaoning’s Chinese Academy of Sciences, who is studying the substance, says his 
+                    research squares up with Hepenstrick’s. Zeng says soil samples with elevated 
+                    magnesium levels from the mining sites showed reduced nutrients, low microbial 
+                    life, and plant death.</p>
+                <p>Hepenstrick emphasizes that his study one of the first to examine chalk’s effect on 
+                    the environment is far from conclusive. Additional work needs to be done to 
+                    understand the full ramifications of climbing chalk. But that’s easier said than done.</p>
+                <p>The environmental impact of rock climbing, in general, isn’t well known. Access is 
+                    one limitation, as most scientists are not climbers. Even in accessible areas, the 
+                    variable terrain itself can present a challenge to measuring climbing’s effects. “It’s 
+                    been difficult to tease apart the mechanisms that are potentially impacting the 
+                    sensitive cliff communities,” says Peter Clark, a doctoral candidate at the University 
+                    of Vermont, who is studying cliff ecology.</p>
+                <p>Climbing groups such as Access Fund, an advocacy organization that provides 
+                    guidelines to the climbing community, are taking a wait-and-see approach to 
+                    Hepenstrick’s report before making any policy adjustments. “It’s data for us,” says 
+                    executive director Chris Winter. “If there is a conservation concern, we take that 
+                    quite seriously.”</p>
+                <h4>‘Clean’ climbing?</h4>
+                <p>Until additional studies can be conducted, responsibility is mostly left to climbers, 
+                    who “do care about nature,” says Hepenstrick, an occasional climber himself. “You 
+                    could inform them that using climbing chalk in a certain way could have an impact, 
+                    and they would take that in.”</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article237.png" alt="Red Butte, which the Havasupai people call Wii'i Gdwiisa (“clenched fist mountain”), is one of many sacred Indigenous sites ">
+                        <div>
+                            <strong>This new park gives different views of the 
+                                Grand Canyon with no crowds</strong>
+                            <p>Grand Canyon National Park draws 4.7 million visitors a year to the northwest 
+                                corner of Arizona to hike, camp, or watch wildlife. But most of them don’t realize 
+                                that the lands within and surrounding the park are sacred</p>
+                            <a href="article237.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article238.png" alt="Loch Lomond & The Trossachs National Park aside, the bulk of Scotland is accessible to wild campers.">
+                        <div>
+                            <strong>How to plan a wild camping adventure in 
+                                Scotland</strong>
+                            <p>Pitching a tent far from civilisation, where the only sounds come from the birds and 
+                                the whistling of the wind through the trees, makes for a restorative break for 
+                                anyone who enjoys spending time in nature.</p>
+                            <a href="article238.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article239.png" alt="The State Botanical Garden of Georgia’s visitor center and conservatory houses tropical plants and a stunning orchid collection">
+                        <div>
+                            <strong>Atlanta isn’t all that Georgia has to offer. Here 
+                                are 7 other worthy trips.</strong>
+                            <p>There’s a famous saying in the South: “Whether you’re going to heaven or hell, 
+                                you’re going through Atlanta.” It’s hard to avoid if you are flying or connecting 
+                                through Hartsfield-Jackson International, one of the world’s busiest</p>
+                            <a href="article239.html">View article</a>
+                        </div>
+                    </div>
+                </li> 
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

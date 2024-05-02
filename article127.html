@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article127_main.png" alt="A new study shows that young tyrannosaurs, such as the juvenile Gorgosaurus pictured here, hunted down small prey to consume the meatiest parts before moving on to bigger meals when the carnivores reached adulthood.">
+            </div>
+            <div>
+                <h3>Dino nuggets ...  for 
+                    dinosaurs A young 
+                    tyrannosaur’s last meal 
+                    gives new insight</h3>
+                <p>
+                    <span class="science">SCIENCE</span>
+                    <time datetime="2023-12-09">December 09, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="right_ThreePic">
+            <ul>
+                <li><img src="images/article127_02.png" alt="The left side of the Gorgosaurus rib cage shows the ribs (green dots) and protruding prey bones (red dots)."></li>
+                <li><img src="images/article127_03.png" alt="The exceptionally well-preserved remains of a young tyrannosaur species (Gorgosaurus libratus) have also revealed the remains of its last meal."></li>
+            </ul>
+            <div>
+                <p>Juvenile tyrannosaurs selected their meals from the Cretaceous version of the kid’s 
+                    menu, newly analyzed fossils show. While adult “tyrant lizards” were bone 
+                    crushers, capable of hunting large prey and reducing carcasses to little more than 
+                    splinters, paleontologists have long wondered exactly what the younger 
+                    tyrannosaurs were munching on.</p>
+                <p>Now, gut contents found within a Gorgosaurus skeleton reveal that the adolescent 
+                    tyrants bolted down choice cuts of smaller prey a key find that is helping 
+                    paleontologists understand the broader food webs of prehistoric North America.</p>
+                <p>Known to paleontologists since 1914, Gorgosaurus lived about 75 million years ago 
+                    among the floodplains of ancient Alberta, Canada. Experts have unearthed 
+                    numerous fossils of the svelte tyrannosaur, including some relatively complete 
+                    skeletons, with the adults reaching more than 26 feet in length and weighing more 
+                    than two tons in life.</p>
+                <p>The new specimen, described today in a study in Science Advances, was about 13 
+                    percent of its adult body mass, a dinosaur that perished before its big growth spurt. 
+                    “Gorgosaurus may not be as popular as the iconic T. rex, but we now have two very 
+                    well-preserved Gorgosaurus juveniles from Alberta,” says University of Calgary 
+                    paleontologist and study author Darla Zelenitsky.</p>
+                <p>The skeleton was discovered in 2009 among the colorful, banded rocks of Dinosaur 
+                    Provincial Park. “At the time, the discoverer and collectors did not realize there 
+                    were prey items preserved inside its stomach,” Zelenitsky says. As the bones were 
+                    carefully freed from the encasing rock, experts were surprised to find scraps of the 
+                    dinosaur’s last meal. “It was only during cleaning in 2010 when the prey’s small toe 
+                    bones were found poking through the ribs of the tyrannosaur,” she says.</p>
+                <p>The bones found inside the Gorgosaurus body cavity belonged to juvenile 
+                    dinosaurs of another species. The young meat-eater had chomped off the hind legs 
+                    of two parrot-like dinosaurs called caenagnathids before perishing itself. The 
+                    details the Gorgosaurus’s last meal provide evidence for a hypothesis that 
+                    paleontologists have long suspected: Juvenile and adult tyrannosaurs relied upon 
+                    different food sources, the same species behaving differently as the dinosaur 
+                    grew up.</p>
+                <p>“This is about as close to definitive proof as we could get for a niche shift with 
+                    growing tyrannosaurs,” says University of New Mexico paleontologist Kat 
+                    Schroeder, who was not involved in the new study.</p>
+                <p>Analyses of the caenagnathid bones in the tyrannosaur gut contents reveal that 
+                    both individuals were less than a year old. Young dinosaurs were especially 
+                    vulnerable to carnivores, which helps explain the rarity of infant dinosaurs in the 
+                    fossil record. The little caenagnathids would have been easy pickings for 
+                    adolescent tyrannosaurs honing their hunting skills.</p>
+                <p>“This fossil provides the first direct evidence that juvenile Gorgosaurus were still 
+                    feeding on relatively small prey compared to their adult counterparts,” Zelenitsky 
+                    says, “and probably not jumping into a herd of megaherbivores to feast.”</p>
+                <p>The caenagnathid bones also provide a glimpse at tyrannosaur feeding behavior. 
+                    The only bones ingested were from the prey animals’ hind legs, which would have 
+                    carried a large amount of muscle—the equivalents of the thigh and drumsticks of 
+                    poultry. The young Gorgosaurus seems to have preferentially eaten these meatier 
+                    parts, suggesting the dinosaur hunted its prey for the protein-rich cuts rather than 
+                    scavenging scraps from a carcass. “We’ve never had evidence for active predation 
+                    among juvenile tyrannosaurs before,” Schroeder says.</p>
+                <p>The Gorgosaurus also swallowed the leg parts whole, something that is seen in 
+                    some modern predators as well. “Juvenile Gorgosaurus may have fed similarly to 
+                    how some living crocodylians or birds do, swallowing large chunks including the 
+                    bones rather than selectively feeding on muscle,” says Auburn University 
+                    paleontologist Thomas Cullen, who was not involved in the new study.</p>
+                <p>Despite being a single specimen, the fossil provides evidence for a broader pattern 
+                    among dinosaurs that’s perplexed paleontologists for years. Prehistoric habitats in 
+                    North America that were prowled by large tyrannosaurs such as Gorgosaurus and 
+                    T. rex generally lacked medium-sized carnivorous species living beside them. “We 
+                    don’t see that absence of medium-sized predators in other habitats that hosted 
+                    large tyrannosaurs, in Cretaceous Asia or other assemblages with large 
+                    carnivorous dinosaurs,” Cullen says. How Gorgosaurus and related tyrannosaurs 
+                    grew up in North America seems unique.</p>
+                <p>Splitting up available prey based on body size likely explains the difference. “
+                    Paleontologists have long hypothesized that changes in body size and proportions 
+                    in tyrannosaurs were related to shifts in diet or feeding behavior,” Zelenitsky says, 
+                    especially among T. rex. The juveniles have narrower and shallower jaws compared 
+                    to adults of their species, meaning they had to grow into their impressive bites.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article231.png" alt="The Great Ocean Road is one of Australia’s most scenic routes with the combination of coastal fringes and limestone cliffs ribboned with foamy surf. ">
+                        <div>
+                            <strong>How to plan the ultimate campervanning 
+                                adventure through Australia</strong>
+                            <p>As road trip destinations go, there are few better places than Australia. Nature 
+                                seems to flow in through the windows in eucalyptus-scented gusts as you drive, 
+                                while the wonders of the great red continent unfurl beyond the windscreen. </p>
+                            <a href="article231.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article232.png" alt="The heather is in bloom within the rugged North York Moors countryside.">
+                        <div>
+                            <strong>Follow in the footsteps of monks and literary 
+                                giants on the North York Moors</strong>
+                            <p>Driving into the North York Moors National Park is a bit like delving into the pages 
+                                of The Secret Garden  it was indeed these heather-clothed moorlands that inspired 
+                                Frances Hodgson Burnett’s 1911 novel. Granted</p>
+                            <a href="article232.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article233.png" alt="one of the mountain silverback gorilla living within the Bwindi Impenetrable Forest.">
+                        <div>
+                            <strong>How locals are protecting the wildlife of the 
+                                Queen Elizabeth Conservation Area</strong>
+                            <p>Pelicans preen and glide. Jacana birds, precise as ballerinas, point their improbably 
+                                elongated toes. Pied kingfishers flit in and out of their lakeside nest holes, saddle 
+                                billed storks patrol the grassy banks and skimmers</p>
+                            <a href="article233.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

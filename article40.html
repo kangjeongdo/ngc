@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article40_main.png" alt="Hermes travels through Table Mountain National Park.">
+            </div>
+            <div>
+                <h3>This wild African cat has 
+                    adapted to life in a big city 
+                    surprisingly well</h3>
+                <p>
+                    <span class="animal">ANIMAL</span>
+                    <time datetime="2023-07-18">July 18 , 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="right_ThreePic">
+            <ul>
+                <li><img src="images/article40_02.png" alt="Caracals have learned how to live hidden in plain sight along the urban edge, which includes suburbs, vineyards, and roads."></li>
+                <li><img src="images/article40_03.png" alt="Hermes is a well-known male caracal that has become highly habituated to people."></li>
+            </ul>
+            <div>
+                <p>Cape Town’s streetlights blinked below, while the sheer rockface of Table Mountain 
+                    rose on one side. We stood still, expecting the animal to retreat. Instead, he trotted 
+                    right past us, the pool of light from our lowered headlamps illuminating his burnt 
+                    orange coat; round, pale eyes; and distinctive large, pointed ears topped with long 
+                    black tufts. Pausing for a brief backward glance, the leggy feline vanished into the 
+                    bushes.</p>
+                <p>We knew immediately it was Hermes a caracal habituated to humans that’s often 
+                    spotted by hikers and trail runners around the 61,776-acre Table Mountain 
+                    National Park, which is within the city limits of the South African capital. The 
+                    caracal, believed to be four to five years old, has become something of a poster 
+                    animal for wildlife conservation in Cape Town, a city on the Cape Peninsula whose 
+                    population has grown from 1.1 million in 1970 to 4.7 million today. The seaside 
+                    metropolis, with its mountain in the middle of the city, hosts a plethora of urban 
+                    wildlife, from baboons to snakes to penguins.</p>
+                <p>Shy, usually nocturnal cats found in various landscapes across Africa and Asia, 
+                    caracals are not in danger of extinction. But caracals in Cape Town are notable in 
+                    another way: They’re the area’s apex predator, since leopards were hunted off the 
+                    Cape Peninsula in the early 20th century. Native to the peninsula, caracals have 
+                    only recently been recorded venturing into more urban areas, likely drawn by easy 
+                    to catch prey such as Southern African vlei rats and guinea fowl, says Gabriella L
+                    eighton, a researcher at the University of Cape Town who led a recent paper on 
+                    caracal behavior. Scientists estimate there are probably around 60 caracals on the 
+                    Cape Peninsula at any given time.</p>
+                <p>As the striking, 1.5-foot-tall felines have become accustomed to people, they’ve 
+                    been spotted throughout the city’s natural areas, from heavily trafficked hiking 
+                    trails to the Kirstenbosch Botanical Garden to popular Clifton Beach at sunset.</p>
+                <p>Many of the cats especially those in the northern, more developed part of Table 
+                    Mountain (where I encountered Hermes) prefer to hunt around the urban edge, 
+                    which includes suburbs, roads, and vineyards. This is risky, however, since such 
+                    areas pose threats to the animals, particularly getting hit by cars the leading cause 
+                    of death for Cape Town caracal. The cats face other pressures, to a lesser extent, 
+                    from poisons, dog attacks, and snares, says Laurel Serieys, a wildlife biologist at the 
+                    conservation organization Panthera, who founded the University of Cape Town’s 
+                    Urban Caracal Project in 2014. A lack of genetic diversity, due to the urban 
+                    development hemming the animal in, is also a major threat for the caracal’s future 
+                    in the city, she says.</p>
+                <p>Even so, caracals “can adapt to human activity in ways that were not expected,” says 
+                    Serieys, such as adjusting their behavior to avoid being seen by people in busy areas
+                    “That was a very cool surprise.”</p>
+                <h4>Laying the groundwork</h4>
+                <p>Prior to 2014, no one had studied the peninsula’s caracals, Serieys says, in large 
+                    part because people doubted they were even there. She had to convince South 
+                    African National Parks to grant her a permit to study a population they didn’t think 
+                    existed on Table Mountain.</p>
+                <p>Since then, Serieys and colleagues have learned more about the urban cats’ 
+                    movements, diet, genetics, and threats. They’ve fitted 26 caracals with GPS collars, 
+                    conducted necropsies, set up camera traps around the city, and collected photos 
+                    and videos of caracal sightings from the public.</p>
+                <p>“Just getting on the ground and learning what’s there, and what threats exist to 
+                    those animals is important,” Serieys says.</p>
+                <p>So far, their results show that vehicle collisions accounted for more than 70 percent 
+                    of recorded caracal deaths in Cape Town between 2015 and 2020. Poison is another 
+                    hazard: Ninety-two percent of dead caracals that Serieys tested had consumed 
+                    anticoagulant rodenticides, an often fatal exposure.</p>
+                <p>Caracals get caught in snares set to catch smaller prey items, or fall victim to dogs, 
+                    which can also pass on diseases such as canine parvovirus, according to Serieys.</p>
+                <p>To reduce vehicle strikes of caracals, in January, the project team installed 
+                    reflective caracal signs along seven common roadkill sites in Cape Town, though 
+                    they’ve yet to collect data to show if it’s working to reduce deaths. The team has 
+                    also suggested that the city put in speed bumps at frequent caracal-crossing 
+                    locations.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article112.png" alt="Twenty years after leading a bombing raid targeting Brookings, Oregon, Nobuo Fujita reads a 1942 headlines of his wartime bombing mission. ">
+                        <div>
+                            <strong>Pearl Harbor was the only WWII attack on 
+                                the U.S., right Wrong.</strong>
+                            <p>Most of the fighting during World War II took place overseas, destroying much of 
+                                Europe and Pacific nations in the process. But there are little known instances of 
+                                Japan and Nazi Germany attacking the American mainland.</p>
+                            <a href="article112.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article113.png" alt="Lizzie Borden's fate was a big story for the the illustrated Police News in 1893.">
+                        <div>
+                            <strong>Did Lizzie Borden get away with murder 
+                                Inside the crime of the 19th century.</strong>
+                            <p>Jurors trooped past a gaggle of anxious journalists and bystanders as the superior 
+                                court in New Bedford, Massachusetts, began what would be considered the crime 
+                                of the century—the 19th century</p>
+                            <a href="article113.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article114.png" alt="Queen Isabella of Castille and King Ferdinand II of Aragon receive Christopher Columbus in April 1492 at the Spanish royal court.">
+                        <div>
+                            <strong>Meet 5 of the fiercest queens from medieval 
+                                times</strong>
+                            <p>During the turbulent, pestilent-ridden Middle Ages, kings dominated the Western 
+                                world, fighting wars, making alliances, and aggressively holding onto their power. 
+                                But hidden away in the annuls of history</p>
+                            <a href="article114.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

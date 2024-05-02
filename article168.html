@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article168_main.png" alt="A diver explores a cathedral-like cenote, which lies underneath Mexico’s Yucatán Peninsula near the Maya ruins of Tulum. ">
+            </div>
+            <div>
+                <h3>Beyond the Western 
+                    myth of exploration lies 
+                    a rich and often 
+                    overlooked history</h3>
+                <p>
+                    <span class="travel">TRAVEL</span>
+                    <time datetime="2023-06-12">June 12, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_ThreePic">
+            <ul>
+                <li><img src="images/article168_02.png" alt="Since Alexander Graham Bell, an early president of National Geographic, tested his flying contraptions on the hills of Nova Scotia (upper left), aviation has captivated us."></li>
+                <li><img src="images/article168_03.png" alt="Grueling walks, climbs, and sea crossings have charted new pathways around the globe, mapped natural phenomena, and connected cultures"></li>
+                <li><img src="images/article168_04.png" alt="Cameras, submersibles, and remotely operated devices unveil the ocean’s opaque depths."></li>
+            </ul>
+            <div>
+                <p>There is only one museum along the old Oregon Trail that tells the story of 
+                    America’s westward expansion through the eyes of those being expanded into. In a 
+                    corner of Oregon bordered by Washington and Idaho, this wood-paneled warren of 
+                    galleries and interactive exhibits celebrates the heritage of Native people and 
+                    mourns what was destroyed when the pioneers arrived. Walking down a long ramp, 
+                    visitors enter the brick facade of a replica “Indian training school,” where Native 
+                    children were forcibly converted and assimilated. A life-size photo of the students 
+                    stares back from over a century ago; their matching uniforms make them look like 
+                    tiny soldiers.</p>
+                <p>“We were told to write our own history if we want it told well,” Bobbie Conner 
+                    explained. She sat in a conference room of the Tamástslikt Cultural Institute, the 
+                    center she directs on the Umatilla Reservation, home to the Cayuse, Umatilla, and 
+                    Walla Walla tribes. “And this story is as old as time: conquest.”</p>
+                <p>The history of exploration is often told in the binary. Explorer and high mountain. 
+                    Explorer and remote island. Explorer and uncontacted tribe. The conqueror and the 
+                    conquered. Today the definition of exploration is more expansive. We explore our 
+                    bodies, our ancestry, the capacity of our brains, the idea of home. We explore 
+                    history and who gets to tell it. The explorer has been an adventurer, a showman, a 
+                    scientist, and now there’s a new archetype: the reconciler someone to help us 
+                    understand how we got here. These pioneers are interrogating our history books, 
+                    rewriting them, and hoping to prevent the past from repeating.</p>
+                <p>By the time I sat with Conner in that conference room, I’d spent six months in 
+                    Oregon, my home state, waiting out the COVID-19 pandemic. For years I’d written 
+                    dispatches for this magazine from places like the remote marshes of South Sudan, 
+                    the desert border of the United States and Mexico, and the mountains of eastern 
+                    Congo. Now, stretched in front of me was the banality of a home I’d never had much 
+                    interest in. With nowhere to go, I sought to understand my new confines; before 
+                    long, I ended up on the edge of the state, questioning my idea of exploration itself.</p>
+                <p>But first, let’s rewind some 60,000 years to when “a small colony in Africa went into 
+                    the world and lost contact.” This is according to Felipe Fernández-Armesto, a 
+                    historian and professor at the University of Notre Dame, who’s spent nearly six 
+                    decades studying how the world has been transformed by a process he calls route 
+                    finding in which different cultures collide, interact, and adapt to each other in 
+                    journeys fueled by greed, imperialism, religion, and science. “The history of 
+                    exploration,” he says, “is putting the routes between different peoples back.” It’s as 
+                    if, for thousands of years, we’ve been attempting to undo the distance our earliest 
+                    ancestors put between us, for better or worse.</p>
+                <p>It was this goal that united scientists, scholars, and military men to found the 
+                    National Geographic Society in 1888. For the past 135 years we’ve plumbed the sea, 
+                    sky, land, and space “for the increase and diffusion of geographic knowledge.” The 
+                    exploration we funded and documented seemed at times less about making contact 
+                    and more about being first. And there was no shortage of those milestones: from 
+                    summiting Mount Everest with the American team to mapping the Atlantic Ocean 
+                    floor.</p>
+                <p>Firsts then morphed into discoveries: Science, space, and the natural world were 
+                    wrung for their secrets. The Leakeys unearthed our fossilized ancestors, Jane 
+                    Goodall lived among the chimpanzees, and conservationist Mike Fay charted a 
+                    2,000-mile trek across Central African rainforests. Today explorers may not be 
+                    human at all: Does a camera explore when it’s dropped to the bottom of the ocean 
+                    to photograph at depths humans haven’t yet reached? Or a microscopic robot, when 
+                    it’s threaded through our bodies to perform surgery?</p>
+                <p>Stories have fueled exploration for hundreds of years. During what’s known as the 
+                    European age of exploration, from the 15th to 17th centuries, popular fiction told 
+                    of heroes on daring journeys, and these so-called romances of chivalry may have 
+                    inspired Columbus and Magellan to set sail. Storytelling has repopulated the world 
+                    with new generations of explorers many times over. Perhaps the photography and 
+                    maps National Geographic magazine published moved you to go out and see the 
+                    world. But stories have also served to propel a Western myth of the explorer that 
+                    isn’t entirely true.</p>
+                <p>“There’s a failure of the literature to discuss explorers from other countries, so for 
+                    the last 500 years this was a story dominated by dead white males,” says Fernández 
+                    Armesto. “That’s created the impression that it’s a white male activity it isn’t, by 
+                    any means.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article121.png" alt="The memorial cemetery at Tengchong holds tombs of soldiers with the Chinese Expeditionary Force who died fighting the Japanese army.">
+                        <div>
+                            <strong>The stories I learned walking the Burma Roa 
+                                perhaps WWII’s greatest engineering feat</strong>
+                            <p>It unspools north from Myanmar, or Burma, to the jungled hills rumpling the border 
+                                of China. Near Tengchong, an ancient Chinese trading post leveled by U.S. bombers 
+                                in World War II, it bypasses a McDonald’s closed by COVID-19</p>
+                            <a href="article121.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article122.png" alt="Narrow streets in Bai communities such as Jianchuan are built for the passage of ancient trading caravans.">
+                        <div>
+                            <strong>This ‘culture of introverts’ prefers to have 
+                                conversations in song</strong>
+                            <p>Fiftyish. Squarely built. Face reddened by the subtropical sun. King Li is a 
+                                community leader among the Bai ethnic minority in the rumpled, green mountains 
+                                of Yunnan Province. A friendly man. But reserved. Soft-spoken. </p>
+                            <a href="article122.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article123.png" alt="A new architectural feature of Yangon, Myanmar, following a military coup on February 1: a city of makeshift barricades put up by pro-democracy protesters.">
+                        <div>
+                            <strong>A storyteller on a global trek maps his walk 
+                                through a city agonized by a military coup</strong>
+                            <p>Perhaps at the makeshift shrines of its dead. Take, for example, the ephemeral 
+                                memorial of Khant Nyar Hein.</p>
+                            <a href="article123.html">View article</a>
+                        </div>
+                    </div>
+                </li> 
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

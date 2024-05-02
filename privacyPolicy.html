@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <section class="policyContainer">
+        <div>
+            <h2>PRIVACY POLICY</h2>
+            <p>This privacy policy describes the processing of information provided or collected on the sites and applications where this privacy policy is posted, whether on our digital properties or on applications we make available on third-party sites or platforms. It 
+                also describes the processing of guest information provided to us or collected by us offline in our physical properties, such as in our stores, theme parks, resorts, and cruise ships, or through our guest call centers. We follow this privacy policy in accordance 
+                with applicable law in the places where we operate. In some cases, we may provide additional data privacy notices specific to certain products, practices, or regions. Those terms are to be read in conjunction with this policy.</p>
+            <p>Please keep in mind that when you provide information to us on a third-party site or platform (for example, via our applications), the information you provide may be separately collected by the third-party site or platform. The information we collect is 
+                covered by this privacy policy, and the information the third-party site or platform collects is subject to the third-party site or platform’s privacy practices. Privacy choices you have made on the third-party site or platform will not apply to our use of the 
+                information we have collected directly through our applications. Please also keep in mind that our sites and applications may contain links to other sites not owned or controlled by us and we are not responsible for the privacy practices of those sites. We 
+                encourage you to be aware when you leave our sites or applications and to read the privacy policies of other sites that may collect your personal information.</p>
+            <div>
+                <h3>I.  YOUR CALIFORNIA PRIVACY RIGHTS</h3>
+                <ul>
+                    <li>
+                        <p>This notice to California residents is provided under California law, including the California Consumer Privacy Act (“CCPA”), Cal. Civ. Code 1798.100, et seq. This notice supplements our Privacy Policy by explaining your privacy rights if you are a 
+                            California resident, providing our “notice at collection,” and providing certain mandated disclosures about our treatment of California residents’ information, both online and offline.</p>
+                    </li>
+                </ul>
+                <h3>II. YOUR US STATE PRIVACY RIGHTS</h3>
+                <ul>
+                    <li>
+                        <p>This page contains additional information relevant to residents of certain US states that have their own data privacy laws and regulations, and associated rights. This content should be read in conjunction with our Privacy Policy.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h2>FOR PARENTS</h2>
+            <p>At The Walt Disney Company, we are committed to protecting the privacy of children who use our sites and applications. We respect your right as a parent to understand  our information practices , including the types of personal information we may 
+                collect from children, the uses to which we may put that information, and whether and with whom we may share that information.  Read our Children’s Privacy Policy for details on our practices and your choices as a parent. Our Internet Safety tips are 
+                designed to help start a dialog with your kids about staying safe online, while enjoying all that online experiences have to offer. Learn more about the importance of profile creation on Disney+ by reading our Advertising on Disney+ article. Have 
+                questions or suggestions?  Visit our Support page, and we’ll be happy to hear from you.</p>
+            <div>
+                <h3>I. CHILDREN’S PRIVACY POLICY</h3>
+                <ul>
+                    <li>
+                        <p>The Walt Disney Family of Companies (“TWDC”) is committed to protecting the privacy of children who use our sites and applications. This Children’s Online Privacy Policy explains our information collection, disclosure, and parental consent practices 
+                            with respect to information provided by children under the age of 13 (“child” or “children”), and uses terms that are defined in our general Privacy Policy. This policy is in accordance with the U.S. Children’s Online Privacy Protection Act (“COPPA”), and 
+                            outlines our practices in the United States regarding children’s personal information. For more information about COPPA and general tips about protecting children’s online privacy, please visit OnGuard Online.</p>
+                    </li>
+                    <li>
+                        <p>The Walt Disney Company’s Child Directed Websites and Mobile Apps are included in PRIVO’s Kids Privacy Assured COPPA Safe Harbor Certification Program (“the Program”). The Program certification applies to the digital properties listed on the 
+                            validation page that is viewable by clicking on the PRIVO seal. PRIVO is an independent, third-party organization committed to safeguarding children’s personal information collected online. PRIVO aims to help parents and their children exercise 
+                            control over personal information while exploring the Internet. The PRIVO COPPA certification seal posted on this page indicates The Walt Disney Company has established COPPA compliant privacy practices and has agreed to submit to PRIVO’s 
+                            oversight and consumer dispute resolution process. If you have questions or concerns about our privacy practices, please contact us at (877) 466-6669 or privacycontact@twdc.com. If you have further concerns after you have contacted us, you can 
+                            contact PRIVO directly at privacy@privo.com.</p>
+                    </li>
+                </ul>
+                <h3>II. INTERNET SAFETY</h3>
+                <ul>
+                    <li>
+                        <p><strong>COMMUNICATE &colon;</strong> Once you have an idea of how your child uses the Internet and what is available to them, you can establish online guidelines and rules. Whether it’s setting guidelines about which sites to visit or what’s okay to do online, it is 
+                            essential to clearly communicate the rules to your child.</p>
+                        <p>Speak often to your child about potential risks and what to do in various situations. Encourage your child to ask questions about situations they run into. Being aware of the risks your child faces, and communicating frequently with your child about 
+                            these risks, will help develop their judgment and responsibility about Internet usage.</p>
+                    </li>
+                    <li>
+                        <p><strong>SAFETY RULES &colon;</strong> While the Internet offers amazing opportunities for entertainment, education, connectivity, and more, anyone who goes online should understand basic Online Safety. Teaching these basics to your children is essential.</p>
+                        <ol>
+                            <li>
+                                <p>When asked by friends or strangers, online or offline, never share Account IDs and Passwords.</p>
+                            </li>
+                            <li>
+                                <p>Don’t reveal any personal identity information in your Screen Names, such as your birthday, hobbies, hometown or school.</p>
+                            </li>
+                            <li>
+                                <p>In any information exchange, like e-mail or chat, never give any personal information about yourself or someone else.</p>
+                            </li>
+                            <li>
+                                <p>Don’t share photos of yourself, your family, or your home with people you meet online.</p>
+                            </li>
+                            <li>
+                                <p>Never open e-mails that come from unknown sources DELETE them.</p>
+                            </li>
+                            <li>
+                                <p>If you receive mean or threatening comments online, don’t respond. Log off and report the activity to your parents.</p>
+                            </li>
+                            <li>
+                                <p>Nothing you write on the Web is completely private. Be careful what you write and to whom.</p>
+                            </li>
+                            <li>
+                                <p>Never make plans to meet an online “friend” in person.</p>
+                            </li>
+                            <li>
+                                <p>WHEN IN DOUBT&colon; Always ask your parents for help. If you’re not sure, log off.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><strong>CYBER BULLIES &colon;</strong> Just as a child may encounter bullying or aggressive behavior from other students in school, they may be subject to bullying online. So-called “cyber bullies” may send harmful and cruel words or images through the Internet or an 
+                            electronic device such as a cell phone, in order to harass, embarrass, humiliate, and threaten their target. Other forms of bullying include password hacking, identity theft and blackmail. Many kids may be equally likely to become bullies or victims. While 
+                            some are anonymous, cyber bullies are often kids who are known by a child from their school, camp, community group, or neighborhood.</p>
+                        <p>It is important to talk openly with children about how to handle cyber bullying issues. If your child encounters a form of cyber bullying, remember that bullies thrive on the reactions of their targets. Children should avoid escalating the situation by 
+                            refraining from responding to the bully. Parents should contact your local authorities if the problem persists. Be sure to save all messages, including dates and time.</p>
+                    </li>
+                    <li>
+                        <p><strong>RESOURCES &colon;</strong> Children as young as two are interacting with the Internet from their parents’ laps. As they get older, however, they may begin to venture online by themselves, with as much support and guidance as you can provide. It is up to parents to 
+                            decide which controls to put in place and when to ease up as children grow and mature in their decision-making.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h2>PRIVACY CONTROLS</h3>
+            <p>We use technology, such as cookies (browser and Flash) and web beacons, to collect information when you visit our sites or use our applications on third party sites or platforms. Please visit our Online Tracking and Advertising page for more information, 
+                including how to disable cookies.</p>
+            <div>
+                <h3>I. ONLINE TRACKING TECHNOLOGIES AND ADVERTISING</h3>
+                <ul>
+                    <li>
+                        <p>We and certain service providers operating on our behalf collect information about your activity, or activity on devices associated with you, on our sites and applications using tracking technologies such as cookies, Flash cookies, pixels, tags, software 
+                            development kits, application program interfaces, and Web beacons. </p>
+                        <p>Definitions for some of the tracking technologies listed, as well as information about your choices with respect to them, are available below. This tracking data may be used for many purposes including, for example, to:</p>
+                        <ol>
+                            <li>
+                                <p>Provide useful features to simplify your experience when you return to our sites and applications (for example, remembering your shipping information for future purchases);</p>
+                            </li>
+                            <li>
+                                <p>Deliver relevant content and advertising based on your preferences, usage patterns and location;</p>
+                            </li>
+                            <li>
+                                <p>Monitor, evaluate, measure, and optimize the use and operation of our sites and applications and the advertising that you see; and</p>
+                            </li>
+                            <li>
+                                <p>Analyze traffic on our sites and on the sites of third parties.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>We may use your personal information to deliver relevant marketing and advertising to you on our properties and on third parties’ sites and applications. We may provide social media and other platforms with limited personal information, such as 
+                            certain identifiers or your hashed email address, which they match with their customers’ profiles. Based on this, the platform may show you our ads, look for other users who may enjoy our ads, suppress our ads for you, and provide us insights on how 
+                            to optimize and better target our advertising.</p>
+                    </li>
+                    <li>
+                        <p>Some states provide residents or, in some cases, their authorized agents, with the right to opt out of the “selling” or “sharing” of their “personal information”, or of “targeted advertising” based on their “personal information.” To submit a request to opt 
+                            out you may click the “Do Not Sell or Share My Personal Information” link in our website footers or in our application settings. Please note that your opt-out choice is specific to the digital property and to the device and browser you are using. If you 
+                            access other digital properties of The Walt Disney Family of Companies, you will need to make a separate election for each. Also, if you clear your cookies on your browser or use another browser or device, you may need to opt out again. Importantly, 
+                            you may also choose to provide the information requested in this opt out form, which may enable us to take action on your opt-out request more broadly than for a specific digital property, including on properties where you are an authenticated 
+                            guest</p>
+                    </li>
+                    <li>
+                        <p>You may also choose to opt out of targeted advertising directly with many ad networks and partners, data exchanges, and marketing analytics and other digital advertising and marketing service providers. You may also be able to choose to control 
+                            targeted advertising on other websites and platforms that you visit. In addition, you may choose to control targeted advertising you receive within applications by using the settings and controls on your devices. We adhere to the Digital Advertising 
+                            Alliance’s Self-Regulatory Principles for Online Behavioral Advertising.</p>
+                    </li>
+                    <li>
+                        <p>When you view video content or ads, such as on the Disney+ and Hulu services, we may permit the use of third-party measurement software that enables third parties (such as Nielsen) to include your viewing activity in calculating measurement 
+                            statistics such as TV Ratings. To learn more about your choices with respect to Nielsen measurement software, please see the information we have provided in Your Controls and Choices.</p>
+                    </li>
+                </ul>
+                <h3>II. ONLINE TRACKING TECHNOLOGIES</h3>
+                <ul>
+                    <li>
+                        <p>Examples of online tracking technologies include &colon;</p>
+                        <ol>
+                            <li>
+                                <p>Cookies. Cookies are pieces of information that a website places on the hard drive of your computer when you visit the website. Cookies may involve the transmission of information from us to you and from you directly to us, to another party on our 
+                                    behalf, or to another party in accordance with its privacy policy. We may use cookies to bring together information we collect about you. You can choose to have your computer warn you each time a cookie is being placed on your device, or you can 
+                                    choose to block all cookies. You do this through your browser settings. Each browser is a little different, so look at your browser Help menu to learn the correct way to modify your cookies. If you turn cookies off, you won’t have access to many features 
+                                    that make your guest experience more efficient, and some of our services will not function properly.</p>
+                            </li>
+                            <li>
+                                <p>Web beacons and marketing pixels. Web beacons and marketing pixels are small pieces of data that are embedded in images on the pages of sites. They may involve the transmission of information directly to us, to another party on our behalf, or to 
+                                    another party in accordance with its privacy policy. We may use web beacons or marketing pixels to bring together information we collect about you.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h3>III. OPT OUT PREFERENCE SIGNALS AND DO NOT TRACK</h3>
+                <ul>
+                    <li>
+                        <p>You or your authorized agent may choose to enable online, where available, a universal tool that automatically communicates your opt-out preferences, such as the Global Privacy Control (“GPC”). We will process the GPC signal as a request to opt out.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article49_main.png" alt="Abdul Fatah Bahani, shown with his monkey, says that his profession is misunderstood and unfairly denigrated in media. ">
+            </div>
+            <div>
+                <h3>These macaques are used 
+                    for entertaining. They’re 
+                    also endangered.</h3>
+                <p>
+                    <span class="animal">ANIMAL</span>
+                    <time datetime="2023-11-09">November 09 , 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="right_ThreePic">
+            <ul>
+                <li><img src="images/article49_02.png" alt="Majid Hamdi dresses up his monkey, hoping to attract more tips."></li>
+                <li><img src="images/article49_03.png" alt="Omar Enouiti stands with his monkey in the square."></li>
+                <li><img src="images/article49_04.png" alt="Majid Hamdi is one of the eldest monkey handlers in the square."></li>
+                <li><img src="images/article49_05.png" alt="Three-year-old Titi, whose name may change depending on who is handling him at the moment, attracts customers in an outfit selected by handler Abdul Fatah Bahani."></li>
+                <li><img src="images/article49_06.png" alt="Monkey handler Abdelllatif el Mounahi says he was chased out of the square by competitors and now he must struggle to make money on the edges of the area"></li>
+            </ul>
+            <div>
+                <p>MARRAKECH, MOROCCOIn Jemaa el-Fnaa, the raucous main square in 
+                    Marrakech, street merchants shout special prices for argan oil and wooden camel 
+                    figurines. Smoke wafts from food stalls, and motorbikes veer dangerously near 
+                    pedestrians. Amid the clamor is Cookie, a six-month-old Barbary macaque wearing 
+                    a cream-colored lace bonnet that makes him look like a human infant. Around his 
+                    neck is a leather collar connected to a metal chain he keeps tugging at to break free. </p>
+                <p>Sharla Bonneville, a first-time visitor to Marrakech from Toronto, Canada, 
+                    exchanges a wary glance with one of her friends as they walk past Cookie and two 
+                    more macaques with their handlers on this Friday evening in March. Ignoring the 
+                    men’s importunings to stop and watch their monkeys do tricks, they continue 
+                    moving through the crowd.</p>
+                <p>“It’s quite upsetting,” Bonneville says, referring to the chained monkeys. “My 
+                    friends and I aren’t interested in seeing these animals in captivity.”</p>
+                <p>Barbary macaques are native to the Barbary Coast, the historic name given to 
+                    coastal regions of North Africa. They’re the only macaque species found outside 
+                    Asia and the only non-human primate living in the wild north of the Sahara. With 
+                    fewer than 10,000 remaining, the International Union for Conservation of Nature 
+                    lists them as endangered, at risk of disappearing from the wild within a decade.</p>
+                <p>Keeping a macaque as a pet in Morocco is illegal and can lead to a fine of up to 
+                    $10,000 except in Jemaa el-Fnaa, where at least 17 people have permits allowing 
+                    them to use the animals as tourist attractions. That’s all according to Zouhair 
+                    Amhaouch, the director of the Parks and Nature Reserves Division, in Morocco's 
+                    National Agency for Water and Forests.</p>
+                <p>In 2008, Morocco’s Ministry of Interior submitted Jemaa el-Fnaa, with its fortune 
+                    tellers, henna tattoo artists, and macaque performers, to UNESCO for 
+                    consideration to be listed as a cultural heritage site. UNESCO said in a statement 
+                    to National Geographic, however, that it “does not insist on maintaining the 
+                    monkeys since the square involves many other forms of intangible cultural 
+                    heritage."</p>
+                <p>“The number one reason people come to the square is to see a show,” says Adil 
+                    Ouadrhiri, who owns six macaques, including Cookie, and employs four handlers. 
+                    “We’re here to entertain people, and they want to see monkeys.” Ouadrhiri’s family 
+                    has worked here with Barbary macaques since the 1970s.</p>
+                <p>In pairs, his handlers take either the morning or the afternoon shift. Ouadrhiri says 
+                    each handler makes about $120 a day in tips and that he and they divide the day’s 
+                    take equally.</p>
+                <p>Primatologist Kristina Stazaker, with U.K.-based Neotropical Primate 
+                    Conservation, estimates that some handlers may earn much more than that. When 
+                    she visited Jemaa el-Fnaa for a study funded by the International Primate 
+                    Protection League, which is headquartered in South Carolina, she spent the day 
+                    observing the action from a cafe and says she tallied one macaque used as a photo 
+                    prop 18 times in just one hour. Generally, she says, tips are up to $10.</p>
+                <h4>‘Sensitive creatures’ </h4>
+                <p>When left to their own devices in the wild, Barbary macaques naturally form social 
+                    groups of 30 to 80 individuals. They’re “sensitive creatures,” says conservationist 
+                    Siân Waters, the executive director of Barbary Macaque Awareness & 
+                    Conservation, another U.K.-based nonprofit, dedicated to conserving the animals 
+                    and their habitat.</p>
+                <p>Barbary macaques, males included, form close caretaking bonds with their infants. 
+                    When the females aren’t nursing, males often carry the babies through the forest 
+                    on their backs, even risking their lives to protect them. When parents aren’t 
+                    preoccupied with their babies, they forage for tasty nuts, plants, and insects and 
+                    spend time grooming each other.</p>
+                <p>“You can’t domesticate primates,” Waters says. Monkeys kept as pets and made to 
+                    perform tricks suffer from psychological trauma that manifests in extreme 
+                    aggression, repetitive movements, and self-mutilation, as well as physical damage 
+                    that may be irreversible, she says. Macaques kept in cramped cages, she notes, can 
+                    also suffer from musculoskeletal problems that impair their mobility and flexibility.</p>
+                <p>Waters says she’s seen some handlers in Jemaa el-Fnaa beating their macaques and 
+                    that her organization regularly receives messages from tourists horrified by 
+                    abusive treatment of the monkeys, claiming the animals are being hit, dragged in 
+                    chains, forced to wear clothing, spend the entire day in hot temperatures without 
+                    shade, and then kept in cramped quarters when they aren’t working.</p>
+                <p>The problem is widespread, Waters says, though National Geographic and Waters 
+                    did not witness Zaaboul or Enouiti ever hitting their macaques, and Waters never 
+                    received any messages claiming that they’d abused the animals. Waters also didn’t 
+                    notice any obvious musculoskeletal problems with their specific monkeys.</p>
+                <p>But despite what Ouadrhiri says about tourists wanting a show, Stazaker says that 
+                    when she and her colleagues surveyed around 500 visitors to Jemaa el-Fnaa about 
+                    the monkeys they were seeing in the square, “we found that most of them really 
+                    disliked it. We were hearing people use words like ‘horrible,’ ‘cruel,’ and ‘disgusting.’” 
+                    Only a small fraction of the surveyed tourists 16 percent responded that they liked 
+                    it and that getting to see the macaques was “fun” and “a rare opportunity.”</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article139.png" alt="A 1904 painting by Kobayashi Kiyochika depicts a scene from the First Sino-Japanese war with sailors crippled by beriberi disease.">
+                        <div>
+                            <strong>Why is there a Vitamin K but no Vitamin F</strong>
+                            <p>Vitamin C for a cold? A good dose of Vitamin D on a sunny day? We all know that 
+                                vitamins are critical for our health, but how did they get their names and, more 
+                                importantly, when were they discovered in the first place?</p>
+                            <a href="article139.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article140.png" alt="Large lampreys from the Jurassic period, found in China, reveal the early days of these suction cup-mouthed parasites of the sea.">
+                        <div>
+                            <strong>This 160-million-year-old fish gouged out its 
+                                victims’ flesh</strong>
+                            <p>Lampreys have been feeding on flesh and blood since the depths of prehistory. 
+                                These jawless, eel-like creatures have suctioning discs lined with teeth for mouths, 
+                                which many modern species use to latch</p>
+                            <a href="article140.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article141.png" alt="This color enhanced hysterosalpingogram shows a female reproductive system, with fallopian tubes and a healthy uterus.">
+                        <div>
+                            <strong>COVID-19 can interfere with your period in 
+                                many ways. Here's how.</strong>
+                            <p>Raven La Fae, a 32-year-old artist in Calgary, Canada, has always been able to 
+                                predict their menstrual periods almost to the day; it arrived every 28 days and 
+                                lasted for five. But after contracting COVID-19 in late 2020, </p>
+                            <a href="article141.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

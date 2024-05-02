@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article225_main.png" alt="Basque burnt cheesecake has grown into a global phenomenon in recent years, inspiring an array of variations on the original.">
+            </div>
+            <div>
+                <h3>The story behind Basque 
+                    burnt cheesecake</h3>
+                <p>
+                    <span class="travel">TRAVEL</span>
+                    <time datetime="2023-09-01">September 01, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="center_Pic">
+            <div>
+                <p>Caramelised on top, jiggly in the centre, served with no garnish, tossed across the 
+                    bar with nothing more than a fork the five-ingredient cheesecake from La Viña in 
+                    San Sebastián, Spain, has managed to captivate chefs and diners across the world, 
+                    under the name Basque burnt cheesecake.</p>
+                <p>It’s found new life as far afield as Singapore, where it’s been reincarnated as a soft 
+                    serve ice cream, and on the pages of the New York Times, which declared it a ‘Flavor 
+                    of the Year’ for 2021 all while still being slung out by the slice at the family-run 
+                    restaurant where it was created.</p>
+                <p>A cursory perusal of the internet offers an array of variations, or what a Basque 
+                    person would likely call aberrations, on this heat-blasted custardy dessert. You’ll 
+                    find it flavoured with electric purple ube, baked in the shape of a heart, over-burnt, 
+                    slathered with speculoos cream, or even as an ice cream sundae garnish. With more 
+                    than 229,000 tags on Instagram, #BasqueBurntCheesecake has taken on a life of its 
+                    own, but if you ever want a taste of the original, classic version, you can count on 
+                    La Viña to never, ever change.</p>
+                <div>
+                    <img src="images/article225_02.png" alt="La Viña in San Sebastián, Spain has been serving the original Basque burnt cheesecake since ​the 1980s.">
+                </div>
+                <h4>Origins</h4>
+                <p>La Viña opened its doors in 1959, founded by Eladio Rivera, his brother Antonio, 
+                    and their wives, Carmen Jiménez and Conchi Hernáez. Eladio’s son Santi started 
+                    working in the bar from a young age. A passionate, self-taught cook, he was spurred 
+                    on by advice from his chef friends and the occasional cooking course.</p>
+                <p>“On my days off, I would come to work. Everything would be empty, and I could 
+                    work and do tests in the kitchen,” Santi says. “Pintxos, dishes for the restaurant… 
+                    among these tests, I tested the cheesecake and would make it every now and then, 
+                    until people started asking for it more and more.”</p>
+                <p>Cheesecake wasn’t a traditional Basque dish, but this was the late 1980s and Santi 
+                    was filled with ideas from courses he’d attended further afield, in places such as 
+                    Paris. Cream cheese and other ‘modern’ food items were just reaching Spain for the 
+                    first time as it opened up to the global economy, and Santi loved to experiment.</p>
+                <p>The cheesecake was served for years, but it was only when the trend for pintxo 
+                    tours took off in the 2000s, that foreigners en masse began to discover La Viña’s 
+                    cheesecake, which lines the shelves of the bar, still in springform tins, with singed 
+                    parchment paper poking out the top. Instagram and Tripadvisor have boosted the 
+                    profile further, and Santi has even shared the recipe online there are no trade 
+                    secrets here.</p>
+                <p>“Basque chefs drafted the statutes of Basque Cuisine, and one of them was that 
+                    cuisine should be transmitted to the general public for all to enjoy,” he says. “I live 
+                    by that statute. There always a 15% that can’t be taught not because you don’t want 
+                    to, but because it’s in the hands of the person making the dessert.”</p>
+                <h4>How it’s made</h4>
+                <p>An adaptation of the traditional cheesecake with a flan-like twist, a classic Basque 
+                    burnt cheesecake contains nothing more than cream cheese, eggs, cream, sugar and 
+                    a bit of flour. What makes this dessert unique is actually its ‘missing’ ingredients 
+                    and ‘incorrect’ technique.</p>
+                <p>While a normal baked cheesecake involves cooking the delicate eggy custard at a 
+                    relatively low heat, this cake gets somewhat rougher treatment it’s cooked at 
+                    what’s technically too high a temperature, meaning the parts of the cake in contact 
+                    with the pan brown into a natural crust, while the top burns in places and the 
+                    interior remains jiggly and loose.</p>
+                <p>Embellishments such as ice cream and berry coulis, were out of the question due to 
+                    space restrictions in the kitchen at La Viña. The biscuit base? Also a victim of 
+                    streamlining. Basque burnt cheesecake is, at heart, a rough-and-ready dessert but 
+                    therein lies its deliciousness.</p>
+                <h4>Where to eat it</h4>
+                <h4>La Viña</h4>
+                <p>Trying the original cheesecake at the source is a must, if only to have a reference for 
+                    every other version in town. Pair it with a PX sherry or Santi’s favourite a glass of 
+                    txakoli (a dry, slightly sparkling white wine). During high season, you’ll likely have 
+                    to queue, as this little spot on San Sebastián’s busy 31 de Agosto Kalea is at the top 
+                    of every visitor’s list and fills up quickly.</p>
+                <h4>Ekaitz</h4>
+                <p>Ekaitz is a traditional Basque erretegia (grill house) on the outskirts of San 
+                    Sebastián, in the incorporated village of Igeldo. Be sure to leave room after its 
+                    exquisite grilled txuleta steaks and garlic-kissed fresh fish as Ekaitz’s cheesecake is
+                     one of the city’s most famous — a sort of hybrid of the Basque and New York styles, 
+                    with a biscuit base, berry compote topping and very creamy cheese filling.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article189.png" alt="The town of Positano is one of many along the Amalfi Coast, a famed stretch known for its curving roads and breathtaking vistas.">
+                        <div>
+                            <strong>Travel Italy's Most Scenic Stretch of Coastline</strong>
+                            <p>The Amalfi Coast is the playground of the social elite and well-heeled, but don’t let 
+                                that throw you. The Italians love kids and this area puts everyone at close quarters.</p>
+                            <a href="article189.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article190.png" alt="A vintage car passes a modern bar nestled between neoclassical buildings in Havana, Cuba.">
+                        <div>
+                            <strong>Get Off the Tourist Track in Havana</strong>
+                            <p>To get an inside glimpse of daily life for the average Cuban, you and your kids 
+                                should skip the hotels and stay in one of the hundreds of casas particulares 
+                                sprinkled throughout Havana, the Cuban equivalent of B&Bs</p>
+                            <a href="article190.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article191.png" alt="The Manhattan Bridge connects Manhattan and Brooklyn.">
+                        <div>
+                            <strong>Why a Trip to New York is a Rite of Passage</strong>
+                            <p>For a first trip, stick with Manhattan, the classic microcosm of the world. There’s no 
+                                major influence, theme, subject, attraction, or trend that in some way isn’t touched 
+                                or reflected in the work, play, creativity</p>
+                            <a href="article191.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

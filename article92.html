@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article92_main.png" alt="Niagara Falls in the summer of 2013. The American Falls, foreground left, range in height between 70 and 110 feet above the talus, or rock pile, at its base.">
+            </div>
+            <div>
+                <h3>In 1969, the U.S. turned 
+                    off Niagara Falls. Here’s 
+                    what happened next.</h3>
+                <p>
+                    <span class="history">HISTORY &amp; CULTURE</span>
+                    <time datetime="2023-11-16">November 16 , 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_ThreePic">
+            <ul>
+                <li><img src="images/article92_02.png" alt="Niagara Falls in November 1969, after immediate repairs to the crumbling surfaces of the American Falls. Further modifications, including removing the talus or adjusting the water flow, were ultimately rejected by a panel of experts and the American public."></li>
+                <li><img src="images/article92_03.png" alt="An aerial view of the American Falls in 2015"></li>
+                <li><img src="images/article92_04.png" alt="Men pose on a turbine at a hydroelectric plant on the Niagara River, 1924. Power generated by Niagara Falls made the area a global industrial center in the late 19th century"></li>
+            </ul>
+            <div>
+                <p>In the summer of 1969, America brandished its mastery over nature, landing a man 
+                    on the Moon. Closer to home and perhaps to Americans’ hearts it shut off Niagara 
+                    Falls.</p>
+                <p>After major rock collapses in 1931 and 1954, house-sized boulders had built up at 
+                    the base of the American side of the falls, halving its original vertical drop and 
+                    prompting concerns that the mighty natural marvel would eventually crumble into 
+                    one long rapids. In 1965, a local newspaper declared Niagara Falls “an incurably ill 
+                    loved one,” and subsequent outcry prompted Congress to authorize the U.S. Army 
+                    Corps of Engineers Corps to study potential renovations to the diminishing natural 
+                    wonder. The Corps promptly built a cofferdam that diverted the Niagara River over 
+                    Horseshoe Falls on the Canadian side, shutting off the American Falls completely 
+                    for diagnosis.</p>
+                <p>To tourists flocking to Niagara Falls, NY in the summer of 1969, the 100-foot-high 
+                    dry cliff they encountered instead of the world’s most famous waterfall was 
+                    stunning proof of American mastery over nature. But it was far from the first time 
+                    that engineers had attempted to “fix” Niagara Falls since the late 19th century the 
+                    Corps and Canadian engineers have continuously tweaked the two cataracts to 
+                    balance opposing goals: harnessing power and maintaining natural beauty. Today, 
+                    up to three quarters of the Niagara River runs beneath the falls on both sides of the 
+                    U.S.-Canada border via massive tunnels to hydroelectric plants, rather than over 
+                    the towering brinks. Which raises a big question: Is Niagara still worthy of the title 
+                    “natural” wonder? Or are the falls just a particularly pretty spillway for the 
+                    hydropower complexes that line Niagara’s shores?</p>
+                <h4>Wilderness becomes industry</h4>
+                <p>First Nations and Native American tribes have lived around Onguiaahra, “the 
+                    strait,” for at least 10,000 years, and Niagara’s sublime power struck the hearts of 
+                    the first non-Indigenous explorers (who anglicized the Iroquian name) with a 
+                    mixture of awe and fear. But where romantics saw beauty, industrialists saw profit. 
+                    By the mid-1800s, factories and mills had sprung up at the base of the falls on both 
+                    sides of the international border. In the 1880s, hydroelectric generation was 
+                    proven at scale for the first time at Niagara and Niagara Falls quickly became global 
+                    industrial center, according to Daniel Macfarlane, an environmental historian and 
+                    author of Fixing Niagara Falls.</p>
+                <p>These developments dismayed Frederick Law Olmsted, the landscape architect 
+                    who’d designed Central Park in New York City. With Frederick Church, the painter 
+                    whose depictions of Niagara helped make the falls an American icon, he launched 
+                    the Free Niagara conservation movement which succeeded in pushing factories 
+                    away from the base of the falls on both sides of the river.</p>
+                <h4>The first renovations</h4>
+                <p>In 1885 the Olmsted-designed New York State Reservation at Niagara was made 
+                    the country’s first state park, and quickly became a popular place for tourists and 
+                    honeymooners to gaze on the wild splendor of the American Falls and larger 
+                    Horseshoe Falls across the border in Canada. But there was a problem: Niagara 
+                    Falls was losing its thunder. A growing hydropower “arms race” between the two 
+                    countries upriver meant less water than ever was flowing over the falls on both 
+                    sides.</p>
+                <p>After Canada and the U.S. signed the Niagara River Diversion treaty in 1950, they 
+                    discussed numerous plans including turning Niagara into an “intermittent 
+                    waterfall” that would only run on Sundays before agreeing to divert no more than 
+                    half of the Niagara River’s 200,000 cubic feet-per-second natural flow for 
+                    hydropower during daytime hours during a designated tourist season.</p>
+                <p>“That means if you were to go to Niagara Falls at Christmastime, or any time in the 
+                    winter, all you’re seeing is one-quarter of the water going over the waterfall,” 
+                    Macfarlane tells National Geographic. “The other three quarter is going around 
+                    [the falls] in diversion tunnels.”</p>
+                <p>The 1950 treaty also laid out a plan for masking hydropower’s significant impact on 
+                    the Niagara River and its famous falls. Canadian engineers diverted the river in 
+                    small sections, blasting and carving the brink of Horseshoe Falls, shrinking it by 
+                    hundreds of feet to create an unbroken crestline covered by a thin, uniform curtain 
+                    of water to give the impression of volume. A custom-built “telecolorimeter” helped 
+                    engineers ensure the falls on the Canadian side remained the right shade of 
+                    greenish blue. Re-sculpting Horsehoe Fall’s flanks minimized mist, which had been 
+                    a common tourist complaint.</p>
+                <p>American preservationists were upset by the geological meddling, but engineers 
+                    countered by pointing out that Niagara Falls naturally erodes several feet per year 
+                    anyway—its current location is some eight miles upstream from where water 
+                    started eating away the Niagara Escarpment about 12,000 years ago.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article71.png" alt="Compost is made from a mix of food scraps and yard waste such as raked leaves. ">
+                        <div>
+                            <strong>Summer storms can strike suddenly. Here’s 
+                                what causes them.</strong>
+                            <p>For many of us, warmer months are a time to relax, spread out in the warm sun, and 
+                                maybe have a picnic. But who among us hasn’t experienced the dread of seeing 
+                                storm clouds form as if out of nowhere</p>
+                            <a href="article71.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article72.png" alt="Hot, humid conditions are two crucial ingredients that can make sunny weather turn stormy.">
+                        <div>
+                            <strong>How to compost and why it’s good for the 
+                                environment</strong>
+                            <p>About a third of the food produced around the world goes to waste, and much of it 
+                                ends up in landfills where it becomes a source of methane, a greenhouse gas 25 
+                                times more potent than carbon dioxide. Eliminating waste</p>
+                            <a href="article72.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article73.png" alt="A helicopter drops water on a July wildfire burning through Riverside County in California.">
+                        <div>
+                            <strong>This summer's extreme weather is a sign of 
+                                things to come</strong>
+                            <p>Two-thirds of the way through the year, 2023 seems destined to be remembered as
+                                the year that extreme weather events left the Northern Hemisphere reeling.</p>
+                            <a href="article73.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

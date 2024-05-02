@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_small">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article211_main.png" alt="Shinjuku, one of Tokyo's busiest districts, is home to Omoide Yokocho, a 'food alley' packed with restaurants, bars and izakayas.">
+            </div>
+            <div>
+                <h3>A culinary guide to Tokyo</h3>
+                <p>
+                    <span class="travel">TRAVEL</span>
+                    <time datetime="2023-05-26">May 26, 2023</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_ThreePic">
+            <ul>
+                <li><img src="images/article211_02.png" alt="Some of Tokyo's best-value sushi and seafood is to be found among the lanes of Tsukiji Outer Market."></li>
+                <li><img src="images/article211_03.png" alt="Ramen takes many forms, but this noodle soup typically features toppings such as nori, spring onion and a perfectly cooked soft-boiled egg."></li>
+                <li><img src="images/article211_04.png" alt="Among the city's dozens of temples is Senso-ji, Tokyo's oldest, with its distinctive five storeys."></li>
+            </ul>
+            <div>
+                <p>Exciting things continue to happen in Tokyo’s dining scene. In the 2023 Michelin 
+                    Guide to the Japanese capital, 200 restaurants were awarded at least one star more 
+                    than in Paris and New York combined. Of those, 12 come with lofty three-star 
+                    status, including chef Seiji Yamamoto’s artistic kaiseki (multi-course) menu at 
+                    RyuGin and the Edo-style sushi at Masahiro Yoshitake’s Sushi Yoshitake.</p>
+                <p>British chef Daniel Calvert himself no stranger to a Michelin stars described 
+                    working in the city as ‘every chef’s dream’ when he launched his restaurant Sézanne 
+                    at the Four Seasons Hotel Tokyo at Marunouchi in 2021. And he’s not the only one 
+                    who thinks this way: Virgilio Martinez and Massimo Bottura are also among the 
+                    acclaimed international chefs to have opened outposts here in recent years.</p>
+                <p>Yet, for all its fine dining finesse, Tokyo’s culinary scene is just as much about the
+                    joy of casual, everyday dishes. Three ramen joints Ginza Hachigo, Konjiki 
+                   Hototogisu and Nakiryu have been awarded a Michelin star each, while a couple of 
+                   hundred Bib Gourmand awards give a deserved nod to good-value comfort food 
+                   such as soba noodles, tonkatsu cutlets and kare raisu (curry and rice). The latter, a 
+                   weeknight staple in many homes, is thought to have arrived with the Japanese 
+                   Imperial Navy, who may have encountered an adulterated version of Indian curries 
+                   being eaten by British sailors.</p>
+                <p>Meanwhile, to sample a dish that’s little-known outside of Japan, pay a visit to the 
+                    Ryogoku neighbourhood for chanko-nabe, the hearty hotpot eaten in large 
+                    quantities by sumo wrestlers looking to bulk up. Or head to the Tsukishima district 
+                    to try grilled monjayaki the runny batter might not look appetising when first 
+                    poured onto the hotplate, but it turns into a wonderfully addictive, savoury goo.</p>
+                <p>Beyond dining, Tokyo is also a great drinks destination, home to inventive 
+                    mixologists like Hiroyasu Koyama, of Bar Benfiddich, and Shingo Gokan, of The SG 
+                    Club. There’s also a well-established craft beer scene, which has a habit of adding a 
+                    Japanese accent to imported styles (a hint of yuzu in a weissen, perhaps, or the 
+                    numbing tingle of sansho pepper in a golden ale), internationally acclaimed whisky 
+                    and, of course, sake, brewed using centuries-old techniques.</p>
+                <h4>Tapas Molecular Bar</h4>
+                <p>The tapas-inspired fusion at this eight-seat counter restaurant in Mandarin 
+                    Oriental, Tokyo lies somewhere between art and a science experiment. The menu 
+                    changes seasonally but can include imaginative creations like smoked barbecue 
+                    pork and sesame ash designed to look like a smouldering cigar.</p>
+                <h4>RyuGin</h4>
+                <p>Seiji Yamamoto’s artful take on refined kaiseki-ryori (Japan’s haute cuisine) has 
+                    earned three Michelin stars for his restaurant, located in the smart Tokyo Hibiya 
+                    Midtown complex. The menu is omakase, meaning guests leave it up to the chef to 
+                    decide on the array of small dishes served.</p>
+                <h4>Sushi Yoshitake</h4>
+                <p>Technique and the finest produce play a major role at chef Masahiro Yoshitake’s 
+                    three-Michelin-starred sushi restaurant. But so too does inventiveness: the nigiri 
+                    rice is seasoned with red vinegar (rather than the usual white rice vinegar) and 
+                    highlights include steamed abalone with a liver and sea urchin sauce.</p>
+                <h4>The SG Club</h4>
+                <p>Named one of the World’s 50 Best Bars, this Shibuya spot is spread across two 
+                    floors. Upstairs, Guzzle offers drinks such as gin and tonic infused with condensed 
+                    beer; downstairs, speakeasy-styled Sip serves up creations like the signature 
+                    tomato tree cocktail (above), combining gin, tomato, dill, elderflower and mastic.</p>
+                <h4>Bar Benfiddich</h4>
+                <p>Owner and mixologist Hiroyasu Kayama creates cocktails at this Shinjuku bar 
+                    using foraged botanicals along with ingredients such as wormwood, yuzu and anise 
+                    grown on his farm north of the capital. There’s no menu, but expect plenty of 
+                    absinthe and lesser-known spirits from around the world.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article145.png" alt="A colored scanning electron micrograph of microglial cells—the immune cells of the central nervous system—that play important roles in brain infections and inflammation">
+                        <div>
+                            <strong>Why does COVID-19 cause brain fog 
+                                Scientists may finally have an answer.</strong>
+                            <p>When scientists infected brain organoids pinhead-size bits of brain tissue grown in 
+                                the lab with the virus that causes COVID, they found that not only does it spread in 
+                                neurons in the brain, it also accelerates</p>
+                            <a href="article145.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article146.png" alt="A patient is inoculated against SARS-CoV-2 in the Netherlands on October 2, 2023. While unpleasant, side-effects of the vaccine such as headaches and chills may be an indication that the vaccine is building a stronger immune response and defense against future infections.">
+                        <div>
+                            <strong>It’s good to feel bad after your COVID shot</strong>
+                            <p>Jeremy Warner has had six shots of the COVID vaccines. He’s an oncologist at 
+                                Brown University in Providence, Rhode Island, where he treats 
+                                immunocompromised patients with cancer who are especially vulnerable</p>
+                            <a href="article146.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article147.png" alt="A nurse holds up a single dose of a COVID-19 vaccine alongside a single dose of the flu vaccine at the Feixa Llarga nursing home in Barcelona, Spain, where residents are being inoculated against both viral infections.">
+                        <div>
+                            <strong>Why the new COVID shot is a game-changer 
+                                (and why the term ‘booster’ is obsolete)</strong>
+                            <p>Developed by Pfizer-BioNTech and Moderna and approved on September 11 by 
+                                the U.S. Food and Drug Administration (FDA), the new COVID vaccines have 
+                                arrived just as the latest strain of the virus is causing</p>
+                            <a href="article147.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

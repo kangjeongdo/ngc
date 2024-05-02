@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+            <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <section class="indexContainer">
+        <div>
+            <img src="images/bg_index_01.png" alt="picture about worldwide">
+            <div>
+                <h3>NATIONAL GEOGRAPHIC<b>INCREDIBLE ANIMAL JOURNEYS</b></h3>
+                <p>We might think we are the world’s greatest explorers, but we’re not. Millions of animals migrate across our planet daily using routes passed down through generations. INCREDIBLE ANIMAL JOURNEYS puts us in the action as they soar, fly and swim from the Antarctic to the African savanna and the Pacific Ocean to Alaska.</p>
+                <a href="subscribe.html" class="btnMore">Discover more</a>
+            </div>
+        </div>
+        <div class="showArticle">
+            <div>
+                <h3>OUR TRAVEL<b>LATEST STORIES</b></h3>
+                <p>Subscribe for full access to read stories from National Geographic.</p>
+                <a href="subscribe.html" class="btnMore">Explore our latest</a>
+            </div>
+            <ul class="articleList">
+                <li>
+                    <img src="images/index_travel_17.png" alt="hot airballoons over rocks in Turkey">
+                    <strong>You can ski down a dormant volcano in Erciyes, Turkey's best ski destination</strong>
+                    <p>Dormant volcano Erciyes offers a towering ski experience, modern facilities and miles of well-groomed pistes all of which are within day-tripping reach of the UNESCO-listed sites at Cappadocia.</p>
+                    <a href="article163.html" class="btnMore">Read more</a>
+                </li>
+                <li>
+                    <img src="images/index_destination_guides_12.png" alt="table full of Japanese sweets and treats">
+                    <strong>A rail adventure in Kyushu onsen, homestays and sweet treats along Japan's Sugar Road</strong>
+                    <p>Kyushu’s trading heritage helped shape Japan. Today a new rail link from Tokyo, which takes in the historic Sugar Road, makes it easier to explore this lush island’s onsen villages</p>
+                    <a href="article210.html" class="btnMore">Read more</a>
+                </li>
+                <li>
+                    <img src="images/index_animal_19.png" alt="Five Chinstrap penguins against a black background">
+                    <strong>A 4-second power nap These penguin parents survive on ‘microsleeps.’</strong>
+                    <p>The unusual sleep pattern, also observed in overtired people, may be a short-term strategy for making it through the intense demands of raising a chick in Antarctica.</p>
+                    <a href="article07.html" class="btnMore">Read more</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>TRAVEL ABOUT<b>ADVENTURE</b></h3>
+            <p>There's something about the light in Maine. During the day, sunshine reflects off crisp blue waters, casts angles across tidy seaside cottages, and illuminates curious creatures in tide pools.</p>
+            <a href="list_Travel.html" class="btnMore">See the articles</a>
+            <div>
+                <div>
+                    <img src="images/index_travel_26.png" alt="OBS Camp sailing">
+                    <img src="images/index_adventure_07.png" alt="one man looking at the sunshine">
+                </div>
+                <img src="images/index_adventure_29.png" alt="climbing">
+                <div>
+                    <img src="images/index_adventure_06.png" alt="a rower">
+                    <img src="images/index_adventure_33.png" alt="rock climbing">
+                </div>
+            </div>
+        </div>
+        <div class="oneArticle">
+            <img src="images/article_bestfamily_trips_08.png" alt="family in Paris">
+            <div>
+                <h3>TRAVEL ABOUT<b>BEST FAMILY TRIPS</b></h3>
+                <p>A family city guide to Edinburgh,
+                    A family city guide to Paris,
+                    Travel Italy's Most Scenic Stretch of Coastline</p>
+                <a href="article188.html" class="btnMore">See the articles</a>
+            </div>
+        </div>
+        <div>
+            <h3>ALL ABOUT<b>NATURE</b></h3>
+            <p>Get the big story of the day, and meaningful news designed to entertain and educate 
+                you about our wild kin.</p>
+            <p>Sign up for National Geographic newsletters</p>
+            <button data-popup="newsLetterPopUp" class="openPopUp">Discover more</button>
+            <div id="videoBox">
+                <iframe src="https://www.youtube.com/embed/H9bsPyC4FTQ?si=DnDDsVlLG3oKy9p5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="showArticle">
+            <div>
+                <h3>ANIMAL<b>BEST DOG’S EVER</b></h3>
+                <p>It all began when Australian breeder Wally Conron was asked to 
+                    supply a guide dog for a blind woman living in Hawaii. The woman’s 
+                    husband was allergic todogs. At the time, Conron worked for the 
+                    Royal Guide Dogs Association ofAustralia.</p>
+                <a href="article05.html" class="btnMore">See the articles</a>
+            </div>
+            <ul class="articleList">
+                <li>
+                    <img src="images/index_animal_12.png" alt="A black lab Labradoodle sitting with a background of the mountains during the daytime">
+                </li>
+                <li>
+                    <img src="images/index_animal_15.png" alt="A mixed breed Dalmatian from the shoulders up wearing a red bow tie.">
+                </li>
+                <li>
+                    <img src="images/index_animal_16.png" alt="dog smile.">
+                </li>
+            </ul>
+        </div>
+        <div class="showArticle">
+            <div>
+                <h3>ENVIRONMENT<b>WILDFIRES COVERAGE</b></h3>
+                <p>As climate change drives an increase in wildfires, we’re seeing more smoke lofted into the upper atmosphere each fire season. Depending on wind and weather, this smoke can spread hundreds or thousands of miles from its source as we saw in early June on the U.S. East Coast. </p>
+                <a href="article77.html" class="btnMore">See the articles</a>
+            </div>
+            <ul class="articleList">
+                <li>
+                    <img src="images/index_wildfirescoverage_02.png" alt="red and orange smoke clouds the skyline behind trees from a forest fire">
+                </li>
+                <li>
+                    <img src="images/index_wildfirescoverage_07.png" alt="a boat on the east river with the manhattan skyline covered in an orange glow">
+                </li>
+                <li>
+                    <img src="images/index_wildfirescoverage_04.png" alt="helicopters drop water on a wildfire as smoke plumes up">
+                </li>
+            </ul>
+        </div>
+        <div class="oneArticle">
+            <img src="images/article_outofedenwalk_13.jpg" alt="Photo of women in hats carrying bags">
+            <div>
+                <h3>HISTORY &amp; CULTURE<b>OUT OF EDEN WALK</b></h3>
+                <p>Call it your very first step on a 24,000-mile walk across the world. You take this 
+                    inaugural stride in Ethiopia, in the Great Rift Valley of Africa, the paradise of thorns 
+                    where humankind was born.</p>
+                <a href="article119.html" class="btnMore">See the articles</a>
+            </div>
+        </div>
+        <div class="showArticle">
+            <div>
+                <h3>MORE<b>TOP STORIES</b></h3>  
+                <p>Subscribe to see the stories from National Geographic magazine</p>
+                <a href="subscribe.html" class="btnMore">Subscribe more top stories</a>
+            </div>
+            <ul class="articleList">
+                <li>
+                    <img src="images/index_animal_08.png" alt="A small crocodile photogrpahed in a studio setting in Florida on a bright white background.">
+                    <strong>American crocodiles are spreading north in Florida. That’s a good thing.</strong>
+                    <p>The reptile, less aggressive than the American alligator, has been spotted 200 miles north of the Florida Everglades, suggesting it's reclaiming its former territory.</p>
+                    <a href="article03.html" class="btnMore">Read more</a>
+                </li>
+                <li>
+                    <img src="images/index_black_history_18.png" alt="march on for voting">
+                    <strong>Struggle for voting rights continues 58 years after historic March on Washington</strong>
+                    <p>In 2021, 18 states have enacted 30 new laws that restrict voter access. The laws establish harsher voter ID requirements and make mail-in voting and early voting more challenging, among other restrictions, which protest organizers say, "amount to shameful, outright voter suppression.</p>
+                    <a href="article102.html" class="btnMore">Read more</a>
+                </li>
+                <li>
+                    <img src="images/index_historymagazine_06.png" alt="A bronze statue of Marcus Aurelius on a horse">
+                    <strong>>What were Marcus Aurelius' rules for life His self-help classic has the answers</strong>
+                    <p>The second-century A.D. world of Emperor Marcus Aurelius was in shambles. A great plague ravaged western Europe, as he embarked on a long and bloody war against the Germanic tribes along the Danube frontier. Faced with these woes, along with old age and thoughts of death, the emperor sought comfort in philosophy.</p>
+                    <a href="article107.html" class="btnMore">Read more</a>
+                </li>
+            </ul>
+        </div>
+        <div class="oneArticle">
+            <img src="images/article_coronavirus_07.png" alt="A nurse holds up a single dose of a COVID-19 vaccine alongside a single dose of the flu vaccine">
+            <div>
+                <h3>SCIENCE<b>CORONAVIRUS COVERAGE</b></h3>
+                <p>The primary reason for the rise “is because immunity is waning for many people," says William Schaffner, an infectious disease specialist at Vanderbilt University School of Medicine. Waning immunity occurs when protective antibodies and cellular defenses that were first stimulated by vaccine or infection diminish over time</p>
+                <a href="article147.html" class="btnMore">See the articles</a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>THE BEST OF NATIONAL GEOGRAPHIC<b>DELIVERED TO YOUR INBOX</b></h3>
+                <p>Sign up for more inspiring photos, stories, and special offers from National Geographic</p>
+                <a href="login.html" class="btnMore">SIGN UP</a>
+            </div>
+            <img src="images/bg_index_02.png" alt="MossForest">
+        </div>
+        <div>
+            <h3>GET THE<b>LATEST NEWS</b></h3>
+            <p>Be the first to receive the latest news on our brand,
+                products and upcoming events.</p>
+            <a href="subscribe.html">Subscribe</a>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

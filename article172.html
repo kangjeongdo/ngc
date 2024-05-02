@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article172_main.png" alt="California’s Condor Trail winds through seven wilderness areas, including Los Padres National Forest’s Ventana Wilderness (seen here), in Monterey County, California.">
+            </div>
+            <div>
+                <h3>Is California’s Condor 
+                    Trail the next great thru 
+                    hike</h3>
+                <p>
+                    <span class="travel">TRAVEL</span>
+                    <time datetime="2022-03-04">March 04, 2022</time>
+                </p>
+            </div>
+        </div>
+        <div class="left_ThreePic">
+            <ul>
+                <li><img src="images/article172_02.png" alt="Sespe Creek, in Sespe Wilderness, is the last undammed river in Southern California."></li>
+                <li><img src="images/article172_03.png" alt="Lake Piru in Ventura County marks the southern end of the Condor Trail."></li>
+                <li><img src="images/article172_04.png" alt="A tagged California condor takes flight. While still critically endangered, condors are steadily making a comeback."></li>
+            </ul>
+            <div>
+                <p>The rugged chaparral of California’s Sespe Wilderness lay hidden under the 
+                    camouflage of mahogany and sage hues. Nearly a week into her thru-hike on the 
+                    Condor Trail, Brittany Nielsen surveyed this scraggly landscape. She had already 
+                    faced a downpour, severe flooding, and hypothermia. Now, she leaned against her 
+                    pack in the spring sun, scanning the thickets and hoping the trail would emerge like 
+                    a scrub jay.</p>
+                <p>“I learned a lesson about being calm while being lost on the trail,” Nielsen says. 
+                    Earlier, behind on miles and low on her food supply, she had searched for the path in 
+                    a frenzy, only to find herself exhausted. The trail on the side of Sespe Creek was 
+                    fiercely overgrown in sections and required strong orienteering skills to navigate.</p>
+                <p>“When I opened my eyes I was looking at the sky,” Nielsen says, “And up above me I 
+                    couldn’t believe it there was a condor.” She noted the telltale band of white feathers 
+                    in the shape of a scalene triangle that decorated the bird’s nine-foot wingspan. 
+                    When the condor drifted out of sight, Nielsen dropped her gaze into the chaparral 
+                    where, directly in front of her, she discovered a small rock cairn that marked the trail.</p>
+                <p>Over the course of her 37 days on the hike, Nielsen would lose and gain the trail 
+                    numerous times as she fought through menacing brush and screamed expletives 
+                    that no one could hear in the most remote pockets of Los Padres National Forest. 
+                    She would travel through seven wilderness areas, along the shores of central 
+                    California, past colonies of elephant seals, and across the ancestral lands of the 
+                    Chumash, Salinan, Esselen, Tataviam, and Costanoan peoples.</p>
+                <p>Unlike California’s well-established John Muir and Pacific Crest Trails, the Condor 
+                    Trail is a thru-hiking “route,” meaning its course exists as a continuous thread of 
+                    trails and roads and cross-country travel but that it lacks proper signage and 
+                    maintenance. While these popular thru-hiking routes receive hundreds of hikers a 
+                    year, Nielsen took on the Condor Trail alone in 2015. When she finished on June 
+                    18th, she was the first thru-hiker to complete it.</p>
+                <p>“You can’t do the Condor Trail with an ego,” Nielsen says, describing how it has 
+                    thwarted accomplished hikers and trail runners. “It is an exercise in mental strength.
+                    You need to have an open mind and be ready to be humbled and lost.”</p>
+                <h4>A path through the brush</h4>
+                <p>After decades of planning by local hiking enthusiasts and cartographers, the elusive 
+                    trail now has its own official guidebook. Published last summer by author Brian 
+                    Sarvis, Condor Trail Guide: Hiker’s Guide to the 400 Mile Condor Trail Through Los 
+                    Padres National Forest In California outlines the hike from its starting point in Lake 
+                    Piru in Ventura County to its terminus at Bottchers Gap in Monterey County. Along 
+                    the way, Sarvis’ guide gives essential information on water sources, navigation, and 
+                    detailed maps put together with the help of cartographer Bryan Conant.</p>
+                <p>“Brittany Nielsen inspired us all and proved that the route could be done as a thru 
+                    hike,” says Sarvis, a retired superintendent from Santa Barbara, California, who 
+                    spent the past six years putting together the guide and eventually thru-hiking the 
+                    trail twice once in both directions. “The advantage of the Condor Trail is its solitude 
+                    and the immersion in the natural world. It is not a trail to set out and try to 
+                    complete in record time.”</p>
+                <p>Having hiked cross-country routes (treks without defined trails) across California’s 
+                    Sierra Nevada, Sarvis became interested in the trail that was in his own backyard. 
+                    He estimates about a half of the Condor Trail is on defined trails or roads, while a 
+                    quarter is on overgrown trails. The last quarter is mostly cross-country routes 
+                    some of which host thick stands of poison oak. With months spent on the trail thru 
+                    hiking, section hiking, or day hiking over to compile his guide, Sarvis says he learned 
+                    how quickly unmaintained trails can disappear, whether caused by wildfires, 
+                    landslides, flooding, or overgrowth.</p>
+                <p>Sarvis recommends thru-hiking the trail in winter or spring when rains provide 
+                    ample water sources that dry up come summer. However, he cautions that heavy 
+                    rain can make for dangerous water crossings and days of travel with wet feet. He 
+                    walked the trail both times in the months of March or April, taking 34 days for each 
+                    trek.</p>
+                <p>“I love following the wildflowers up from Lake Piru all the way up into the Ventana 
+                    Wilderness,” he says, describing the fields of poppies and lupine that ignite across 
+                    the landscape like firecrackers. “You get a whole month’s worth of wildflowers on 
+                    this hike if you go in the early spring.”</p>
+                <p>Sarvis’ guide is a monumental achievement in the Condor Trail’s decades long 
+                    history that began in 1996, when hiker and software engineer Alan Coles first began 
+                    working out the route, later extending the trail’s breadth with friend Chris Danch. 
+                    Together, the two hoped to form a route that showcased the highlights of their 
+                    beloved Los Padres National Forest from the towering peaks of the Sespe 
+                    Wilderness to the dense redwood stands of Big Sur all home to the state’s iconic 
+                    endangered species, the California condor.</p>
+                <p>In the late 1990s, Bryan Conant, of the Los Padres Forest Association, helped give 
+                    the trail a second life, devoting his free time to mapping the entire route and 
+                    forming a website for the trail, which he still runs today as the trail’s most active 
+                    steward. Every year, Conant helps provide information to thru-hikers attempting 
+                    the trail, including Nielsen, who says Conant was instrumental in getting her to the 
+                    finish line. Conant believes Sarvis’ new guide will make the trail far more achievable 
+                    for future hikers. Since Nielsen thru-hiked the trail in 2015, Conant says 12 others 
+                    have done the same.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article154.png" alt="Lexie Stroiney, 6, left, Charlie Stroiney, 8, right, and their mom Kate Forte wait in an exam room during a long day of testing at Children's National Hospital, in Washington, DC, on January 26, 2022. Lexie had COVID-19 but Charlie did not.">
+                        <div>
+                            <strong>What long COVID means for kids and who’s 
+                                struggling the most</strong>
+                            <p>Owen, 11, was the last in his family to get COVID-19. While everyone else 
+                                recovered within two weeks, his symptoms lingered. Over the next few weeks his 
+                                vision blurred, his skin turned pale, he began forgetting</p>
+                            <a href="article154.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article155.png" alt="People with post-COVID depression often feel misunderstood because even though they have recovered from the acute symptoms, they still don't feel like themselves. ">
+                        <div>
+                            <strong>Could COVID-19 trigger depression</strong>
+                            <p>When Glo Lindenmuth was sick with COVID-19 in December 2021, she was 
+                                congested and exhausted for about a week; her sense of smell and taste were gone 
+                                for two weeks. She knew about these symptoms</p>
+                            <a href="article155.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article158.png" alt="Around Norway's northeastern shores, tours take skiers across the icy waters of the Lyngen fjord and up the snowbound peaks of the Lyngen Alps before the skiing begins.">
+                        <div>
+                            <strong>Extreme adventure at the edge of the word 
+                                sail and ski in Norway</strong>
+                            <p>“Sometimes you have to do things you’ve never done to get to places you’ve never 
+                                been.” These are the words of wisdom offered by our mountain guide, Espen 
+                                Minde, as we take a break from climbing</p>
+                            <a href="article158.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

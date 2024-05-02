@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_big">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article173_main.png" alt="Previously known for harvesting high-quality sea sponges, the Greek island of Kalymnos is now one of the world’s top destinations for sport climbing, a new Olympic event.">
+            </div>
+            <div>
+                <h3>How sport climbing is 
+                    helping to revitalize a 
+                    Greek island</h3>
+                <p>
+                    <span class="travel">TRAVEL</span>
+                    <time datetime="2021-07-27">July 27, 2021</time>
+                </p>
+            </div>
+        </div>
+        <div class="right_ThreePic">
+            <ul>
+                <li><img src="images/article173_02.png" alt="The trade in sponges, many now imported, still flourishes in Kalymno"></li>
+                <li><img src="images/article173_03.png" alt="A fisherman dives for sea sponges off Kalymnos."></li>
+                <li><img src="images/article173_04.png" alt="Today Kalymnos has about 3,900 climbing routes for various skill levels, many with sea views."></li>
+            </ul>
+            <div>
+                <p>For more than 50 years, Antonis Kampourakis woke at dawn, strapped on fins and a 
+                    mask, and dived deep into the Aegean Sea. His aim? To harvest the valuable sea 
+                    sponges that sustained the Greek island of Kalymnos for centuries.</p>
+                <p>He’s just one of the many locals who have ties to this traditional work, which was 
+                    often passed down in families through generations. When a catastrophic disease 
+                    began decimating the sea sponges in 1986, the islanders’ main source of income 
+                    also plummeted.</p>
+                <p>But then a new focus emerged, one that looks to the island’s landscape its steep 
+                    cliffs, stalactite caves, fine limestone crags, and breathtaking sea views from the 
+                    top.</p>
+                <p>Now the barren yet picturesque island is one of the world’s top spots for sport 
+                    climbing, a type of rock climbing in which the routes are fixed with permanent 
+                    anchors. The activity is helping to revitalize the local economy, drawing both 
+                    amateur and expert adventurers, and is gaining global attention this year as a new 
+                    Olympic event.</p>
+                <h4>A culture immersed in the sea</h4>
+                <p>Sea sponge harvesting a pursuit mentioned in Homer’s eighth-century B.C. epics 
+                    has been practiced in Kalymnos since the 1800s. The sponge fishermen became 
+                    legendary, descending to depths of more than 250 feet and using resourceful yet 
+                    risky techniques, from free diving naked and weighted with a marble stone to 
+                    breathing through a long hose that snaked to the surface.</p>
+                <p>“Although hard and dangerous, for me this job was a fun fair. I longed for daybreak 
+                    to come to plunge into the sea,” says the 80-year-old Kampourakis. “For 52 years I 
+                    kept diving for sponges, even a thousand times per day … but it was well-paid, I 
+                    raised six daughters, bought houses for their families,” says Kampourakis, whose 
+                    likeness is depicted on a local statue honoring the sponge divers.</p>
+                <p>While islanders were sponge hunting, merchants were selling the “Kalymnian gold” 
+                    at far-flung markets. “There used to be 200 to 250 sponge boats, sailing all over 
+                    Greece and the eastern Mediterranean,” says Nikolas Papachatzis, a sponge trader. 
+                    “Now only a few remain.”</p>
+                <p>The decades-long intensive harvesting, the disease that hit the sponges in the 1980s, 
+                    and the increased frequency of extreme climatic events since the 1990s all 
+                    combined to nearly wipe out the sponge harvesting industry.</p>
+                <p>Now the local sponges are scarce, but surprisingly the sponge trade still flourishes. 
+                    Because of the islanders’ know-how, sponges from elsewhere are processed here.</p>
+                <p>“Everything is done by hand, sponge by sponge; cleaning, washing, trimming,” says 
+                    Papachatzis. Kalymnos accounts for 80 percent of sponge exports worldwide, and 
+                    it imports sponges from tropical waters to satisfy the demand. “A Mediterranean 
+                    sponge, though, has an unsurpassed quality and a 10-year life span,” he says.</p>
+                <p>As global efforts focus on reducing the use of plastic, natural sponges may seem 
+                    more sustainable than artificial ones. Yet care should be taken with the remaining 
+                    fragmented sponge populations, says Thanos Dailianis, a marine biologist at the 
+                    Hellenic Centre for Marine Research.</p>
+                <p>“For sponge fisheries to continue, it is imperative to establish sound management 
+                    schemes and endorse sustainable practices,” he says. “Cutting part of the sponge 
+                    instead of wholly removing it from the substrate is proven to minimize harvesting 
+                    impact, since it allows the remaining part to regenerate.” Dailianis also advocates 
+                    for the designation of protected zones, which he says, “can have significant long 
+                    term benefits by promoting restocking of depleted areas.”</p>
+                <h4>The rise of sport climbing</h4>
+                <p>While sponge harvesting was declining, an altogether different industry was 
+                    emerging. Along the island’s coastline, high yellowish-orange cliffs rise from the sea 
+                    dramatic features that caught the eye of Italian climber Andrea Di Bari when he 
+                    vacationed on Kalymnos in 1996. Enchanted by the rock’s high quality, he returned 
+                    the following year with climbing partners in tow to open up 43 routes.</p>
+                <p>Published images by photographer Andrea Gallo grabbed more climbers’ attention. 
+                    Then Aris Theodoropoulos, a mountain guide, climbing instructor, and author of the 
+                    Kalymnos Climbing Guidebook, collaborated with the municipality to help make 
+                    Kalymnos a bona fide climbing destination.</p>
+                <p>“In 1999 we noticed some strange guys, loaded with gear, then saw their figures 
+                    hanging on the rocks,” says George Hatzismalis, head of the Municipality Tourist 
+                    Office. “Soon, we started looking for what interventions should be made in order 
+                    for this to evolve: opening new routes, maintaining them, organizing a climbing 
+                    festival.”</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article225.png" alt="Basque burnt cheesecake has grown into a global phenomenon in recent years, inspiring an array of variations on the original.">
+                        <div>
+                            <strong>The story behind Basque burnt cheesecake</strong>
+                            <p>Caramelised on top, jiggly in the centre, served with no garnish, tossed across the 
+                                bar with nothing more than a fork the five-ingredient cheesecake from La Viña in 
+                                San Sebastián, Spain, has managed to captivate chefs</p>
+                            <a href="article225.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article226.png" alt="With its exposed brick walls, grungy lighting and dark wood counter, this Notting Hill hangout, Electric Diner, offers a stylish take on the classic diner.">
+                        <div>
+                            <strong>7 of the best American diners in the UK</strong>
+                            <p>Found in just about every big city and small town in the US, the diner is a beloved 
+                                institution  and a veritable cultural icon. Dishing up quick, affordable American 
+                                classics, these colourful restaurants have fed hungry customers</p>
+                            <a href="article226.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article227.png" alt="Introduced to Sierra Leone by the Temne tribe, monkors are a sweet and savoury fritter consisting of green banana and plantain.">
+                        <div>
+                            <strong>A taste of Sierra Leone, from sizzling fired 
+                                bites to soothing fish stews</strong>
+                            <p>Over the centuries, Sierra Leone has been a place of refuge. The Limba peoples 
+                                were drawn by whispers of a land untouched by turmoil in Africa’s Sahelian 
+                                kingdoms, and other tribes set out for there too</p>
+                            <a href="article227.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

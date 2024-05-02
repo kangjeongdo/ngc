@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ngc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="gnbPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <h2>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h2>
+            <input type="button" value="search" data-toggle="searchField" class="openField">
+        </div>
+        <div>
+             <aside>
+                <ol>
+                    <li>Animal</li>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+                <ol>
+                    <li>Environment</li>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html">WildFires Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>History &amp; Culturee</li>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+                <ol>
+                    <li>Science</li>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+                <ol>
+                    <li>Travel</li>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <h2>LATEST<b>STORIES</b></h2> 
+                <ul>
+                    <li>
+                        <a href="article241.html">Inside the Irish ‘hell caves’ where Halloween was born</a>
+                    </li>
+                    <li>
+                        <a href="article127.html">Dino nuggets ...  for dinosaurs A young tyrannosaur’s last meal gives new insight</a>
+                    </li>
+                    <li>
+                        <a href="article132.html">Walking is the sixth vital sign. Here’s how to do it right.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" data-panel="gnbPanel" class="openBtn">
+                <input type="button" value="Animal" data-gnb="depthMenuForAnimal" class="openGnb">
+                <input type="button" value="Environment" data-gnb="depthMenuForEnvironment" class="openGnb">
+                <input type="button" value="History &amp; Culture" data-gnb="depthMenuForHistoryCulture" class="openGnb">
+                <input type="button" value="Science" data-gnb="depthMenuForScience" class="openGnb">
+                <input type="button" value="Travel" data-gnb="depthMenuForTravel" class="openGnb">
+            </div>
+            <h1>
+                <a href="index.html"><img src="images/ngc_logo.png" alt="National Geographic logo"></a>
+            </h1>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="subscribe.html">Subscribe</a>
+                <input type="button" value="Newsletters" data-popup="newsLetterPopUp" class="openPopUp">
+                <input type="button" value="search" data-toggle="searchField" class="openField">
+            </div>
+        </div>
+        <div id="depthMenuForAnimal">
+            <aside>
+                <ol>
+                    <li><a href="list_Animal.html">Animal</a></li>
+                    <li><a href="list_Domesticated.html">Domesticated</a></li>
+                    <li><a href="list_PhotoArk.html">Photo Ark</a></li>
+                    <li><a href="list_WildCities.html">Wild Cities</a></li>
+                    <li><a href="list_WildLifeWatch.html">WildLife Watch</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ANIMAL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article09.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article07.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article04.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article01.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForEnvironment">
+            <aside>
+                <ol>
+                    <li><a href="list_Environment.html">Environment</a></li>
+                    <li><a href="list_ClimateChangeCoverage.html">Climate Change Coverage</a></li>
+                    <li><a href="list_WildFiresCoverage.html.html">WildFires Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>ENVIRONMENT</b></h2>
+                <ol>
+                    <li>
+                        <a href="article63.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article.62.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article60.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article58.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>    
+        <div id="depthMenuForHistoryCulture">
+            <aside>
+                <ol>
+                    <li><a href="list_HistoryCulture.html">History &amp; Culture</a></li>
+                    <li><a href="list_BlackHistory.html">Explore Black History in America</a></li>
+                    <li><a href="list_HistoryMagazine.html">National Geographic History Magazine</a></li>
+                    <li><a href="list_OutOfEdenWalk.html">Out of Eden Walk</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>HISTORY &amp; CULTURE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article119.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article103.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article99.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article97.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForScience">
+            <aside>
+                <ol>
+                    <li><a href="list_Science.html">Science</a></li>
+                    <li><a href="list_CoronavirusCoverage.html">Coronavirus Coverage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>SCIENCE</b></h2>
+                <ol>
+                    <li>
+                        <a href="article138.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article135.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article133.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article130.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="depthMenuForTravel">
+            <aside>
+                <ol>
+                    <li><a href="list_Travel.html">Travel</a></li>
+                    <li><a href="list_Adventure.html">Adventure</a></li>
+                    <li><a href="list_AdventureEverywhere.html">Adventure Everywhere</a></li>
+                    <li><a href="list_BestFamilyTrips.html">Best Family Trips</a></li>
+                    <li><a href="list_BestOfTheWorld.html">Best of the World</a></li>
+                    <li><a href="list_DestinationGuides.html">Destination Guides</a></li>
+                    <li><a href="list_FoodTravel.html">Food &amp; Travel</a></li>
+                    <li><a href="list_NationalParks.html">National Parks</a></li>
+                    <li><a href="list_WorldHeritage.html">World Heritage</a></li>
+                </ol>
+            </aside>
+            <div>
+                <input type="button" value="close" class="closeBtn">
+                <h2>OUR<b>TRAVEL</b></h2>
+                <ol>
+                    <li>
+                        <a href="article161.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article159.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article158.html">View article</a>
+                    </li>
+                    <li>
+                        <a href="article156.html">View article</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="newsLetterPopUp">
+            <div>
+                <img src="images/bg_newsletters.png" alt="with penguins">
+                <input type="button" value="close" class="closePopUp">
+                <div>
+                    <dl>
+                        <dt>Stay in touch&excl;</dt>
+                        <dd>Subscribe to following updates and you won't miss a thing</dd>
+                    </dl>
+                    <form>
+                        <input type="email" placeholder="Your email" title="enter your email to receive updates">
+                        <input type="submit" value="submit" title="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="searchField">
+            <form>
+                <fieldset>
+                    <input type="search" placeholder="search" title="insert keyword for articles">
+                    <input type="submit" value="search" class="openBtn">
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    <article>
+        <div class="mainPic_small">
+            <h2>NATIONAL GEOGRAPHIC</h2>
+            <div>
+                <img src="images/article85_main.png" alt="The setting sun shines through wildfire smoke during the Beckwourth Complex Fire in California on Monday, July 12, 2021">
+            </div>
+            <div>
+                <h3>How extreme fire weather 
+                    can cool the planet</h3>
+                <p>
+                    <span class="environment">ENVIRONMENT</span>
+                    <time datetime="2021-08-06">August 06 , 2021</time>
+                </p>
+            </div>
+        </div>
+        <div class="center_Pic">
+            <div>
+                <p>Extreme heat often brings extreme wildfires, and this year is no exception, with 
+                    unprecedented heat waves fueling enormous outbreaks of fires in the western 
+                    United States and Canada, as well as across the Mediterranean and in Siberia. But 
+                    paradoxically, the most intense wildfires can have the opposite effect on 
+                    temperatures, cooling Earth’s surface both regionally and globally.</p>
+                <p>Dense wildfire smoke can temporarily block sunlight near the ground, causing 
+                    regional temperatures to drop by several degrees. Wildfire smoke can also have 
+                    global cooling effects by making clouds in the lower atmosphere more reflective or 
+                    blocking sunlight in the upper atmosphere, similar to what a volcanic eruption does.</p>
+                <p>Scientists have only recently begun studying these effects, with Australia’s record  
+                    2019-2020 bushfire season marking the first time researchers detected wildfire 
+                    smoke-induced global cooling. The effect is far too small to counteract human 
+                    caused global warming, but beyond that, researchers say it’s too early to predict
+                     what it means for the broader climate system.</p>
+                <p>But with fire seasons growing more intense around the world and this summer 
+                    triggering a spate of extreme fire weather in North America and elsewhere, the 
+                    search for answers is growing increasingly urgent.</p>
+                <div>
+                    <img src="images/article85_02.png" alt="Bushfire smoke hovers over Canberra, Australia on January 23, 2020. Australia's 2020 fires caused a temporary global cooling effect.">
+                </div>
+                <p>“It’s absolutely clear that research related to the effect of wildfires on climate is 
+                    very topical,” says Sergey Khaykin, a fire weather expert at Sorbonne University in 
+                    France.</p>
+                <h4>Dimmer skies, brighter clouds</h4>
+                <p>As wildfires burn across the land, they emit a cocktail of tiny particles, water vapor, 
+                    and gases into the air. Swept around by winds, this wildfire smoke can pollute the 
+                    air hundreds to thousands of miles away. Residents of the northeastern U.S. 
+                    experienced this firsthand in mid-July, when a pulse of smoke from a wildfire 
+                    outbreak in southern Canada wafted over New York City, Philadelphia, and 
+                    Washington D.C., reddening sunsets and triggering air quality alerts. In late July, 
+                    smoke from Canadian wildfires spread across Minnesota, leading to 
+                    “unprecedented” levels of air pollution. This week, Athens is choking on smoke as 
+                    wildfires rage across nearby forests. The Dixie Fire is currently California's largest 
+                    blaze, destroying over 100 homes and leveling a historic town.</p>
+                <p>In addition to creating a health hazard, dense wildfire smoke near the ground 
+                    sometimes blocks enough light to reduce surface temperatures. As far back as 1950, 
+                    scientists have measured this effect by comparing temperatures on heavy smoke 
+                    days with  temperatures forecast to have occurred in its absence.</p>
+                <p>“The effect ranges, depending how far you are from the source, how big the fire was 
+                    and how much smoke it injected,” says Robert Field, a research scientist at NASA’s 
+                    Goddard Institute for Space Studies. But when wildfire smoke is thick enough, 
+                    Field says, “you could get a brief 5 degree Celsius [9°F] cooling effect.”</p>
+                <p>Field describes these cooling effects as “episodic” and “almost an academic 
+                    curiosity” compared with the public health impacts of wildfire smoke. But new 
+                    research on Australia’s 2019-2020 bushfire season points to another, potentially 
+                    far more significant, way that wildfire smoke can cool Earth’s surface.</p>
+                <p>Writing in the journal Geophysical Research Letters last week, scientists at the 
+                    National Center for Atmospheric Research reported that those Australian fires 
+                    poured so much smoke into the Southern Hemisphere’s atmosphere it triggered a 
+                    “strong and rapid” global cooling effect of about 0.06°C ( 0.01°F). According to lead 
+                    study author John Fasullo, this was largely due to how smoke particles interact 
+                    with clouds in the lower atmosphere, or troposphere.</p>
+                <p>Smoke particles act as seeds for water vapor to form droplets, resulting in clouds 
+                    with additional droplets of water that are smaller and reflect more sunlight. While 
+                    smoke tends to rain out of clouds fairly quickly, the Australian bushfires raged for 
+                    months, pumping more and more cloud-brightening smoke into the atmosphere.</p>
+                <p>“It’s not a big effect, but when you integrate over the entire Southern Ocean, it 
+                    adds up,” Fasullo says.</p>
+                <p>Indeed, the impact seems to have rippled across the climate system. The 
+                    researchers’ models showed that smoke-induced cooling in the Southern 
+                    Hemisphere shifted a critical belt of tropical thunderstorms, the Intertropical 
+                    Convergence Zone, further north. Fasullo says that this shift might have 
+                    contributed to the emergence of La Niña conditions last year, which cooled ocean 
+                    surface temperatures in the eastern equatorial Pacific, although more research is 
+                    needed to confirm that hypothesis.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h5>Comments :</h5>
+                <ul>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                    <li>
+                        <strong>john</strong>
+                        <time datetime="2024-01-16">January 16, 2024 at 4:12pm</time>
+                        <span>Very good</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Leave a Reply</h5>
+                <p>Your email address will not be published. Required fields are marked*</p>
+                <form>
+                    <textarea placeholder="Comment*"></textarea>
+                    <div class="info">
+                        <input type="text" placeholder="Name*">
+                        <input type="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="save_Name">
+                        <label for="save_Name">Save my name, email in this browser for the next time I comment</label>    
+                    </div>
+                    <button class="post_Comment">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h4>Related posts:</h4>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/article246.png" alt="Punctuated with the remains of a milecastle (small fort), Hadrian’s Wall stretches over hilly terrain near Haltwhistle in Northumberland, England">
+                        <div>
+                            <strong>Along Hadrian’s Wall, ancient Rome’s temples, 
+                                towers, and cults come to life</strong>
+                            <p>Hadrian’s Wall once marked the extent of the Roman empire in Britannia. Now it’s a 
+                                pitstop on the way to Scotland’s capital, Edinburgh, or the country’s largest city, 
+                                Glasgow. Things have changed over the past two thousand years.</p>
+                            <a href="article246.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article247.png" alt="A weaver works at her loom at Ock Pop Tock, an artisan studio in Louangphabang.">
+                        <div>
+                            <strong>Why Laos thinks this serpent god deserves 
+                                UNESCO status</strong>
+                            <p>In Laos, a legend holds that a handsome half-serpent, half-human water spirit 
+                                known as a naga lures a beautiful weaver to be his bride in the depths of the 
+                                Mekong River. Although you’ll see this dragon-like god</p>
+                            <a href="article247.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/article248.png" alt="In Padua’s pedestrian-only historic center, Piazza dei Signori is a social hub for the city's university students, locals, and visitors.">
+                        <div>
+                            <strong>These frescoes shattered conventions in the 
+                                Italian art world</strong>
+                            <p>When visitors look up at the ceiling of the Scrovegni Chapel in Padua, Italy, they 
+                                often suddenly fall silent. Painted above are the golden stars and the enchanting 
+                                blue skies of a heaven envisioned by the Renaissance</p>
+                            <a href="article248.html">View article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <footer>
+        <div>
+            <h2><img src="images/ngc_footer_logo.png" alt="goodBy. NGC"></h2>
+            <div>
+                <h3>TOPICS</h3>
+                <a href="list_Animal.html">Animal</a>
+                <a href="list_Environment.html">Environment</a>
+                <a href="list_HistoryCulture.html">History &amp; Culture</a>
+                <a href="list_Science.html">Science</a>
+                <a href="list_Travel.html">Travel</a>
+            </div>
+            <div>
+                <h3>LEGAL</h3>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <a href="termsOfUse.html">Terms of Use</a>
+                <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo" target="_blank">Interest-Based Ads</a>
+            </div>
+            <div>
+                <h3>OUR SITES</h3>
+                <a href="https://www.nationalgeographic.org/society/projects/ng-live/" target="_blank">Attend a Live Event</a>
+                <a href="https://www.nationalgeographic.com/expeditions/" target="_blank">Book a Trip</a>
+                <a href="https://www.natgeomaps.com/" target="_blank">Buy Maps</a>
+                <a href="https://www.shopdisney.com/franchises/national-geographic/" target="_blank">Shop Nat Geo</a>
+                <a href="https://www.nationalgeographic.org/society/events-and-experiences/" target="_blank">Visit the D.C. Museum</a>
+            </div>
+            <div>
+                <h3>JOIN US</h3>
+                <a href="https://help.nationalgeographic.com/" target="_blank">Customer Service</a>
+                <a href="https://jobs.disneycareers.com/search-jobs/national%20geographic/" target="_blank">Work at Nat Geo</a>
+                <a href="https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd" target="_blank">Contribute to Protect the Planet</a>
+                <a href="https://ngmdomsubs.nationalgeographic.com/pubs/NG/NGM/eCare_Login.jsp?cds_page_id=226717&cds_mag_code=NGM&id=1708329081456&lsid=40500151214011265&vid=1" target="_blank">Manage Your Subscription</a>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/natgeo/" target="_blank">twitter</a></li>
+                <li><a href="https://www.instagram.com/natgeo/" target="_blank">instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/national-geographic" target="_blank">linkedin</a></li>
+                <li><a href="https://www.youtube.com/@NatGeo" target="_blank">youtube</a></li>
+                <li><a href="https://www.reddit.com/r/nationalgeographic/?share_id=VNvhkrwTD0" target="_blank">reddit</a></li>
+            </ul>
+            <p>
+                <span>Copyright © 1996-2015 National Geographic Society</span>
+                <span>Copyright © 2015-2023 National Geographic Partners, LLC. All rights reserved</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
