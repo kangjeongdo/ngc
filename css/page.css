@@ -571,10 +571,17 @@ article > div:last-child ul li div div a:hover::before{
     }
     .list_Travel > div:first-child ol li a{
         font-size: 14px; font-weight: 300; color: #757575; display: block; position: relative;
-        text-align: center; margin-bottom: 25px; 
+        text-align: center; padding-bottom: 25px; box-sizing: border-box; 
     }
     .list_Travel > div:first-child ol li:hover a{
         font-weight: 400; color: #000000;
+    }
+    .list_Travel > div:first-child ol li a::after{
+        content: ''; display: block; border-bottom: 1px solid #000000; position: absolute;
+        bottom: 0; transform: scaleX(0); transition: transform 0.3s ease-in; width: 0%;
+    }
+    .list_Travel > div:first-child ol li a:hover::after{
+        transform: scaleX(1); width: 100%;
     }
     .list_Travel > div:last-child ul li{
        width: 100%;
@@ -1738,11 +1745,8 @@ article > div:last-child ul li div div a:hover::before{
         width: 100%; white-space: nowrap; overflow-x: overlay; transition: overflow-x 0.4s ease; overflow-y: hidden; 
         border-bottom: 1px solid #c4c4c4;
     }
-    .list_Travel > div:first-child ol::-webkit-scrollbar{
-        width: 5%; height: 5px;
-    }
     .list_Travel > div:first-child ol::-webkit-scrollbar-thumb{
-        outline: none; background-color: #000000; border-radius: 5px; 
+        outline: none; background-color: #000000; border-radius: 5px; visibility: hidden;
     }
     .list_Travel > div:first-child ol::-webkit-scrollbar-track{
         background-color: transparent; border-bottom: 1px solid #c4c4c4;
@@ -1755,10 +1759,17 @@ article > div:last-child ul li div div a:hover::before{
     }
     .list_Travel > div:first-child ol li a{
         font-size: 14px; font-weight: 300; color: #757575; display: block; position: relative;
-        text-align: center; margin-bottom: 25px; 
+        text-align: center; padding-bottom: 25px; box-sizing: border-box;
     }
     .list_Travel > div:first-child ol li a:hover{
         font-weight: 400; color: #000000;
+    }
+    .list_Travel > div:first-child ol li a::after{
+        content: ''; display: block; border-bottom: 1px solid #000000; position: absolute;
+        bottom: 0; transform: scaleX(0); transition: transform 0.3s ease-in; width: 0%;
+    }
+    .list_Travel > div:first-child ol li a:hover::after{
+        transform: scaleX(1); width: 100%;
     }
     .list_Travel > div:last-child ul::after,
     article > div:last-child ul::after{
