@@ -1,9 +1,17 @@
 body{
     overflow-x: hidden; 
 }
-body,
 #gnbPanel,
-.list_container2{
+article,
+.list_container,
+.list_container2,
+.list_Travel,
+.loginContainer,
+.signContainer,
+.findContainer,
+.policyContainer,
+.subscribeContainer,
+.termsContainer{
     background-color: #ffffff;
 }
 footer{
@@ -63,7 +71,7 @@ a{
      }
      #gnbPanel div:first-child input.closeBtn{
         text-indent: -9999px; background: url('../images/bul_close.svg') center no-repeat; width: 19px; height: 19px;
-        position: absolute; left: 0; top: 3px;
+        position: absolute; left: 0; top: 6px;
      }
      #gnbPanel div:first-child h2{
         text-align: center; margin: 0 28%; max-width: 133px; width: 35%;
@@ -75,7 +83,7 @@ a{
         display: inherit; width: 100%; 
      }
      #gnbPanel div:first-child input.openField{
-        position: absolute; top: 3px; right: 0;
+        position: absolute; top: 6px; right: 0;
      }
     #gnbPanel > div:last-child{
         margin-top: 40px;
