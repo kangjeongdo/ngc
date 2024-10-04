@@ -1,13 +1,13 @@
 .indexContainer a:not(.bx-prev,.bx-next)::before,
 .list_container a:not(.bx-prev,.bx-next):before,
-.list_Travel > div:last-child > ul li div div a::before,
+.list_Travel > [id^='listfor'] > ul li div div a::before,
 article > div:last-child ul li div div a::before{
     content: ''; display: block; border-bottom: 1px solid #456148; width: 44px;
     position: absolute; bottom: 10px; transition: width 0.5s ease-in; 
 }
 .indexContainer a:not(.bx-prev,.bx-next):hover::before,
 .list_container a:not(.bx-prev,.bx-next):hover::before,
-.list_Travel > div:last-child > ul li div div a:hover::before,
+.list_Travel > [id^='listfor'] > ul li div div a:hover::before,
 article > div:last-child ul li div div a:hover::before{
     width: 5px;
 }
@@ -15,19 +15,18 @@ article > div:last-child ul li div div a:hover::before{
 .list_container > div:not(:last-child) a:not(.bx-prev,.bx-next):hover{
     padding-left: 10px; background: url('../images/bul_arrow_white.svg') right no-repeat;
 }
+article > div:nth-child(3) div:last-child form textarea:focus,
+article > div:nth-child(3) div:last-child form input:focus,
+.list_container2 > div:nth-child(2) input[type='search']:focus,
+.loginContainer form input:not(:last-of-type):focus,
+.findContainer form input[type='email']:focus,
+.signContainer form fieldset input:focus,
+.signContainer form fieldset > div:first-of-type div:first-child select:focus,
+.subscribeContainer > div:last-child form fieldset input[type='text']{
+    outline: none;
+}
 
 @media screen and (max-width:767px){
-
-    article > div:nth-child(3) div:last-child form textarea:focus,
-    article > div:nth-child(3) div:last-child form input:focus,
-    .list_container2 > div:nth-child(2) input[type='search']:focus,
-    .loginContainer form input:not(:last-of-type):focus,
-    .findContainer form input[type='email']:focus,
-    .signContainer form fieldset input:focus,
-    .signContainer form fieldset > div:first-of-type div:first-child select:focus,
-    .subscribeContainer > div:last-child form fieldset input[type='text']{
-        outline: none;
-    }
     .loginContainer h2,
     .findContainer h2,
     .signContainer h2,
@@ -107,7 +106,7 @@ article > div:last-child ul li div div a:hover::before{
     }
     .indexContainer a:not(.bx-prev,.bx-next),
     .list_container a:not(.bx-prev,.bx-next),
-    .list_Travel > div:last-child > ul li div div a,
+    .list_Travel > [id^='listfor'] > ul li div div a,
     article > div:last-child ul li div div a{
         display: block; font-size: 14px; line-height: 20px; color: #ffffff; font-weight: 700; padding: 0 25px 0 49px;
         position: relative; transition: padding 0.5s ease-in; 
@@ -555,7 +554,7 @@ article > div:last-child ul li div div a:hover::before{
     }
     .list_Travel > div:first-child ol{
         width: 100%; white-space: nowrap; overflow-x: overlay; transition: overflow-x 0.4s ease; border-bottom: 1px solid #c4c4c4; padding: 0; overflow-y: hidden;
-        box-sizing: border-box;
+        box-sizing: border-box; display: flex;
     }
     .list_Travel > div:first-child ol::-webkit-scrollbar-thumb{
         outline: none; background-color: #000000; border-radius: 5px;  visibility: hidden;
@@ -564,70 +563,74 @@ article > div:last-child ul li div div a:hover::before{
         background-color: transparent; border-bottom: 1px solid #c4c4c4;
     }
     .list_Travel > div:first-child ol li{
-        display: inline-block; width: 61%; min-height: 39px;
+        width: 61%; min-height: 39px; text-align: center;
     }
     .list_Travel > div:first-child ol li:not(:first-child){
-        margin-left: 2%;
+        margin-left: 12%;
     }
-    .list_Travel > div:first-child ol li a{
+    .list_Travel > div:first-child ol li{
         font-size: 14px; font-weight: 300; color: #757575; display: block; position: relative;
         text-align: center; padding-bottom: 25px; box-sizing: border-box; 
     }
-    .list_Travel > div:first-child ol li:hover a{
+    .list_Travel > div:first-child ol li:hover{
         font-weight: 400; color: #000000;
     }
-    .list_Travel > div:first-child ol li a::after{
+    .list_Travel > div:first-child ol li::after{
         content: ''; display: block; border-bottom: 1px solid #000000; position: absolute;
         bottom: 0; transform: scaleX(0); transition: transform 0.3s ease-in; width: 0%;
     }
-    .list_Travel > div:first-child ol li a:hover::after{
+    .list_Travel > div:first-child ol li:hover::after{
         transform: scaleX(1); width: 100%;
     }
-    .list_Travel > div:last-child ul li{
-       width: 100%;
+    .list_Travel > [id^='listfor']{
+        display: none;
     }
+    .list_Travel > [id^='listfor'].active{
+        display: block;
+    }
+    .list_Travel > [id^='listfor'] ul li,
     article > div:last-child ul li{
-       width: 100%; 
+       width: 100%;
     }
     article > div:last-child ul li:not(:first-child){
         margin-top: 50px;
     }
-    .list_Travel > div:last-child ul li:not(:first-child){
+    .list_Travel > [id^='listfor'] ul li:not(:first-child){
         margin-top: 60px;
     }
-    .list_Travel > div:last-child ul li div img,
+    .list_Travel > [id^='listfor'] ul li div img,
     article > div:last-child ul li div img{
         width: 100%; display: block; margin-bottom: 35px; 
     }
-    .list_Travel > div:last-child ul li div:hover img,
+    .list_Travel > [id^='listfor'] ul li div:hover img,
     article > div:last-child ul li div:hover img{
         opacity: 0.7;
     }
-    .list_Travel > div:last-child ul li div div,
+    .list_Travel > [id^='listfor'] ul li div div,
     article > div:last-child ul li div div{
         display: flex; flex-direction: column;
     }
-    .list_Travel > div:last-child ul li div div h3,
+    .list_Travel > [id^='listfor'] ul li div div h3,
     article > div:last-child ul li div div strong{
         font-size: 18px; font-weight: 100; line-height: 24px; margin-bottom: 35px; color: #000000;
     }
-    .list_Travel > div:last-child ul li div div p,
+    .list_Travel > [id^='listfor'] ul li div div p,
     article > div:last-child ul li div div p{
         font-size: 14px; font-weight: 300; line-height: 20px; margin-bottom: 35px; color: #000000;
     }
-    .list_Travel > div:last-child > ul li div div a,
+    .list_Travel > [id^='listfor'] > ul li div div a,
     article > div:last-child ul li div div a{
         color: #000000; max-width: 79px;
     }
-    .list_Travel > div:last-child > ul li div div a,
+    .list_Travel > [id^='listfor'] > ul li div div a,
     article > div:last-child ul li div div a{
         align-self: flex-end;
     }
-    .list_Travel > div:last-child > ul li div div a:hover,
+    .list_Travel > [id^='listfor'] > ul li div div a:hover,
     article > div:last-child ul li div div a:hover{
         background: url('../images/bul_arrow_black.svg') right no-repeat; padding-left: 10px;
     }
-    .list_Travel > div:last-child > ul li div div a::before,
+    .list_Travel > [id^='listfor'] > ul li div div a::before,
     article > div:last-child ul li div div a::before{
         left: 0;
     }
@@ -1201,19 +1204,7 @@ article > div:last-child ul li div div a:hover::before{
     }
   
 }
-
 @media screen and (min-width:768px) and (max-width:1279px){
-
-    article > div:nth-child(3) div:last-child form textarea:focus,
-    article > div:nth-child(3) div:last-child form input:focus,
-    .list_container2 > div:nth-child(2) input[type='search']:focus,
-    .loginContainer form input:not(:last-of-type):focus,
-    .findContainer form input[type='email']:focus,
-    .signContainer form fieldset input:focus,
-    .signContainer form fieldset > div:first-of-type div:first-child select:focus,
-    .subscribeContainer > div:last-child form fieldset input[type='text']{
-        outline: none;
-    }
     .loginContainer,
     .findContainer,
     .signContainer{
@@ -1301,7 +1292,7 @@ article > div:last-child ul li div div a:hover::before{
     }
     .indexContainer a:not(.bx-prev,.bx-next),
     .list_container a:not(.bx-prev,.bx-next),
-    .list_Travel > div:last-child > ul li div div a,
+    .list_Travel > [id^='listfor'] > ul li div div a,
     article > div:last-child ul li div div a{
         display: block; font-size: 14px; line-height: 20px; color: #ffffff; font-weight: 700; padding: 0 25px 0 49px;
         position: relative; transition: padding 0.5s ease-in; 
@@ -1739,86 +1730,92 @@ article > div:last-child ul li div div a:hover::before{
         margin-bottom: 120px;
     }
     .list_Travel > div:first-child h2{
-        margin-bottom: 60px; font-size: 60px; font-weight: 300; text-align: left;
+        margin-bottom: 60px; font-size: 60px; font-weight: 300; text-align: left; 
     }
-    .list_Travel > div:first-child ol{
-        width: 100%; white-space: nowrap; overflow-x: overlay; transition: overflow-x 0.4s ease; overflow-y: hidden; 
-        border-bottom: 1px solid #c4c4c4;
+    .list_Travel > div:first-child > ol{
+        width: 100%; border-bottom: 1px solid #c4c4c4; display: flex; 
+        white-space: nowrap; overflow-x: overlay; transition: overflow-x 0.4s ease; overflow-y: hidden; 
     }
-    .list_Travel > div:first-child ol::-webkit-scrollbar-thumb{
-        outline: none; background-color: #000000; border-radius: 5px; visibility: hidden;
+    .list_Travel > div:first-child > ol::-webkit-scrollbar-thumb{
+        outline: none; background-color: #000000; border-radius: 5px; visibility: hidden; appearance: none;
     }
-    .list_Travel > div:first-child ol::-webkit-scrollbar-track{
+    .list_Travel > div:first-child > ol::-webkit-scrollbar-track{
         background-color: transparent; border-bottom: 1px solid #c4c4c4;
     }
     .list_Travel > div:first-child ol li{
-        display: inline-block; width: 35%; 
+        width: 35%;
     }
     .list_Travel > div:first-child ol li:not(:first-child){
-        margin-left: 2%;
+        margin-left: 8%;
     }
-    .list_Travel > div:first-child ol li a{
+    .list_Travel > div:first-child ol li{
         font-size: 14px; font-weight: 300; color: #757575; display: block; position: relative;
         text-align: center; padding-bottom: 25px; box-sizing: border-box;
     }
-    .list_Travel > div:first-child ol li a:hover{
+    .list_Travel > div:first-child ol li:hover{
         font-weight: 400; color: #000000;
     }
-    .list_Travel > div:first-child ol li a::after{
+    .list_Travel > div:first-child ol li::after{
         content: ''; display: block; border-bottom: 1px solid #000000; position: absolute;
         bottom: 0; transform: scaleX(0); transition: transform 0.3s ease-in; width: 0%;
     }
-    .list_Travel > div:first-child ol li a:hover::after{
+    .list_Travel > div:first-child ol li:hover::after{
         transform: scaleX(1); width: 100%;
     }
-    .list_Travel > div:last-child ul::after,
+    .list_Travel > [id^='listfor']{
+        display: none;
+    }
+    .list_Travel > [id^='listfor'].active{
+        display: block;
+    }
+    .list_Travel > [id^='listfor'] ul::after,
     article > div:last-child ul::after{
         content: ''; display: block; clear: both;
     }
-    .list_Travel > div:last-child ul li{
+    .list_Travel > [id^='listfor'] ul li{
        width: 49.5%; float: left;
     }
     article > div:last-child ul li{
         float: left; width: 32.5%; 
     }
-    .list_Travel > div:last-child ul li:not(:nth-child(2n+1)),
+    .list_Travel > [id^='listfor'] ul li:not(:nth-child(2n+1)),
     article > div:last-child ul li:not(:first-child){
         margin-left: 1%;
     }
-    .list_Travel > div:last-child ul li:not(:nth-child(n+1):nth-child(-n+2)){
+    .list_Travel > [id^='listfor'] ul li:not(:nth-child(n+1):nth-child(-n+2)){
         margin-top: 60px;
     }
-    .list_Travel > div:last-child ul li div{
+    .list_Travel > [id^='listfor'] ul li div{
         min-height: 610px;
     }
-    .list_Travel > div:last-child ul li div img,
+    .list_Travel > [id^='listfor'] ul li div img,
     article > div:last-child ul li div img{
         width: 100%; display: block; margin-bottom: 35px; 
     }
-    .list_Travel > div:last-child ul li div:hover img,
+    .list_Travel > [id^='listfor'] ul li div:hover img,
     article > div:last-child ul li div:hover img{
         opacity: 0.7;
     }
-    .list_Travel > div:last-child ul li div div{
+    .list_Travel > [id^='listfor'] ul li div div{
         min-height: 300px;
     }
-    .list_Travel > div:last-child ul li div div h3,
+    .list_Travel > [id^='listfor'] ul li div div h3,
     article > div:last-child ul li div div strong{
         font-size: 26px; font-weight: 100; line-height: 32px; margin-bottom: 60px; color: #000000;
     }
-    .list_Travel > div:last-child ul li div div p,
+    .list_Travel > [id^='listfor'] ul li div div p,
     article > div:last-child ul li div div p{
         font-size: 14px; font-weight: 300; line-height: 20px; margin-bottom: 35px; color: #000000;
     }
-    .list_Travel > div:last-child > ul li div div a,
+    .list_Travel > [id^='listfor'] > ul li div div a,
     article > div:last-child ul li div div a{
         color: #000000; max-width: 79px;
     }
-    .list_Travel > div:last-child > ul li div div a:hover,
+    .list_Travel > [id^='listfor'] > ul li div div a:hover,
     article > div:last-child ul li div div a:hover{
         background: url('../images/bul_arrow_black.svg') right no-repeat; padding-left: 10px;
     }
-    .list_Travel > div:last-child > ul li div div a::before,
+    .list_Travel > [id^='listfor'] > ul li div div a::before,
     article > div:last-child ul li div div a::before{
         left: 0;
     }
@@ -2424,19 +2421,8 @@ article > div:last-child ul li div div a:hover::before{
     }
   
 }
-
 @media screen and (min-width:1280px){
 
-    article > div:nth-child(3) div:last-child form textarea:focus,
-    article > div:nth-child(3) div:last-child form input:focus,
-    .list_container2 > div:nth-child(2) input[type='search']:focus,
-    .loginContainer form input:not(:last-of-type):focus,
-    .findContainer form input[type='email']:focus,
-    .signContainer form fieldset input:focus,
-    .signContainer form fieldset > div:first-of-type div:first-child select:focus,
-    .subscribeContainer > div:last-child form fieldset input[type='text']{
-        outline: none;
-    }
     .loginContainer,
     .findContainer{
         max-width: 862px;
@@ -2513,7 +2499,7 @@ article > div:last-child ul li div div a:hover::before{
     }
     .indexContainer a:not(.bx-prev,.bx-next),
     .list_container a:not(.bx-prev,.bx-next),
-    .list_Travel > div:last-child > ul li div div a,
+    .list_Travel > [id^='listfor'] > ul li div div a,
     article > div:last-child ul li div div a{
         display: block; font-size: 14px; line-height: 20px; color: #ffffff; font-weight: 700; padding: 0 25px 0 49px;
         position: relative; transition: padding 0.5s ease-in; 
@@ -2956,66 +2942,79 @@ article > div:last-child ul li div div a:hover::before{
     .list_Travel > div:first-child ol li:not(:first-child){
         margin-left: 2%;
     }
-    .list_Travel > div:first-child ol li a{
+    .list_Travel > div:first-child ol li{
         font-size: 14px; font-weight: 300; color: #757575; display: block; position: relative;
         padding-bottom: 20px;
     }
-    .list_Travel > div:first-child ol li a:hover{
+    .list_Travel > div:first-child ol li.active {
         font-weight: 400; color: #000000;
     }
-    .list_Travel > div:first-child ol li a::after{
+    .list_Travel > div:first-child ol li.active::after{
+        transform: scaleX(1); width: 100%;
+    }
+    .list_Travel > div:first-child ol li:hover{
+        font-weight: 400; color: #000000;
+    }
+    .list_Travel > div:first-child ol li::after{
         content: ''; display: block; border-bottom: 1px solid #000000; position: absolute;
         bottom: -1px; transform: scaleX(0); transition: transform 0.3s ease-in; width: 0%;
     }
-    .list_Travel > div:first-child ol li a:hover::after{
+    .list_Travel > div:first-child ol li:hover::after{
         transform: scaleX(1); width: 100%;
     }
-    .list_Travel > div:last-child ul::after,
+    .list_Travel > [id^='listfor']{
+        display: none; width: 100%;
+    }
+    .list_Travel > [id^='listfor'].active{
+        display: block;
+    }
+    .list_Travel > [id^='listfor'] ul::after,
     article > div:last-child ul::after{
         content: ''; display: block; clear: both;
     }
-    .list_Travel > div:last-child ul li,
+    .list_Travel > [id^='listfor'] ul li,
     article > div:last-child ul li{
         float: left; width: 33%; 
     }
-    .list_Travel > div:last-child ul li:not(:nth-child(3n+1)),
+    .list_Travel > [id^='listfor'] ul li:not(:nth-child(3n+1)),
     article > div:last-child ul li:not(:first-child){
         margin-left: 0.5%;
     }
-    .list_Travel > div:last-child ul li:not(:nth-child(n+1):nth-child(-n+3)){
+    .list_Travel > [id^='listfor'] ul li:not(:nth-child(n+1):nth-child(-n+3)){
         margin-top: 60px;
     }
-    .list_Travel > div:last-child ul li div img,
+    .list_Travel > [id^='listfor'] ul li div img,
     article > div:last-child ul li div img{
         width: 100%; display: block; margin-bottom: 35px; 
     }
-    .list_Travel > div:last-child ul li div:hover img,
+    .list_Travel > [id^='listfor'] ul li div:hover img,
     article > div:last-child ul li div:hover img{
         opacity: 0.7;
     }
-    .list_Travel > div:last-child ul li div div{
+    .list_Travel > [id^='listfor'] ul li div div{
         min-height: 360px;
     }
-    .list_Travel > div:last-child ul li div div h3,
+    .list_Travel > [id^='listfor'] ul li div div h3,
     article > div:last-child ul li div div strong{
         font-size: 30px; font-weight: 100; line-height: 33px; margin-bottom: 60px; color: #000000;
     }
-    .list_Travel > div:last-child ul li div div p,
+    .list_Travel > [id^='listfor'] ul li div div p,
     article > div:last-child ul li div div p{
         font-size: 16px; font-weight: 300; line-height: 22px; margin-bottom: 35px; color: #000000;
     }
-    .list_Travel > div:last-child > ul li div div a,
+    .list_Travel > [id^='listfor'] > ul li div div a,
     article > div:last-child ul li div div a{
         color: #000000; max-width: 79px;
     }
-    .list_Travel > div:last-child > ul li div div a:hover,
+    .list_Travel > [id^='listfor'] > ul li div div a:hover,
     article > div:last-child ul li div div a:hover{
         background: url('../images/bul_arrow_black.svg') right no-repeat; padding-left: 10px;
     }
-    .list_Travel > div:last-child > ul li div div a::before,
+    .list_Travel > [id^='listfor'] > ul li div div a::before,
     article > div:last-child ul li div div a::before{
         left: 0;
     }
+
 
     article > div:first-child,
     article > .left_ThreePic,

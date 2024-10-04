@@ -642,7 +642,7 @@ footer > *{
 }
 #gnbPanel{
     box-sizing: border-box; width: 100%; height: 100%; padding:55px 5%; overflow-y: scroll;
-    position: fixed; top: 0; display: none; z-index: 60; 
+    position: fixed; top: 0; display: none; z-index: 60; box-sizing: border-box;
  }
 #gnbPanel.active{
    display: block;

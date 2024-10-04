@@ -21,7 +21,33 @@ $(document).ready(function(){
     showPass();
     giftperson();
     cardBg();
+    font('.list_Travel > div:first-child ol li')
+    list();
   });
+  function list(){
+    var currentList = null
+    var list = $("[id^='listfor']");
+    var listactive = $(".list_Travel > div:first-child > ol li");
+    var change = $(".list_Travel > div:first-child h2");
+    $('.openList').click(function(){
+        var font = $(this).text();
+        listactive.removeClass('active');
+        list.removeClass('active')
+        $(this).addClass('active')
+        currentList = '#' + $(this).attr("data-list");
+        $(currentList).addClass("active");
+        $(change).text(font);
+    });
+}
+function font(btn){
+    $(btn).click(function(){
+       if($(this).hasClass('active')){
+        $(this).removeClass('active')
+       }else{
+        $(this).addClass('active')
+       }
+    });
+}
 function panelControl(){
     var currentPanel = null;
     $(".openBtn").click(function(){
@@ -153,13 +179,3 @@ function cardBg(){
         }
     });
 }
-// function size(){
-//     if(window.matchMedia("screen and (max-width:767px)").matches){
-//         $(".list_container > div:nth-child(4) > ul").addClass("articleList");
-//         console.log( $(".list_container > div:nth-child(4) > ul").addClass("articleList"))
-//         console.log("작동됩니다")
-//     }else{
-//         $(".list_container > div:nth-child(4) > ul").addClass("")
-//         console.log("작작동")
-//     }
-// }
