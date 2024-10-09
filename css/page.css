@@ -25,7 +25,94 @@ article > div:nth-child(3) div:last-child form input:focus,
 .subscribeContainer > div:last-child form fieldset input[type='text']{
     outline: none;
 }
-
+@keyframes slideUp{
+    from{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideUpEx{
+    from{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+}
+@keyframes leftSlide{
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes leftSlideEx {
+    from{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+}
+@keyframes rightSlide{
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes rightSlideEx {
+    from{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+}
+@keyframes show {
+    from{
+        opacity: 0; 
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes showEx {
+    from{
+        opacity: 1; 
+    }
+    to{
+        opacity: 0;
+    }
+}
+.show{
+    animation: show 1.3s ease-in forwards !important;
+}
+.slideUp{
+    animation: slideUp 0.7s ease-in forwards !important;
+}
+.leftSlide{
+    animation: leftSlide 1s ease-in forwards !important;
+}
+.rightSlide{
+    animation: rightSlide 1s ease-in forwards !important;
+}
 @media screen and (max-width:767px){
     .loginContainer h2,
     .findContainer h2,
@@ -550,7 +637,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         padding-top: 225px; margin-bottom: 120px;
     }
     .list_Travel > div:first-child h2{
-        margin-bottom: 60px; font-size: 35px; font-weight: 300; text-align: left; width: 100%;
+        margin-bottom: 60px; font-size: 35px; font-weight: 300; text-align: left; width: 100%; text-transform: uppercase;
     }
     .list_Travel > div:first-child ol{
         width: 100%; white-space: nowrap; overflow-x: overlay; transition: overflow-x 0.4s ease; border-bottom: 1px solid #c4c4c4; padding: 0; overflow-y: hidden;
@@ -1730,7 +1817,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         margin-bottom: 120px;
     }
     .list_Travel > div:first-child h2{
-        margin-bottom: 60px; font-size: 60px; font-weight: 300; text-align: left; 
+        margin-bottom: 60px; font-size: 60px; font-weight: 300; text-align: left; text-transform: uppercase;
     }
     .list_Travel > div:first-child > ol{
         width: 100%; border-bottom: 1px solid #c4c4c4; display: flex; 
@@ -2502,7 +2589,7 @@ article > div:nth-child(3) div:last-child form input:focus,
     .list_Travel > [id^='listfor'] > ul li div div a,
     article > div:last-child ul li div div a{
         display: block; font-size: 14px; line-height: 20px; color: #ffffff; font-weight: 700; padding: 0 25px 0 49px;
-        position: relative; transition: padding 0.5s ease-in; 
+        position: relative; transition: padding 0.5s ease-in;
     }
     strong{
         display: block; font-size: 16px; line-height: 22px; margin-bottom: 15px; color: #ffffff; font-weight: 700;
@@ -2518,7 +2605,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         color: #000000;
     }
     div.bx-wrapper{
-        background: transparent; border: none; box-shadow: none; margin-bottom: 0;
+        background: transparent; border: none; box-shadow: none; margin-bottom: 0; opacity: 0; animation: slideUpEx 1s ease-in forwards; opacity: 0;
     }
     div.bx-wrapper .bx-controls-direction a{
         width: 50px; height: 50px; background-position: 0 0;
@@ -2555,10 +2642,10 @@ article > div:nth-child(3) div:last-child form input:focus,
         float: left;
     }
     .oneArticle img{
-        display: block; width: 58%; max-width: 1000px; 
+        display: block; width: 58%; max-width: 1000px; animation: slideUpEx 1s ease-in forwards; opacity: 0;
     }
     .oneArticle div{
-        margin-left: 7%; width: 35%;
+        margin-left: 7%; width: 35%; animation: rightSlideEx 1s ease-in forwards; opacity: 0;
     }
     .oneArticle div a{
         text-align: right;
@@ -2592,7 +2679,6 @@ article > div:nth-child(3) div:last-child form input:focus,
     .list_container > div:last-child a:hover{
         background-color: #757575;
     }
-
     
     .indexContainer > div:first-child{
         position: relative; 
@@ -2601,7 +2687,8 @@ article > div:nth-child(3) div:last-child form input:focus,
         width: 100%; display: block;
     }
     .indexContainer > div:first-child div{
-        position: absolute; bottom: 50px; max-width: 1720px; left: 5%; width: 89.5%;
+        position: absolute; bottom: 50px; max-width: 1720px; left: 5%; width: 89.5%; opacity: 0;
+        transition: animation 0.3s ease-in; animation: slideUpEx 1s ease-in-out forwards;
     }
     .indexContainer > div:first-child div h3{
         text-shadow: 3px 3px 3px black; width: 45%;
@@ -2628,7 +2715,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         padding-left: 10px; background: url('../images/bul_arrow_white.svg') right no-repeat;
     }
     .indexContainer > div.showArticle > div:first-child{
-        width: 33%; margin-right: 7%; max-width: 455px;
+        width: 33%; margin-right: 7%; max-width: 455px; opacity: 0; animation: leftSlideEx 1s ease-in-out forwards; transition: 1s;
     }
     .indexContainer > div:nth-child(2) > div:first-child a{
         max-width: 112px;
@@ -2650,7 +2737,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         left: 0;
     }
     .indexContainer > div:nth-child(3){
-        margin-bottom: 220px;
+        margin-bottom: 220px; opacity: 0;  animation : slideUpEx 1s ease-in-out forwards; 
     }
     .indexContainer > div:nth-child(3) > div{
        display: flex; justify-content: space-between; gap: 10px;
@@ -2665,7 +2752,10 @@ article > div:nth-child(3) div:last-child form input:focus,
         width: 100%; display: block;
     }
     .indexContainer div.oneArticle div a::before{
-        right: 126px;
+        right: 126px; 
+    }
+    .indexContainer div:nth-child(5) > *:not(div){
+        opacity: 0; animation: slideUpEx 1s ease-out forwards;
     }
     .indexContainer div:nth-child(5) p,
     .indexContainer div:nth-child(5) button.openPopUp{
@@ -2689,7 +2779,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         max-width: 167px;
     }   
     .indexContainer div:nth-child(11){
-        padding-top: 120px; 
+        padding-top: 120px;
     }
     .indexContainer div:nth-child(11)::after{
         content: ''; display: block; clear: both;
@@ -2698,7 +2788,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         float: left;
     }
     .indexContainer div:nth-child(11) div{
-        margin-left: 8%; width: 39%; margin-right: 3.5%;
+        margin-left: 8%; width: 39%; margin-right: 3.5%;  opacity: 0; animation: leftSlideeEx 1s ease-out forwards;
     }
     .indexContainer div:nth-child(11) div b{
         color: inherit;
@@ -2713,7 +2803,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         background: url('../images/bul_arrow_black.svg') right no-repeat; padding-left: 10px;
     }
     .indexContainer div:nth-child(11) img{
-        width: 42.4%; max-width: 730px; display: block; 
+        width: 42.4%; max-width: 730px; display: block;  opacity: 0; animation: rightlideeEx 1s ease-out forwards;
     }
 
     .list_container > div:first-child{
@@ -2735,7 +2825,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         content: ''; display: block; clear: both;
     }
     .list_container > div:nth-child(2) > *{
-        float: left;
+        float: left; 
     }
     .list_container > div:nth-child(2) > div{
         margin: 0 7% 0 7.8%; width: 35.5%; 
@@ -2753,14 +2843,15 @@ article > div:nth-child(3) div:last-child form input:focus,
         width: 42%; 
     }
     .list_container div:nth-child(3){
-        background-color: #02291f; height: 580px;
+        background-color: #02291f; height: 580px; 
     }
+
     .list_container div:nth-child(3) > *{
-        color: #ffffff; display: block; margin-left: 7%;
+        color: #ffffff; display: block; margin-left: 7%; opacity: 0; animation: showEx 1s ease-in-out forwards;
     }
     .list_container div:nth-child(3) em{
         text-indent: -9999px; background: url('../images/icon_quotes.svg') bottom no-repeat; width: 32px;
-        padding-top: 200px; margin-bottom: 25px;
+        padding-top: 180px; margin-bottom: 25px;
     }
     .list_container div:nth-child(3) blockquote{
         font-size: 60px; line-height: 66px; font-weight: 300; 
@@ -2796,7 +2887,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         margin-bottom: 240px; padding-left: 5%; display: flex; justify-content: space-between;
     }
     .list_container div.showArticle > div:first-of-type{
-        margin-right: 6.2%; width: 23.8%;
+        margin-right: 6.2%; width: 23.8%; opacity: 0; animation: leftSlideEx 1s ease-out forwards;
     }
     .list_container > div.showArticle ul.articleList li > a::before{
         right: 105px; 
@@ -2928,7 +3019,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         padding-top: 273px; margin-bottom: 120px;
     }
     .list_Travel > div:first-child h2{
-        margin-bottom: 60px; font-size: 60px; font-weight: 300; text-align: left;
+        margin-bottom: 60px; font-size: 60px; font-weight: 300; text-align: left; text-transform: uppercase;
     }
     .list_Travel > div:first-child ol::after{
         content: ''; display: block; clear: both;
