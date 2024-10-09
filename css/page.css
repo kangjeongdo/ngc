@@ -101,6 +101,18 @@ article > div:nth-child(3) div:last-child form input:focus,
         opacity: 0;
     }
 }
+@keyframes bouncing {
+    0% {
+        opacity: 0;
+        transform: scale(.3);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+      70% { transform: scale(.9); }
+      100% { transform: scale(1); }
+}
 .show{
     animation: show 1.3s ease-in forwards !important;
 }
@@ -2815,18 +2827,6 @@ article > div:nth-child(3) div:last-child form input:focus,
     .list_container > div:first-child h2{
         position: absolute; left: 5%; top: 330px; text-shadow: 3px 3px 3px black;  max-width: 745px; animation: bouncing 1s ease-in forwards; transition: animation 0.5s ease-in;
     }
-    @keyframes bouncing {
-        0% {
-            opacity: 0;
-            transform: scale(.3);
-          }
-          50% {
-            opacity: 1;
-            transform: scale(1.05);
-          }
-          70% { transform: scale(.9); }
-          100% { transform: scale(1); }
-    }
     .list_container > div:first-child h2 b{
         text-shadow: none;
     }
@@ -2920,7 +2920,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         width: 100%; display: block;
     }
     .list_container2 div:first-child > div{
-        position: absolute; bottom: 30px; max-width: 800px; 
+        position: absolute; bottom: 30px; max-width: 800px; animation: bouncing 1s ease-in forwards; transition: animation 0.5s ease-in;
     }
     .list_container2 div:first-child > div h2{
         text-shadow: 3px 3px 3px black; font-size: 90px; line-height: 96px;
