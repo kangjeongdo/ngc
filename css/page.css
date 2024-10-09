@@ -2813,7 +2813,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         width: 100%; display: block; 
     }
     .list_container > div:first-child h2{
-        position: absolute; left: 5%; top: 330px; text-shadow: 3px 3px 3px black;  max-width: 745px; animation: bouncing 1s ease-in 2 reverse; transition: animation 0.5s ease-in;
+        position: absolute; left: 5%; top: 330px; text-shadow: 3px 3px 3px black;  max-width: 745px; animation: bouncing 1s ease-in forwards; transition: animation 0.5s ease-in;
     }
     @keyframes bouncing {
         0% {
