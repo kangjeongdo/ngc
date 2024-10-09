@@ -642,8 +642,9 @@ footer > *{
 }
 #gnbPanel{
     box-sizing: border-box; width: 100%; height: 100%; padding:55px 5%; overflow-y: scroll;
-    position: fixed; top: 0; display: none; z-index: 60; box-sizing: border-box;
+    position: fixed; top: 0; display: none; z-index: 60; box-sizing: border-box; scrollbar-width: none;
  }
+#gnbPanel:-webkit-scrollbar {display: none;}
 #gnbPanel.active{
    display: block;
 }

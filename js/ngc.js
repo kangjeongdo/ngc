@@ -45,41 +45,35 @@ function ani(){
     var context = $('.indexContainer > div:first-child div');
     var offset_arr = []
     var rightoffset_arr = []
+    var div2 = $('.list_container > div:nth-child(2) > div');
+    var div4 = $('.list_container > div:nth-child(4) > div');
+    var div4img = $('.list_container > div:nth-child(4) > ul');
+    var div2img = $('.list_container > div:nth-child(2) > img');
     var showleft =$('.showArticle > div:first-child').toArray();
-    console.log(showleft)
     var text = $('.list_container div:nth-child(3) > *');
     var oneright =$('.oneArticle> div').toArray();
     var oneimg = $('.oneArticle> img').toArray();
     var showimg = $('.showArticle > .bx-wrapper').toArray();
     var oneleft = $('.indexContainer > div:nth-child(11) > div');
     var oneleftimg = $('.indexContainer > div:nth-child(11) > img');
-    console.log(oneleft)
     var div3 = $('.indexContainer > div:nth-child(3)');
     var div5 = $(".indexContainer > div:nth-child(5) > *:not('div')")
     $(showleft).each(function(){
         offset_arr.push($(this).offset());
     });
-    console.log(offset_arr[0].top)
     $(oneright).each(function(){
         rightoffset_arr.push($(this).offset());
     });
-    console.log(rightoffset_arr)
     $(window).on('scroll',function(){
         var scroll = $(document).scrollTop();
-        $('.indexContainer').on(function(){
-            console.log($(this))
-            var oneoffest = oneleft.offset();
-            var div3offset = div3.offset();
-            var div5offset = div5.offset();
-            var coffset = context.offset();
-            // var textoffset = text.offset();
-            if(scroll <= (offset_arr[0].top-500)){
-                $(showleft[0]).removeClass("leftSlide");
-                $(showimg[0]).removeClass("slideUp");
-            }else{
-                $(showleft[0]).addClass("leftSlide");
-                $(showimg[0]).addClass("slideUp");
-            }
+        var oneoffest = oneleft.offset();
+        var div2offset = div2.offset();
+        var div3offset = div3.offset();
+        var div4offset = div4.offset();
+        var div5offset = div5.offset();
+        var coffset = context.offset();
+        var textoffset = text.offset();
+        if($('.indexContainer').length){
             if(scroll >= (parseInt(coffset.top)-500)) {
                 $(context).addClass('slideUp');
             }else{
@@ -94,6 +88,13 @@ function ani(){
                 $(div5).addClass('slideUp');
             }else{
                 $(div5).removeClass("slideUp");
+            }
+            if(scroll <= (offset_arr[0].top-500)){
+                $(showleft[0]).removeClass("leftSlide");
+                $(showimg[0]).removeClass("slideUp");
+            }else{
+                $(showleft[0]).addClass("leftSlide");
+                $(showimg[0]).addClass("slideUp");
             }
             if(scroll <= (offset_arr[1].top-500)){
                 $(showleft[1]).removeClass("leftSlide");
@@ -144,12 +145,42 @@ function ani(){
                 $(oneleft).addClass("leftSlide");
                 $(oneleftimg).addClass("rightSlide");
             }
-        });
-        // if(scroll <= (textoffset.top-500)){
-        //     $(text).removeClass("show");
-        // }else{
-        //     $(text).addClass("show");
-        // }
+        }else{}
+        if($('.list_container').length){
+            if(scroll <= (textoffset.top-500)){
+                $(text).removeClass("show");
+            }else{
+                $(text).addClass("show");
+            }
+            if(scroll <= (offset_arr[0].top-500)){
+                $(showleft[0]).removeClass("leftSlide");
+                $(showimg[0]).removeClass("slideUp");
+            }else{
+                $(showleft[0]).addClass("leftSlide");
+                $(showimg[0]).addClass("slideUp");
+            }
+            if(scroll <= (rightoffset_arr[0].top-400)){
+                $(oneright[0]).removeClass("rightSlide");
+                $(oneimg[0]).removeClass("slideUp");
+            }else{
+                $(oneimg[0]).addClass("slideUp");
+                $(oneright[0]).addClass("rightSlide");
+            }
+            if(scroll >= (parseInt(div2offset.top)-400)) {
+                $(div2).addClass('leftSlide');
+                $(div2img).addClass('rightSlide');
+            }else{
+                $(div2).removeClass('leftSlide');
+                $(div2img).removeClass('rightSlide');
+            }
+            if(scroll >= (parseInt(div4offset.top)-400)) {
+                $(div4).addClass('leftSlide');
+                $(div4img).addClass('rightSlide');
+            }else{
+                $(div4).removeClass('leftSlide');
+                $(div4img).removeClass('rightSlide');
+            }
+        }else{}
     }).scroll();
 }
 function font(btn){

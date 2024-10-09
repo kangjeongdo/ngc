@@ -2813,7 +2813,19 @@ article > div:nth-child(3) div:last-child form input:focus,
         width: 100%; display: block; 
     }
     .list_container > div:first-child h2{
-        position: absolute; left: 5%; top: 330px; text-shadow: 3px 3px 3px black;  max-width: 745px;
+        position: absolute; left: 5%; top: 330px; text-shadow: 3px 3px 3px black;  max-width: 745px; animation: bouncing 1s ease-in 2 reverse; transition: animation 0.5s ease-in;
+    }
+    @keyframes bouncing {
+        0% {
+            opacity: 0;
+            transform: scale(.3);
+          }
+          50% {
+            opacity: 1;
+            transform: scale(1.05);
+          }
+          70% { transform: scale(.9); }
+          100% { transform: scale(1); }
     }
     .list_container > div:first-child h2 b{
         text-shadow: none;
@@ -2828,7 +2840,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         float: left; 
     }
     .list_container > div:nth-child(2) > div{
-        margin: 0 7% 0 7.8%; width: 35.5%; 
+        margin: 0 7% 0 7.8%; width: 35.5%; opacity: 0; animation: leftSlideEx 1s ease-out forwards;
     }
     .list_container > div:nth-child(2) > div h3{
         font-size: 26px; line-height: 32px; color: #ffffff; font-weight: 100; margin-bottom: 60px;
@@ -2840,7 +2852,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         right: 105px;
     }
     .list_container > div:nth-child(2) img{
-        width: 42%; 
+        width: 42%; opacity: 0; animation: rightSlideEx 1s ease-out forwards;
     }
     .list_container div:nth-child(3){
         background-color: #02291f; height: 580px; 
@@ -2863,10 +2875,13 @@ article > div:nth-child(3) div:last-child form input:focus,
         padding: 220px 0 0 5%; display: flex; margin-bottom: 240px;
     }
     .list_container div:nth-child(4) div:not(.bx-wrapper){
-        margin-right: 7%; width: 26.5%;
+        margin-right: 7%; width: 26.5%; opacity: 0; animation: leftSlideEx 1s ease-in-out forwards;
     }
     .list_container div:nth-child(4) ul:after{
         content: ''; display: block; clear: both;
+    }
+    .list_container div:nth-child(4) ul{
+        opacity: 0; animation: rightSlideEx 1s ease-in-out forwards;
     }
     .list_container div:nth-child(4) ul li:not(:first-child){
         margin-left: 1%;
