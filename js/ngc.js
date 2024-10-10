@@ -24,6 +24,7 @@ $(document).ready(function(){
     cardBg();
     font('.list_Travel > div:first-child ol li')
     list();
+    btnTop();
     ani();
   });
   function list(){
@@ -79,31 +80,31 @@ function ani(){
             }else{
                 $(context).removeClass("slideUp");
             }
-            if(scroll >= (parseInt(div3offset.top)-400)) {
+            if(scroll >= (parseInt(div3offset.top)-700)) {
                 $(div3).addClass('slideUp');
             }else{
                 $(div3).removeClass("slideUp");
             }
-            if(scroll >= (parseInt(div5offset.top)-400)) {
+            if(scroll >= (parseInt(div5offset.top)-700)) {
                 $(div5).addClass('slideUp');
             }else{
                 $(div5).removeClass("slideUp");
             }
-            if(scroll <= (offset_arr[0].top-500)){
+            if(scroll <= (offset_arr[0].top-700)){
                 $(showleft[0]).removeClass("leftSlide");
                 $(showimg[0]).removeClass("slideUp");
             }else{
                 $(showleft[0]).addClass("leftSlide");
                 $(showimg[0]).addClass("slideUp");
             }
-            if(scroll <= (offset_arr[1].top-500)){
+            if(scroll <= (offset_arr[1].top-750)){
                 $(showleft[1]).removeClass("leftSlide");
                 $(showimg[1]).removeClass("slideUp");
             }else{
                 $(showimg[1]).addClass("slideUp");
                 $(showleft[1]).addClass("leftSlide");
             }
-            if(scroll <= (offset_arr[2].top-600)){
+            if(scroll <= (offset_arr[2].top-650)){
                 $(showimg[2]).removeClass("slideUp");
                 $(showleft[2]).removeClass("leftSlide");
             }else{
@@ -117,28 +118,28 @@ function ani(){
                 $(showimg[3]).addClass("slideUp");
                 $(showleft[3]).addClass("leftSlide");
             }
-            if(scroll <= (rightoffset_arr[0].top-400)){
+            if(scroll <= (rightoffset_arr[0].top-620)){
                 $(oneright[0]).removeClass("rightSlide");
                 $(oneimg[0]).removeClass("slideUp");
             }else{
                 $(oneimg[0]).addClass("slideUp");
                 $(oneright[0]).addClass("rightSlide");
             }
-            if(scroll <= (rightoffset_arr[1].top-500)){
+            if(scroll <= (rightoffset_arr[1].top-600)){
                 $(oneright[1]).removeClass("rightSlide");
                 $(oneimg[1]).removeClass("slideUp");
             }else{
                 $(oneimg[1]).addClass("slideUp");
                 $(oneright[1]).addClass("rightSlide");
             }
-            if(scroll <= (rightoffset_arr[2].top-400)){
+            if(scroll <= (rightoffset_arr[2].top-600)){
                 $(oneright[2]).removeClass("rightSlide");
                 $(oneimg[2]).removeClass("slideUp");
             }else{
                 $(oneimg[2]).addClass("slideUp");
                 $(oneright[2]).addClass("rightSlide");
             }
-            if(scroll <= (parseInt(oneoffest.top)-500)) {
+            if(scroll <= (parseInt(oneoffest.top)-700)) {
                 $(oneleft).removeClass('leftSlide');
                 $(oneleftimg).removeClass('rightSlide');
             }else{
@@ -223,6 +224,22 @@ function panelComponent(){
         panels.removeClass("active");
     });
 }
+function btnTop(){
+    $('.btnTop > img').hide();
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 100){
+            $('.btnTop > img').fadeIn();
+        }else{
+            $('.btnTop > img').fadeOut();
+        }
+    });
+    $('.btnTop > img').click(function(){
+        $('html').animate({
+            scrollTop : 0
+        }, 500);
+        return false;
+    });
+}
 function popUpShow(){
     var currentPopup = null;
     $(".openPopUp").click(function(){
@@ -240,8 +257,11 @@ function scrollChange(){
     $(window).scroll(function(){
         var scrollTop = $(this).scrollTop();
         if(scrollTop > lastScroll) {
-            $(currentHeader).addClass('backgroundColor');
-            $(currentSearch).addClass('backgroundColor');
+            $(currentHeader).addClass('up');
+            $(currentSearch).addClass('up');
+        }else{
+            $(currentHeader).removeClass('up');
+            $(currentSearch).removeClassClass('up');
         }
     }); 
     $(window).click(function(){

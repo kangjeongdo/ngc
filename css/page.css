@@ -224,7 +224,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         color: #000000;
     }
     div.bx-wrapper{
-        background: transparent; border: none; box-shadow: none;  margin-bottom: 0;
+        background: transparent; border: none; box-shadow: none;  margin-bottom: 0; opacity: 0; animation: slideUpEx 0.5s ease-out forwards;
     }
     div.bx-wrapper .bx-controls-direction a{
         width: 50px; height: 50px; background-position: 0 0;
@@ -262,10 +262,10 @@ article > div:nth-child(3) div:last-child form input:focus,
         margin-bottom: 120px; display: flex; flex-direction: column; 
     }
     .oneArticle img{
-        display: block; width: 100%; order: 2;
+        display: block; width: 100%; order: 2; opacity: 0; animation: slideUpEx 0.5s ease-out forwards;
     }
     .oneArticle div{
-        order: 1; margin-bottom: 30px;
+        order: 1; margin-bottom: 30px; opacity: 0; animation: rightSlideEx 0.5s ease-out forwards;
     }
     .oneArticle div a{
         text-align: right;
@@ -330,7 +330,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         padding-left: 10px; background: url('../images/bul_arrow_white.svg') right no-repeat;
     }
     .indexContainer > div.showArticle > div:first-child{
-        width: 92.8%; margin-bottom: 30px; display: flex; flex-direction: column;
+        width: 92.8%; margin-bottom: 30px; display: flex; flex-direction: column; opacity: 0; animation: leftSlideEx 0.5s ease-out forwards;
     }
     .indexContainer > div.showArticle > div:first-child a{
         align-self: flex-end;
@@ -348,7 +348,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         right: 125px;
     }
     .indexContainer > div:nth-child(3){
-        margin-bottom: 120px;
+        margin-bottom: 120px; opacity: 0; animation: slideUpEx 0.5s ease-out forwards;
     }
     .indexContainer > div:nth-child(3) > div{
        display: flex; width: 100%; align-items: flex-end; flex-wrap: wrap;
@@ -380,6 +380,9 @@ article > div:nth-child(3) div:last-child form input:focus,
     .indexContainer > div:nth-child(5){
         display: flex; flex-direction: column;
     }
+    .indexContainer > div:nth-child(5) > *:not(div){
+        opacity: 0; animation: slideUpEx 0.5s ease-out forwards;
+    }
     .indexContainer div:nth-child(5) button.openPopUp{
         align-self: flex-end; font-size: 14px; line-height: 20px; color: #ffffff; font-weight: 700; padding: 0 25px 0 49px; 
         margin-bottom: 30px;  border: none; background-color: transparent; position: relative; transition: padding 0.5s ease-in;
@@ -405,7 +408,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         padding: 50px 3.6% 120px; display: flex; flex-direction: column; box-sizing: border-box;
     }
     .indexContainer div:nth-child(11) div{
-        width: 100%; margin-bottom: 30px; display: flex; flex-direction: column;
+        width: 100%; margin-bottom: 30px; display: flex; flex-direction: column; opacity: 0; animation: leftSlideEx 0.5s ease-out forwards;
     }
     .indexContainer div:nth-child(11) div b{
         color: inherit;
@@ -420,7 +423,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         background: url('../images/bul_arrow_black.svg') right no-repeat; padding-left: 10px;
     }
     .indexContainer div:nth-child(11) img{
-        width: 100%; display: block; 
+        width: 100%; display: block; opacity: 0; animation: rightSlideEx 0.5s ease-out forwards;
     }
     .list_container > div:first-child{
         position: relative; overflow: hidden; height: 680px;
@@ -429,8 +432,12 @@ article > div:nth-child(3) div:last-child form input:focus,
         width: 100%; display: block; transform: rotateZ(-90deg) translateX(-115%) translateY(-3%) scale(2.8);
     }
     .list_container > div:first-child h2{
-        position: absolute; left: 3.6%; bottom: 95px; text-shadow: 3px 3px 3px black; margin-bottom: 0; 
+        position: absolute; left: 3.6%; bottom: 95px; text-shadow: 3px 3px 3px black; margin-bottom: 0; opacity: 0; animation: fade-in 1s linear forwards;
     }
+    @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }      
     .list_container > div:first-child h2 b{
         text-shadow: none; word-break: break-all; width: 90%;
     }
@@ -438,7 +445,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         padding-top: 120px; margin-bottom: 120px;
     }
     .list_container > div:nth-child(2) > div{
-        width: 100%; margin-bottom: 30px;
+        width: 100%; margin-bottom: 30px; opacity: 0; animation: leftSlideEx 0.5s ease-out forwards;
     }
     .list_container > div:nth-child(2) > div h3{
         font-size: 26px; line-height: 32px; color: #ffffff; font-weight: 100; margin-bottom: 60px; 
@@ -450,13 +457,13 @@ article > div:nth-child(3) div:last-child form input:focus,
         right: 105px;
     }
     .list_container > div:nth-child(2) img{
-        width: 100%; 
+        width: 100%; opacity: 0; animation: rightSlideEx 0.5s ease-out forwards;
     }
     .list_container div:nth-child(3){
         background-color: #02291f; height: 310px;
     }
     .list_container div:nth-child(3) > *{
-        color: #ffffff; display: block; margin-left: 10.7%; 
+        color: #ffffff; display: block; margin-left: 10.7%; opacity: 0; animation: showEx 0.5s ease-out forwards;
     }
     .list_container div:nth-child(3) em{
         text-indent: -9999px; background: url('../images/icon_quotes.svg') bottom no-repeat; width: 24px;
@@ -472,13 +479,13 @@ article > div:nth-child(3) div:last-child form input:focus,
         padding: 120px 3.6% 0; box-sizing: border-box; display: flex; margin-bottom: 135px; flex-direction: column;
     }
     .list_container div:nth-child(4) div{
-        width: 100%; margin-bottom: 30px;
+        width: 100%; margin-bottom: 30px; opacity: 0; animation: leftSlideEx 0.5s ease-out forwards;
     }
     .list_container div:nth-child(4) div p{
         margin-bottom: 0;
     }
     .list_container div:nth-child(4) ul{
-        display: flex; flex-wrap: nowrap;
+        display: flex; flex-wrap: nowrap; opacity: 0; animation: rightSlideEx 0.5s ease-out forwards;
     }
     .list_container div:nth-child(4) ul li{
         width: 48.2%;
@@ -505,7 +512,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         margin-bottom: 220px; padding-left: 3.12%; display: flex; flex-direction: column;
     }
     .list_container div.showArticle > div:first-of-type{
-        width: 100%; margin-bottom: 30px;
+        width: 100%; margin-bottom: 30px; opacity: 0; animation: leftSlideEx 0.5s ease-out forwards;
     }
     .list_container div.showArticle > div:first-of-type p{
         margin-bottom: 0;
@@ -1410,7 +1417,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         color: #000000;
     }
     div.bx-wrapper{
-        background: transparent; border: none; box-shadow: none; margin-bottom: 0;
+        background: transparent; border: none; box-shadow: none; margin-bottom: 0;  opacity: 0; animation: slideUpEx 0.5s ease-out forwards;
     }
     div.bx-wrapper .bx-controls-direction a{
         width: 50px; height: 50px; background-position: 0 0;
@@ -1441,10 +1448,10 @@ article > div:nth-child(3) div:last-child form input:focus,
         margin-bottom: 120px; display: flex; flex-direction: column; padding: 0 8.5%; box-sizing: border-box;
     }
     .oneArticle img{
-        display: block; width: 100%; order: 2;
+        display: block; width: 100%; order: 2;  opacity: 0; animation: leftSlideEx 0.5s ease-out forwards;
     }
     .oneArticle div{
-        width: 100%; order: 1; margin-bottom: 30px; 
+        width: 100%; order: 1; margin-bottom: 30px; opacity: 0; animation: rightSlideEx 0.5s ease-out forwards;
     }
     .oneArticle div h3{
         width: 57%;
@@ -1488,7 +1495,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         width: 100%; display: block;
     }
     .indexContainer > div:first-child div{
-        position: absolute; bottom: 40px; max-width: 1720px; left: 5%; width: 89.5%;
+        position: absolute; bottom: 40px; max-width: 1720px; left: 5%; width: 89.5%; opacity: 0; animation: slideUpEx 0.5s ease-out forwards;
     }
     .indexContainer > div:first-child div h3{
         text-shadow: 3px 3px 3px black; width: 90%;
@@ -1515,7 +1522,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         padding-left: 10px; background: url('../images/bul_arrow_white.svg') right no-repeat;
     }
     .indexContainer > div.showArticle > div:first-child{
-        width: 100%; margin-bottom: 30px; display: flex; flex-direction: column;
+        width: 100%; margin-bottom: 30px; display: flex; flex-direction: column;  opacity: 0; animation: leftSlideEx 0.5s ease-out forwards;
     }
     .indexContainer > div.showArticle > div:first-child a{
         align-self: flex-end;
@@ -1533,11 +1540,10 @@ article > div:nth-child(3) div:last-child form input:focus,
         right: 125px;
     }
     .indexContainer > div:nth-child(3){
-        margin-bottom: 220px;
+        margin-bottom: 220px;  opacity: 0; animation: slideUpEx 0.5s ease-out forwards;
     }
     .indexContainer > div:nth-child(3) > div{
        display: flex; padding: 0 8.5%; box-sizing: border-box;  width: 100%; align-items: flex-end; flex-wrap: wrap;
-       /* background: url('../images/index_adventure_29.png') top/ 83% no-repeat; height: 1189px;  */
     }
     .indexContainer > div:nth-child(3) > div > img{
         width: 100%; margin-bottom: 10px;
@@ -1564,7 +1570,10 @@ article > div:nth-child(3) div:last-child form input:focus,
         right: 126px;
     }
     .indexContainer > div:nth-child(5){
-        display: flex; flex-direction: column;
+        display: flex; flex-direction: column; 
+    }
+    .indexContainer > div:nth-child(5) > *:not(div){
+        opacity: 0; animation: slideUpEx 0.5s ease-out forwards;
     }
     .indexContainer div:nth-child(5) button.openPopUp{
         align-self: flex-end; font-size: 14px; line-height: 20px; color: #ffffff; font-weight: 700; padding: 0 25px 0 49px; 
@@ -1594,7 +1603,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         padding: 225px 3.12% 120px; display: flex; flex-direction: column; box-sizing: border-box;
     }
     .indexContainer div:nth-child(11) div{
-        width: 100%; margin-bottom: 30px; display: flex; flex-direction: column;
+        width: 100%; margin-bottom: 30px; display: flex; flex-direction: column;  opacity: 0; animation: leftSlideEx 0.5s ease-out forwards;
     }
     .indexContainer div:nth-child(11) div h3{
         width: 64%;
@@ -1612,17 +1621,28 @@ article > div:nth-child(3) div:last-child form input:focus,
         background: url('../images/bul_arrow_black.svg') right no-repeat; padding-left: 10px;
     }
     .indexContainer div:nth-child(11) img{
-        width: 100%; display: block; 
+        width: 100%; display: block; opacity: 0; animation: rightSlideEx 0.5s ease-out forwards;
     }
     .list_container > div:first-child{
-        position: relative;
+        position: relative; 
     }
     .list_container > div:first-child img{
         width: 100%; display: block; 
     }
     .list_container > div:first-child h2{
         position: absolute; left: 5%; top: 185px; text-shadow: 3px 3px 3px black;  max-width: 745px; margin-bottom: 0;
+        opacity: 0; animation: fade-in-down 1.5s ease-out forwards;
     }
+    @keyframes fade-in-down {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     .list_container > div:first-child h2 b{
         text-shadow: none;
     }
@@ -1630,7 +1650,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         padding-top: 120px; margin-bottom: 220px;
     }
     .list_container > div:nth-child(2) > div{
-        padding: 0 8.5%; width: 100%; box-sizing: border-box;
+        padding: 0 8.5%; width: 100%; box-sizing: border-box; opacity: 0; animation: leftSlideEx 0.5s ease-out forwards;
     }
     .list_container > div:nth-child(2) > div h3{
         font-size: 26px; line-height: 32px; color: #ffffff; font-weight: 100; margin-bottom: 60px;
@@ -1642,13 +1662,13 @@ article > div:nth-child(3) div:last-child form input:focus,
         right: 105px;
     }
     .list_container > div:nth-child(2) img{
-        width: 100%; padding: 0 8.5%; box-sizing: border-box;
+        width: 100%; padding: 0 8.5%; box-sizing: border-box; opacity: 0; animation: rightSlideEx 0.5s ease-out forwards;
     }
     .list_container div:nth-child(3){
         background-color: #02291f; height: 250px;
     }
     .list_container div:nth-child(3) > *{
-        color: #ffffff; display: block; margin-left: 4.7%; 
+        color: #ffffff; display: block; margin-left: 4.7%; opacity: 0; animation: showEx 0.5s ease-out forwards;
     }
     .list_container div:nth-child(3) em{
         text-indent: -9999px; background: url('../images/icon_quotes.svg') bottom no-repeat; width: 32px;
@@ -1664,13 +1684,16 @@ article > div:nth-child(3) div:last-child form input:focus,
         padding: 220px 3.12% 0; display: flex; margin-bottom: 240px; flex-direction: column;
     }
     .list_container div:nth-child(4) div{
-        width: 100%; margin-bottom: 30px;
+        width: 100%; margin-bottom: 30px; opacity: 0; animation: leftSlideEx 0.5s ease-out forwards;
     }
     .list_container div:nth-child(4) div p{
         margin-bottom: 0;
     }
     .list_container div:nth-child(4) ul:after{
         content: ''; display: block; clear: both;
+    }
+    .list_container div:nth-child(4) ul{
+        opacity: 0; animation: rightSlideEx 0.5s ease-out forwards;
     }
     .list_container div:nth-child(4) ul li:not(:first-child){
         margin-left: 1%;
@@ -1691,7 +1714,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         margin-bottom: 220px; padding-left: 3.12%; display: flex; flex-direction: column;
     }
     .list_container div.showArticle > div:first-of-type{
-        width: 100%; margin-bottom: 30px;
+        width: 100%; margin-bottom: 30px; opacity: 0; animation: leftSlideEx 0.5s ease-out forwards;
     }
     .list_container div.showArticle > div:first-of-type p{
         margin-bottom: 0;
@@ -1715,11 +1738,23 @@ article > div:nth-child(3) div:last-child form input:focus,
         width: 100%; display: block;
     }
     .list_container2 div:first-child > div{
-        position: absolute; bottom: 0px; max-width: 800px; 
+        position: absolute; bottom: 0px; max-width: 800px; left: 3.12%;
     }
     .list_container2 div:first-child > div h2{
-        text-shadow: 3px 3px 3px black; font-size: 40px; line-height: 46px;
+        text-shadow: 3px 3px 3px black; font-size: 40px; line-height: 46px; animation: bounceinright 1.2s ease-in forwards;
     }
+    @keyframes bounceinright {
+        0% {
+            opacity: 0;
+            transform: translateX(2000px);
+          }
+          60% {
+            opacity: 1;
+            transform: translateX(-30px);
+          }
+          80% { transform: translateX(10px); }
+          100% { transform: translateX(0); }
+        }
     .list_container2 div:first-child > div h2 b{
         text-shadow: none; font-size: inherit;
     }
@@ -2617,7 +2652,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         color: #000000;
     }
     div.bx-wrapper{
-        background: transparent; border: none; box-shadow: none; margin-bottom: 0; opacity: 0; animation: slideUpEx 1s ease-in forwards; opacity: 0;
+        background: transparent; border: none; box-shadow: none; margin-bottom: 0; opacity: 0; animation: slideUpEx 0.5s ease-in forwards; opacity: 0;
     }
     div.bx-wrapper .bx-controls-direction a{
         width: 50px; height: 50px; background-position: 0 0;
@@ -2800,7 +2835,7 @@ article > div:nth-child(3) div:last-child form input:focus,
         float: left;
     }
     .indexContainer div:nth-child(11) div{
-        margin-left: 8%; width: 39%; margin-right: 3.5%;  opacity: 0; animation: leftSlideeEx 1s ease-out forwards;
+        margin-left: 8%; width: 39%; margin-right: 3.5%;  opacity: 0; animation: leftSlideEx 1s ease-out forwards;
     }
     .indexContainer div:nth-child(11) div b{
         color: inherit;
@@ -2815,9 +2850,8 @@ article > div:nth-child(3) div:last-child form input:focus,
         background: url('../images/bul_arrow_black.svg') right no-repeat; padding-left: 10px;
     }
     .indexContainer div:nth-child(11) img{
-        width: 42.4%; max-width: 730px; display: block;  opacity: 0; animation: rightlideeEx 1s ease-out forwards;
+        width: 42.4%; max-width: 730px; display: block;  opacity: 0; animation: rightSlideEx 1s ease-out forwards;
     }
-
     .list_container > div:first-child{
         position: relative;
     }
@@ -2917,10 +2951,10 @@ article > div:nth-child(3) div:last-child form input:focus,
         position: relative; margin-bottom: 120px;
     }
     .list_container2 div:first-child img{
-        width: 100%; display: block;
+        width: 100%; display: block; transform: translateY(-5px);
     }
     .list_container2 div:first-child > div{
-        position: absolute; bottom: 30px; max-width: 800px; animation: bouncing 1s ease-in forwards; transition: animation 0.5s ease-in;
+        position: absolute; bottom: 30px; max-width: 800px; animation: show 1s ease-in forwards; transition: animation 0.5s ease-in;
     }
     .list_container2 div:first-child > div h2{
         text-shadow: 3px 3px 3px black; font-size: 90px; line-height: 96px;
