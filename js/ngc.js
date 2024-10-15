@@ -104,14 +104,14 @@ function ani(){
                 $(showimg[1]).addClass("slideUp");
                 $(showleft[1]).addClass("leftSlide");
             }
-            if(scroll <= (offset_arr[2].top-650)){
+            if(scroll <= (offset_arr[2].top-750)){
                 $(showimg[2]).removeClass("slideUp");
                 $(showleft[2]).removeClass("leftSlide");
             }else{
                 $(showimg[2]).addClass("slideUp");
                 $(showleft[2]).addClass("leftSlide");
             }
-            if(scroll <= (offset_arr[3].top-500)){
+            if(scroll <= (offset_arr[3].top-700)){
                 $(showimg[3]).removeClass("slideUp");
                 $(showleft[3]).removeClass("leftSlide");
             }else{
