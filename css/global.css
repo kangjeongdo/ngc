@@ -261,6 +261,13 @@ a{
     header div#searchField form fieldset input.openBtn{
         border: none; position: absolute; right: 5%; top: 5px; height: 20px;
     }
+    .btnTop{
+        position: fixed; z-index: 50; right: calc(16% - 40px); width: 40px; filter: drop-shadow(0 9px 10px rgba(0,0,0,0.15));
+        bottom: 85px; background-color: black; border-radius: 60px; transition: transform 0.3s ease-in-out;
+    }
+    .btnTop img{
+        width: 100%; display: block; 
+    }
     footer{
         padding: 80px 3.6% 0; position: relative; bottom: 0; box-sizing: border-box; min-height: 815px;
     }
@@ -561,6 +568,13 @@ a{
     }
     header div#searchField form fieldset input.openBtn{
         border: none; position: absolute; right: 5%; top: 0; height: 19px;
+    }
+    .btnTop{
+        position: fixed; z-index: 50; right: calc(9.5% - 60px); width: 60px; filter: drop-shadow(0 9px 10px rgba(0,0,0,0.15));
+        bottom: 85px; background-color: black; border-radius: 60px; transition: transform 0.3s ease-in-out;
+    }
+    .btnTop img{
+        width: 100%; display: block; 
     }
     footer{
         padding: 80px 3.12%; position: relative; bottom: 0; box-sizing: border-box;
