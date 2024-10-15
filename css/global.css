@@ -771,7 +771,7 @@ header > div:first-child > div:last-of-type a:hover{
 }
 header div[id^='depthMenu']{
     padding: 80px 5% 40px; display: none; transition: display 10s ease-in-out 3s;  box-sizing: border-box;
-    position: absolute; top: 0; left: 0; width: 100%; background-color: white; opacity: 0; z-index: 10;
+    position: absolute; top: 0; left: 0.5%; right: 2.5%; width:100%; background-color: white; opacity: 0; z-index: 10; transform: translateX(-3%);
 }
 header div[id^='depthMenu'].active{
     display: flex;  animation: slideDown 1.5s ease-in-out forwards; transform-origin: top center; 
@@ -783,6 +783,12 @@ header div[id^='depthMenu'].active{
     to{
         opacity: 1; transform: translateY(22%); 
 }
+}
+@media screen and (max-width:1790px) {
+    header div[id^='depthMenu']{
+        padding: 80px 5% 40px; display: none; transition: display 10s ease-in-out 3s;  box-sizing: border-box;
+        position: absolute; top: 0; left: 0; width: 100%; background-color: white; opacity: 0; z-index: 10; transform: translateX(-3%);
+    }
 }
 header div[id^='depthMenu'] aside{
     padding-top: 80px; width: 14%;
@@ -959,9 +965,6 @@ header div#searchField form fieldset input.openBtn{
 }
 .btnTop img{
     width: 100%; display: block; 
-}
-.btnTop:hover{
-    transform: translateY(-15%);
 }
 footer{
     padding: 80px 5%; position: relative; bottom: 0;
